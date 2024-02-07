@@ -1,0 +1,289 @@
+"Yuju","Yuju",module,Madkting_Connect
+"Yuju Information","Yuju Information",module,Madkting_Connect
+"Valid Account","Valid Account",module,Madkting_Connect
+"Invalid Account","Invalid Account",module,Madkting_Connect
+"Please save Store option","Please save Store option",module,Madkting_Connect
+"Match - Order Status","Match - Order Status",module,Madkting_Connect
+"Download shipping label failed, check log registry #%1 for more details","Download shipping label failed, check log registry #%1 for more details",module,Madkting_Connect
+"Yuju - Download Shipping Label Error: %1","Yuju - Download Shipping Label Error: %1",module,Madkting_Connect
+"Download shipping label failed, must provide required parameters","Download shipping label failed, must provide required parameters",module,Madkting_Connect
+"Incorrect petition","Incorrect petition",module,Madkting_Connect
+"Yuju's order status updated successfully","Yuju's order status updated successfully",module,Madkting_Connect
+"Yuju's order status assignation failed","Yuju's order status assignation failed",module,Madkting_Connect
+"Yuju - Assign Order Status Error: %1","Yuju - Assign Order Status Error: %1",module,Madkting_Connect
+"Yuju's order status assignation failed, must provide required parameters","Yuju's order status assignation failed, must provide required parameters",module,Madkting_Connect
+"Please correct sent data.","Please correct sent data.",module,Madkting_Connect
+"Something went wrong while saving order status.","Something went wrong while saving order status.",module,Madkting_Connect
+"Fatal error could not get order data, response = %1","Fatal error could not get order data, response = %1",module,Madkting_Connect
+"No location information","No location information",module,Madkting_Connect
+"There is no Yuju token information","There is no Yuju token information",module,Madkting_Connect
+"Petition is not POST","Petition is not POST",module,Madkting_Connect
+"Invalid Yuju API token","Invalid Yuju API token",module,Madkting_Connect
+"To define","To define",module,Madkting_Connect
+"Yuju order %1 creation fail: %2","Yuju order %1 creation fail: %2",module,Madkting_Connect
+"Yuju Error - Cannot create order %1, %2","Yuju Error - Cannot create order %1, %2",module,Madkting_Connect
+"Invoice #%1 created.","Invoice #%1 created.",module,Madkting_Connect
+"Could not create invoice","Could not create invoice",module,Madkting_Connect
+"Yuju create invoice, error = %1","Yuju create invoice, error = %1",module,Madkting_Connect
+"Shipment #%1 created.","Shipment #%1 created.",module,Madkting_Connect
+"Could not create shipment","Could not create shipment",module,Madkting_Connect
+"Yuju Order Information","Yuju Order Information",module,Madkting_Connect
+"Order ID","Order ID",module,Madkting_Connect
+"Order Status","Order Status",module,Madkting_Connect
+"N/D","N/D",module,Madkting_Connect
+"N/A","N/A",module,Madkting_Connect
+"Marketplace","Marketplace",module,Madkting_Connect
+"Payment Method","Payment Method",module,Madkting_Connect
+"Actions Information","Actions Information",module,Madkting_Connect
+"Download delivery label","Download delivery label",module,Madkting_Connect
+"Download PDF","Download PDF",module,Madkting_Connect
+"Download ZPL","Download ZPL",module,Madkting_Connect
+"Set ready to ship","Set ready to ship",module,Madkting_Connect
+"Set Status","Set Status",module,Madkting_Connect
+"Done","Done",module,Madkting_Connect
+"There are no available actions to do in this order yet.","There are no available actions to do in this order yet.",module,Madkting_Connect
+"This order was created by Yuju, click here to get details","This order was created by Yuju, click here to get details",module,Madkting_Connect
+"Marketplace:","Marketplace:",module,Madkting_Connect
+"Payment Method:","Payment Method:",module,Madkting_Connect
+"Configuration","Configuration",module,Madkting_Connect
+"General","General",module,Madkting_Connect
+"Connection","Connection",module,Madkting_Connect
+"Match","Match",module,Madkting_Connect
+"API Token","API Token",module,Madkting_Connect
+"<a href=""https://apps.test.yuju.io"" target=""_blank"">Click here to sign into your Yuju account.</a>","<a href=""https://apps.test.yuju.io"" target=""_blank"">Click here to sign into your Yuju account.</a>",module,Madkting_Connect
+"Status","Status",module,Madkting_Connect
+"Store","Store",module,Madkting_Connect
+"Select store where Yuju will get products and update orders.","Select store where Yuju will get products and update orders.",module,Madkting_Connect
+"Notifications URL","Notifications URL",module,Madkting_Connect
+"Edit","Edit",module,Madkting_Connect
+"ID","ID",module,Madkting_Connect
+"Yuju's Status","Yuju's Status",module,Madkting_Connect
+"Magento's Status","Magento's Status",module,Madkting_Connect
+"Document","Document",module,Madkting_Connect
+"Create Document","Create Document",module,Madkting_Connect
+"Invoice","Invoice",module,Madkting_Connect
+"Shipment","Shipment",module,Madkting_Connect
+"Credit Memo","Credit Memo",module,Madkting_Connect
+"Marketplace Order ID","Marketplace Order ID",module,Madkting_Connect
+"Marketplace Status","Marketplace Status",module,Madkting_Connect
+"American Express","American Express",module,Madkting_Connect
+"Referenced Payment","Referenced Payment",module,Madkting_Connect
+"Credit Card","Credit Card",module,Madkting_Connect
+"Debit Card","Debit Card",module,Madkting_Connect
+"Cash on Delivey Payment","Cash on Delivey Payment",module,Madkting_Connect
+"Oxxo Direct","Oxxo Direct",module,Madkting_Connect
+"PayPal","PayPal",module,Madkting_Connect
+"Credit Card on Delivery Payment","Credit Card on Delivery Payment",module,Madkting_Connect
+"Club Premier Kmp","Club Premier Kmp",module,Madkting_Connect
+"Club Premier Mixed","Club Premier Mixed",module,Madkting_Connect
+"LOYALTY","LOYALTY",module,Madkting_Connect
+"Banorte Payworks Lpay","Banorte Payworks Lpay",module,Madkting_Connect
+"Zero Payment","Zero Payment",module,Madkting_Connect
+"Convenience Store","Convenience Store",module,Madkting_Connect
+"Payment by ATM","Payment by ATM",module,Madkting_Connect
+"Credit Card","Credit Card",module,Madkting_Connect
+"Debit Card","Debit Card",module,Madkting_Connect
+"Prepaid Card","Prepaid Card",module,Madkting_Connect
+"Mercadopago","Mercadopago",module,Madkting_Connect
+"Payment Required","Payment Required",module,Madkting_Connect
+"Pending","Pending",module,Madkting_Connect
+"Paid","Paid",module,Madkting_Connect
+"Shipped","Shipped",module,Madkting_Connect
+"Delivered","Delivered",module,Madkting_Connect
+"Delivery Failed","Delivery Failed",module,Madkting_Connect
+"Refunded","Refunded",module,Madkting_Connect
+"Canceled","Canceled",module,Madkting_Connect
+"Actions","Actions",module,Madkting_Connect
+"Pending Payment","Pending Payment",module,Madkting_Connect
+"Processing","Processing",module,Madkting_Connect
+"Complete","Complete",module,Madkting_Connect
+"Closed","Closed",module,Madkting_Connect
+"Yes","Yes",module,Madkting_Connect
+"No","No",module,Madkting_Connect
+"Attributes","Attributes",module,Madkting_Connect
+"Match - Attributes","Match - Attributes",module,Madkting_Connect
+"Add Attribute","Add Attribute",module,Madkting_Connect
+"Save Attribute Match","Save Attribute Match",module,Madkting_Connect
+"Select attribute set to edit","Select attribute set to edit",module,Madkting_Connect
+"We couldn't find any records.","We couldn't find any records.",module,Madkting_Connect
+"Yuju's Attribute","Yuju's Attribute",module,Madkting_Connect
+"Magento's Attribute","Magento's Attribute",module,Madkting_Connect
+"Default Value","Default Value",module,Madkting_Connect
+"Delete","Delete",module,Madkting_Connect
+"Set as default","Set as default",module,Madkting_Connect
+"Choose an option","Choose an option",module,Madkting_Connect
+"It will use product stock","It will use product stock",module,Madkting_Connect
+"Choose Yuju's attribute first","Choose Yuju's attribute first",module,Madkting_Connect
+"Required params missing","Required params missing",module,Madkting_Connect
+"Error","Error",module,Madkting_Connect
+"Row %1","Row %1",module,Madkting_Connect
+"Yuju's attribute missing","Yuju's attribute missing",module,Madkting_Connect
+"Must provide Magento's attribute or default value at least","Must provide Magento's attribute or default value at least",module,Madkting_Connect
+"Failed Petition","Failed Petition",module,Madkting_Connect
+"Attribute match saved successfully","Attribute match saved successfully",module,Madkting_Connect
+"Success Petition","Success Petition",module,Madkting_Connect
+"Are you sure you want to delete","Are you sure you want to delete",module,Madkting_Connect
+"Attribute set selected has no attribute match, so default attribute set configuration is shown as reference. <b>DO NOT FORGET TO SAVE YOUR CHANGES</b>","Attribute set selected has no attribute match, so default attribute set configuration is shown as reference. <b>DO NOT FORGET TO SAVE YOUR CHANGES</b>",module,Madkting_Connect
+"Attribute Options","Attribute Options",module,Madkting_Connect
+"Match - Attribute Options","Match - Attribute Options",module,Madkting_Connect
+"Save Attribute Option Match","Save Attribute Option Match",module,Madkting_Connect
+"Yuju's Option","Yuju's Option",module,Madkting_Connect
+"Magento's Option","Magento's Option",module,Madkting_Connect
+"Select Yuju's attribute","Select Yuju's attribute",module,Madkting_Connect
+"Select Magento's attribute","Select Magento's attribute",module,Madkting_Connect
+"There are no options to be matched.","There are no options to be matched.",module,Madkting_Connect
+"No match","No match",module,Madkting_Connect
+"Attribute option match saved successfully","Attribute option match saved successfully",module,Madkting_Connect
+"There was an error getting Magento attributes","There was an error getting Magento attributes",module,Madkting_Connect
+"Match - Categories","Match - Categories",module,Madkting_Connect
+"Invalid request","Invalid request",module,Madkting_Connect
+"The selected match has been successfully removed","The selected match has been successfully removed",module,Madkting_Connect
+"Request invalid, please try again.","Request invalid, please try again.",module,Madkting_Connect
+"The category requested does not have any match","The category requested does not have any match",module,Madkting_Connect
+"All the selected categories are already matched. Please try again.","All the selected categories are already matched. Please try again.",module,Madkting_Connect
+"%1 Categories successfully matched.","%1 Categories successfully matched.",module,Madkting_Connect
+"Category successfully matched.","Category successfully matched.",module,Madkting_Connect
+"%1 category has not been saved. This category was already matched.","%1 category has not been saved. This category was already matched.",module,Madkting_Connect
+"%1 New categories successfully matched.","%1 New categories successfully matched.",module,Madkting_Connect
+"1 category successfully matched.","1 category successfully matched.",module,Madkting_Connect
+"%1 categories successfully disassociated.","%1 categories successfully disassociated.",module,Madkting_Connect
+"1 category successfully disassociated.","1 category successfully disassociated.",module,Madkting_Connect
+"Already matched","Already matched",module,Madkting_Connect
+"Are you sure you wan't to delete the match for","Are you sure you wan't to delete the match for",module,Madkting_Connect
+"Categories","Categories",module,Madkting_Connect
+"Edit category match","Edit category match",module,Madkting_Connect
+"Categories Match Fieldset","Categories Match Fieldset",module,Madkting_Connect
+"If you select a category ""already matched"" that selection is going to be ignored.","If you select a category ""already matched"" that selection is going to be ignored.",module,Madkting_Connect
+"Save Category Match","Save Category Match",module,Madkting_Connect
+"Back","Back",module,Madkting_Connect
+"Yuju category","Yuju category",module,Madkting_Connect
+"Magento categories","Magento categories",module,Madkting_Connect
+"New Category Match","New Category Match",module,Madkting_Connect
+"Edit Category Match","Edit Category Match",module,Madkting_Connect
+"Select","Select",module,Madkting_Connect
+"Credit memo #%1 created.","Credit memo #%1 created.",module,Madkting_Connect
+"Could not create the credit memo","Could not create the credit memo",module,Madkting_Connect
+"Yuju create credit memo, error = %1","Yuju create credit memo, error = %1",module,Madkting_Connect
+"Yuju create credit memo, error = this credit memo can not be refunded.","Yuju create credit memo, error = this credit memo can not be refunded.",module,Madkting_Connect
+"Credit memo #%1 couldn't be refunded","Credit memo #%1 couldn't be refunded",module,Madkting_Connect
+"Creating","Creating",module,Madkting_Connect
+"Updating","Updating",module,Madkting_Connect
+"Deleting","Deleting",module,Madkting_Connect
+"Synchronized","Synchronized",module,Madkting_Connect
+"Error","Error",module,Madkting_Connect
+"Creating Images","Creating Images",module,Madkting_Connect
+"Updating Images","Updating Images",module,Madkting_Connect
+"Deleting Images","Deleting Images",module,Madkting_Connect
+"Parent Error","Parent Error",module,Madkting_Connect
+"System Error","System Error",module,Madkting_Connect
+"Waiting","Waiting",module,Madkting_Connect
+"Processing","Processing",module,Madkting_Connect
+"Complete","Complete",module,Madkting_Connect
+"None","None",module,Madkting_Connect
+"Create","Create",module,Madkting_Connect
+"Update","Update",module,Madkting_Connect
+"Delete","Delete",module,Madkting_Connect
+"Create in Yuju","Create in Yuju",module,Madkting_Connect
+"Update in Yuju","Update in Yuju",module,Madkting_Connect
+"Delete in Yuju","Delete in Yuju",module,Madkting_Connect
+"Delete products on Yuju","Delete products on Yuju",module,Madkting_Connect
+"Are you sure to delete selected products?","Are you sure to delete selected products?",module,Madkting_Connect
+"Create %1 on Yuju","Create %1 on Yuju",module,Madkting_Connect
+"Create %1","Create %1",module,Madkting_Connect
+"Product","Product",module,Madkting_Connect
+"Products","Products",module,Madkting_Connect
+"No products selected","No products selected",module,Madkting_Connect
+"Synchronize","Synchronize",module,Madkting_Connect
+"Orders","Orders",module,Madkting_Connect
+"Synchronize Orders","Synchronize Orders",module,Madkting_Connect
+"Permanent Synchronization","Permanent Synchronization",module,Madkting_Connect
+"Upload Disabled Products","Upload Disabled Products",module,Madkting_Connect
+"Disable Attributes Update","Disable Attributes Update",module,Madkting_Connect
+"Enable All","Enable All",module,Madkting_Connect
+"Update All","Update All",module,Madkting_Connect
+"Update all the products created in Yuju.","Update all the products created in Yuju.",module,Madkting_Connect
+"Update Stock and Price","Update Stock and Price",module,Madkting_Connect
+"Update only stock and price in all the products created in Yuju.","Update only stock and price in all the products created in Yuju.",module,Madkting_Connect
+"Synchronization","Synchronization",module,Madkting_Connect
+"Yuju's Store","Yuju's Store",module,Madkting_Connect
+"Create Disabled Products","Create Disabled Products",module,Madkting_Connect
+"If you turn on this field products will be created without regard them status in Magento.","If you turn on this field products will be created without regard them status in Magento.",module,Madkting_Connect
+"This is a required field.","This is a required field.",module,Madkting_Connect
+"Creating %1 %2 in Yuju","Creating %1 %2 in Yuju",module,Madkting_Connect
+"product","product",module,Madkting_Connect
+"products","products",module,Madkting_Connect
+"There are no new products to create in selection","There are no new products to create in selection",module,Madkting_Connect
+"Product %1 is already queued","Product %1 is already queued",module,Madkting_Connect
+"Product %1 queue error = %2","Product %1 queue error = %2",module,Madkting_Connect
+"No product could be placed in the queue, please see the debug log for more information","No product could be placed in the queue, please see the debug log for more information",module,Madkting_Connect
+"Synchronization process successfully started with %1 errors","Synchronization process successfully started with %1 errors",module,Madkting_Connect
+"Synchronization process successfully started without errors","Synchronization process successfully started without errors",module,Madkting_Connect
+"Next massive synchronization will be available in %1 %3 and %2 %4.","Next massive synchronization will be available in %1 %3 and %2 %4.",module,Madkting_Connect
+"hours","hours",module,Madkting_Connect
+"hour","hour",module,Madkting_Connect
+"minutes","minutes",module,Madkting_Connect
+"minute","minute",module,Madkting_Connect
+"Synchronization","Synchronization",module,Madkting_Connect
+"You don't have any product in Yuju yet. You must have products in Yuju in order to run this process.","You don't have any product in Yuju yet. You must have products in Yuju in order to run this process.",module,Madkting_Connect
+"Yuju Status","Yuju Status",module,Madkting_Connect
+"No Synchronized","No Synchronized",module,Madkting_Connect
+"Yuju ID","Yuju ID",module,Madkting_Connect
+"Yuju Shop","Yuju Shop",module,Madkting_Connect
+"Marketplace Order Reference","Marketplace Order Reference",module,Madkting_Connect
+"Yuju Type","Yuju Type",module,Madkting_Connect
+"No attribute match defined","No attribute match defined",module,Madkting_Connect
+"%1 max length is %2","%1 max length is %2",module,Madkting_Connect
+"%1 is required","%1 is required",module,Madkting_Connect
+"Yuju Status Message","Yuju Status Message",module,Madkting_Connect
+"Warning","Warning",module,Madkting_Connect
+"Parent Warning","Parent Warning",module,Madkting_Connect
+"Parent product has not been created in Yuju yet","Parent product has not been created in Yuju yet",module,Madkting_Connect
+"Something went wrong creating products in Yuju","Something went wrong creating products in Yuju",module,Madkting_Connect
+"Deleting %1 %2 in Yuju","Deleting %1 %2 in Yuju",module,Madkting_Connect
+"There are no new products to delete in selection","There are no new products to delete in selection",module,Madkting_Connect
+"Something went wrong deleting products in Yuju","Something went wrong deleting products in Yuju",module,Madkting_Connect
+"Updating %1 %2 in Yuju","Updating %1 %2 in Yuju",module,Madkting_Connect
+"There are no new products to update in selection","There are no new products to update in selection",module,Madkting_Connect
+"Something went wrong updating products in Yuju","Something went wrong updating products in Yuju",module,Madkting_Connect
+"Images","Images",module,Madkting_Connect
+"Image error %1","Image error %1",module,Madkting_Connect
+"Variation","Variation",module,Madkting_Connect
+"Variations","Variations",module,Madkting_Connect
+"Tasks Queue","Tasks Queue",module,Madkting_Connect
+"Success History Lifetime (days)","Success History Lifetime (days)",module,Madkting_Connect
+"Failure History Lifetime (days)","Failure History Lifetime (days)",module,Madkting_Connect
+"Start Creation From","Start Creation From",module,Madkting_Connect
+"Save and Match New Category","Save and Match New Category",module,Madkting_Connect
+"%1 min value is %2","%1 min value is %2",module,Madkting_Connect
+"%1 max value is %2","%1 max value is %2",module,Madkting_Connect
+"Sales Channel","Sales Channel",module,Madkting_Connect
+"Enable Order Emails","Enable Order Emails",module,Madkting_Connect
+"Order Emails to Send","Order Emails to Send",module,Madkting_Connect
+"Order Creation Success","Order Creation Success",module,Madkting_Connect
+"Order Creation Failure","Order Creation Failure",module,Madkting_Connect
+"There has been an error while processing product, check log registry #%1 for more details","There has been an error while processing product, check log registry #%1 for more details",module,Madkting_Connect
+"Max Time to Get Products (seconds)","Max Time to Get Products (seconds)",module,Madkting_Connect
+"Error while consulting feeds: %1","Error while consulting feeds: %1",module,Madkting_Connect
+"Error while consulting feed %1: %2","Error while consulting feed %1: %2",module,Madkting_Connect
+"Module Information","Module Information",module,Madkting_Connect
+"Version Number","Version Number",module,Madkting_Connect
+"Create Orders with Shipping Address Lacking","Create Orders with Shipping Address Lacking",module,Madkting_Connect
+"Order has no shipping address","Order has no shipping address",module,Madkting_Connect
+"Stock for no-manage-stock Products","Stock for no-manage-stock Products",module,Madkting_Connect
+"Stock quantity that will be sent to Yuju when a product has ""manage stock"" option disabled.","Stock quantity that will be sent to Yuju when a product has ""manage stock"" option disabled.",module,Madkting_Connect
+"Use Ctrl+Click to check several values or uncheck value.","Use Ctrl+Click to check several values or uncheck value.",module,Madkting_Connect
+"The selected attributes will be ignored on products update. Use Ctrl+Click to check several values or uncheck value.","The selected attributes will be ignored on products update. Use Ctrl+Click to check several values or uncheck value.",module,Madkting_Connect
+"Select Stocks to Send","Select Stocks to Send",module,Madkting_Connect
+"Use Ctrl+Click to check several values or uncheck value. If empty all the stocks will be add to Yuju stock.","Use Ctrl+Click to check several values or uncheck value. If empty all the stocks will be add to Yuju stock.",module,Madkting_Connect
+"Option valid only for Magento 2.3+","Option valid only for Magento 2.3+",module,Madkting_Connect
+"Error adding feed error message, check log registry #%1 for more details","Error adding feed error message, check log registry #%1 for more details",module,Madkting_Connect
+"Error processing product feed, check log registry #%1 for more details", "Error processing product feed, check log registry #%1 for more details",module,Madkting_Connect
+"Error processing images feed, check log registry #%1 for more details", "Error processing images feed, check log registry #%1 for more details",module,Madkting_Connect
+"Missing category in Magento","Missing category in Magento",module,Madkting_Connect
+"Missing category match","Missing category match",module,Madkting_Connect
+"Create Orders with Fulfillment by Channel","Create Orders with Fulfillment by Channel",module,Madkting_Connect
+"Creation of orders with fulfillment by channel is disabled.","Creation of orders with fulfillment by channel is disabled.",module,Madkting_Connect
+"Creation of orders with no shipping address is disabled.","Creation of orders with no shipping address is disabled.",module,Madkting_Connect
+"Fulfillment Type","Fulfillment Type",module,Madkting_Connect
+"Channel","Channel",module,Madkting_Connect
+"Merchant","Merchant",module,Madkting_Connect

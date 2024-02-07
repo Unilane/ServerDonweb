@@ -1,0 +1,36 @@
+
+
+<ul class="header links">    
+    <li class="greet welcome">
+       
+        <span class="not-logged-in"><b>Sobre Nosotros</b></span>
+    </li>
+    <li><a href="<?php echo $block->getUrl('quienes_somos'); ?>">Quienes Somos</a></li>
+    <li><a href="<?php echo $block->getUrl('aviso_de_privacidad'); ?>">Aviso de Privacidad</a></li>
+    <li><a href="<?php echo $block->getUrl('terminos_y_condiciones'); ?>">Términos y Condiciones</a></li>
+    <li><a href="<?php echo $block->getUrl('forms/index/teamindex'); ?>">Únete al equipo</a></li>
+    <li><a href="<?php echo $block->getUrl('marcas'); ?>">Marcas</a></li>
+    <li><a href="<?php echo $block->getUrl('contact'); ?>">Contácto</a></li>
+
+    <li class="greet welcome">
+       
+        <span class="not-logged-in"><b>Centro de Ayuda</b></span>
+    </li>
+    <li><a href="<?php echo $block->getUrl('preguntas_frecuentes'); ?>">Preguntas Frecuentes</a></li>
+    <li><a href="<?php echo $block->getUrl('formas_de_pago'); ?>">Formas de pago</a></li>
+    <li><a href="<?php echo $block->getUrl('rastreo_de_envios'); ?>">Rastreo de envíos</a></li>
+    <li><a href="<?php echo $block->getUrl('forms/index/cancelindex'); ?>">Cancelaciones</a></li>
+    <li><a href="<?php echo $block->getUrl('devoluciones'); ?>">Devoluciones</a></li>
+    <li><a href="<?php echo $block->getUrl('forms/index/invoiceindex'); ?>">Facturación</a></li>
+    <li><a href="<?php echo $block->getUrl('forms/index/warrantyindex'); ?>">Garantía</a></li>
+    <li><a href="<?php echo $block->getUrl('forms/index/supplierindex'); ?>">Quiero ser proveedor</a></li>
+
+</ul>
+<style>
+
+@media (max-width: 991px){
+    .nav-sections .header.links li{
+        line-height:16px;
+    }
+}
+</style>

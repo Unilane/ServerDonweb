@@ -1,0 +1,98 @@
+<?php
+/**
+ * Madkting Software (http://www.madkting.com)
+ *
+ *                                      ..-+::moossso`:.
+ *                                    -``         ``ynnh+.
+ *                                 .d                 -mmn.
+ *     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+ *    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+ *    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+ *    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+ *    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+ *    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+ *    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+ *                                 .ys .::-`
+ *                                o.+`
+ *
+ * @category Module
+ * @package Madkting\Connect
+ * @author Israel Calderón Aguilar <israel@madkting.com>
+ * @link https://bitbucket.org/madkting/magento2
+ * @copyright Copyright (c) 2017 Madkting Software.
+ * @license See LICENSE.txt for license details.
+ */
+
+?>
+<script>
+require([
+    'jquery',
+    'Magento_Ui/js/modal/alert'
+], function ($, alert) {
+    $(function(){
+
+        var actionSelectButton = $('.action-select');
+        var actionDeleteButton = $('div.data-grid-cell-content>ul.action-menu>li>a.action-delete');
+        
+        actionSelectButton.on('click', function (event) {
+
+            event.stopPropagation();
+
+            var divContainer = $(this).parent('div.action-select-wrap');
+            var actionMenu = divContainer.siblings('ul.action-menu');
+            var brothers = divContainer.parents('tr.data-row').siblings();
+
+            if(divContainer.hasClass('_active')){
+                divContainer.removeClass('_active');
+                actionMenu.removeClass('_active');
+            } else {
+                divContainer.addClass('_active');
+                actionMenu.addClass('_active');
+                brothers.find('div.action-select-wrap, ul.action-menu').each(function () {
+                    $(this).removeClass('_active');
+                });
+            }
+        });
+
+        $('body').on('click', function () {
+            var divContainer = actionSelectButton.parent('div.action-select-wrap');
+            if(divContainer.hasClass('_active')){
+                divContainer.siblings('ul.action-menu').removeClass('_active');
+                divContainer.removeClass('_active');
+            }
+
+        });
+
+        actionDeleteButton.on('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            var categoryId = $(this).data('category-id');
+            var categoryName = $(this).data('category-name');
+
+            alert({
+                "title" : "<?php echo __('Delete') ?>" + " " + categoryName,
+                "content" : "<?php echo __('Are you sure you wan\'t to delete the match for') ?>" + " " + categoryName + "?",
+                "buttons" : [
+                    {
+                        "text" : "<?php echo __('No') ?>",
+                        "class" : "action-secondary action-dismiss",
+                        "click" : function () {
+                            this.closeModal();
+                        }
+                    },
+                    {
+                        "text" : "<?php echo __('Yes') ?>",
+                        "class" : "action-primary action-accept",
+                        "click" : function () {
+                            var deleteUrl = "<?php echo $block->getUrl('madkting/categoriesmapping/delete') ?>" + "id/" + categoryId;
+                            location.href = deleteUrl;
+                        }
+                    }
+                ]
+            });
+        });
+        
+    });
+});
+</script>

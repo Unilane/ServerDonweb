@@ -1,0 +1,123 @@
+<?php
+/**
+ * Madkting Software (http://www.madkting.com)
+ *
+ *                                      ..-+::moossso`:.
+ *                                    -``         ``ynnh+.
+ *                                 .d                 -mmn.
+ *     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+ *    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+ *    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+ *    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+ *    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+ *    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+ *    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+ *                                 .ys .::-`
+ *                                o.+`
+ *
+ * @category Module
+ * @package Madkting\Connect
+ * @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+ * @link https://bitbucket.org/madkting/magento2
+ * @copyright Copyright (c) 2017 Madkting Software.
+ * @license See LICENSE.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+<?php /** @var Madkting\Connect\Block\Adminhtml\Product\Form\Create $block */ ?>
+<div class="madkting-create-product-form fieldset-wrapper">
+<?php if (!empty($shops = $block->getMadktingShops())): ?>
+    <div class="admin__fieldset-wrapper-content">
+        <fieldset class="admin__fieldset">
+            <div class="madkting-store-field admin__field _required">
+                <label class="admin__field-label"><span><?php echo __('Yuju\'s Store') ?></span></label>
+                <div class="admin__field-control">
+                    <ul class="madkting-stores-list">
+                        <?php
+                            $first = true;
+                            foreach ($shops as $shop):
+                        ?>
+                            <li><div class="admin__field admin__field-option">
+                                <input id="madkting-shop-<?php echo $shop->pk ?>" class="admin__control-radio" value="<?php echo $shop->pk ?>" <?php echo !$first?: 'checked="checked"' ?> name="madktingShop" type="radio" />
+                                <label class="admin__field-label" for="madkting-shop-<?php echo $shop->pk ?>"><span><?php echo $shop->name ?></span></label>
+                            </div></li>
+                        <?php
+                                $first = false;
+                            endforeach;
+                        ?>
+                    </ul>
+                </div>
+            </div>
+    <?php if (empty($block->isUploadDisabledProductsEnabled())): ?>
+            <div class="upload-disabled-field admin__field">
+                <label class="admin__field-label" for="create-disabled-products"><span><?php echo __('Create Disabled Products') ?></span></label>
+                <div class="admin__field-control">
+                    <div class="admin__actions-switch" data-role="switcher">
+                        <input id="create-disabled-products" class="admin__actions-switch-checkbox" name="disabledProducts" type="checkbox">
+                        <label class="admin__actions-switch-label" for="create-disabled-products">
+                            <span class="admin__actions-switch-text" data-text-on="<?php echo __('Yes') ?>" data-text-off="<?php echo __('No') ?>"></span>
+                        </label>
+                    </div>
+                    <div class="admin__field-note">
+                        <span><?php echo __('If you turn on this field products will be created without regard them status in Magento.') ?></span>
+                    </div>
+                </div>
+            </div>
+    <?php endif; ?>
+        </fieldset>
+    </div>
+<?php else: ?>
+    <p><?php echo __('Invalid Yuju API token') ?></p>
+<?php endif; ?>
+</div>
+<script>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/alert',
+        'mage/translate'
+    ], function ($, alert) {
+        'use strict';
+
+        $(function () {
+            $('div.page-main-actions').on('click', '#create_products_button', function() {
+                var selectedProductsJson = <?php echo !empty($block->getSelectedProducts()) ? json_encode($block->getSelectedProducts()) : '[]' ?>,
+                    excludedProductsJson = <?php echo !empty($block->getExcludedProducts()) ? json_encode($block->getExcludedProducts()) : '[]' ?>,
+                    searchFilter = '<?php echo $block->getRequest()->getParam('search') ?>',
+                    componentNamespace = '<?php echo $block->getRequest()->getParam('namespace') ?>',
+                    componentFilters = <?php echo json_encode($block->getRequest()->getParam('filters')) ?>,
+                    madktingShop = $('input[name="madktingShop"]:checked').val(),
+                    uploadDisabled = $('#create-disabled-products').prop('checked') ? true : [],
+                    shopError = $('.madkting-store-field .admin__field-control .admin__field-error');
+
+                /* Show shop required message */
+                if (!madktingShop) {
+                    if (!shopError.length) {
+                        $('.madkting-store-field .admin__field-control').append('<label class="admin__field-error"><?php echo __('This is a required field.') ?></label>');
+                        return;
+                    }
+                } else {
+                    shopError.remove();
+                }
+
+                /* Queue petition */
+                $.ajax({
+                    'url': '<?php echo $block->getUrl('*/product/massCreate') ?>',
+                    'data': {'selected':selectedProductsJson, 'excluded':excludedProductsJson, 'search':searchFilter, 'namespace':componentNamespace, 'filters':componentFilters, 'madktingShop':madktingShop, 'uploadDisabled':uploadDisabled},
+                    'dataType': 'json',
+                    'showLoader': true
+                }).done(function (data) {
+                    if (data.error) {
+                        alert({
+                            'title': '<?php echo __('Error') ?>',
+                            'content': data.message
+                        });
+                    } else {
+                        $('body').trigger('processStart');
+                        setLocation(data.location);
+                    }
+                });
+            });
+        });
+    });
+</script>

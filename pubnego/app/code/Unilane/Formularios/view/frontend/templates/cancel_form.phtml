@@ -1,0 +1,84 @@
+<style>
+    .titulo {
+	color: #2D5D89;
+	font-weight: 700;
+	text-align: center;
+	margin: 10px 0;
+}
+
+</style>
+<div class="about-info cms-content">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h2 class="text-center titulo">CANCELACIONES</h2>
+            <br>
+            <br>
+            <p class="text-justify">
+                Sabemos que en ocasiones hay equivocaciones, por eso aceptamos la cancelación de un pedido siempre que se solicite antes del envío del paquete; una vez que tu paquete esté en reparto se deberá solicitar una devolución. Las cancelaciones exitosas no conllevan cargos de ningún tipo.
+                <br>
+                <br>
+                <strong style="line-height: 35px;">Procedimiento para cancelaciones</strong><br>
+                En caso de requerir una cancelación envíanos tu información en el formulario que se encuentra al final de ésta página, para esto deberás de tener a la mano la siguiente información de tu pedido:<br>
+                — Nombre de cliente o razón social del negocio bajo el cual se hizo el pedido.<br>
+                — Folio de pedido<br>
+                — Producto(s) a cancelar<br>
+                — Motivo de cancelación
+                <br>
+                <br>
+                Si tienes alguna pregunta o necesitas más información sobre el procedimiento o nuestras políticas de devolución, no dudes en contactarnos a través de WhatsApp, teléfono o redes sociales.
+                O si lo prefiere, puede ponerse en contacto con nuestro personal de apoyo al teléfono (662) 109 33 27 o enviar un correo a la dirección contacto@unilane.mx teniendo a la mano la misma información descrita anteriormente.
+                <br>
+                <br>
+                *En caso de enviar un correo electrónico, le sugerimos que el título del correo inicie con la palabra “Cancelación”.
+                <br>
+                <br>
+                Una vez recibida está información, el área correspondiente evaluará el caso y dará trámite a la cancelación de su pedido.
+
+            </p>  
+        </div>
+        <div class="col-6">
+        </div>
+    </div>    
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-10">
+        <form method="POST" action="<?= $block->escapeUrl($block->getFormAction()) ?>" enctype="multipart/form-data">            
+            <div class="col-12 form-control"> 
+                <label for="name">Nombre Completo o Razon Social <span style="color: red;">*</span></label> 
+                <input class="form-control" type="text" id="name" name="nombrerazon" placeholder="Nombre Completo o Razon Social"  required> </div>
+            <div>
+            <div class="col-12 form-control"> 
+                <label for="name">Folio del pedido <span style="color: red;">*</span></label> 
+                <input class="form-control" type="text" id="name" name="folio" placeholder="Folio del pedido" required> </div>
+            <div>
+            <div class="col-12 form-control"> 
+                <label lang="es" for="name">Fecha del pedido <span style="color: red;">*</span></label> 
+                <input class="form-control" type="date" id="fechadate" name="fecha" placeholder="Fecha del pedido" required> </div>
+            <div>
+            <div class="col-12 form-control"> 
+                <label for="name">Correo electrónico <span style="color: red;">*</span></label> 
+                <input class="form-control" type="text" id="name" name="correo" placeholder="Direccion de correo electronico valido" required> </div>
+            <div>
+            <div class="col-12 form-control"> 
+                <label for="name">Teléfono <span style="color: red;">*</span></label> 
+                <input class="form-control" type="text" id="name" name="telefono" placeholder="Numero de Telefono" required> </div>
+            <div>        
+            <div class="col-12  form-control"> 
+                <label for="name">Motivo de solicitud de la cancelación <span style="color: red;">*</span></label> 
+                <textarea class="form-control" type="textarea" rows="8" id="name" name="motivo" placeholder="Motivo de solicitud de la cancelacion" required></textarea>
+            <div>
+            <br>            
+            <br>
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" type="submit" name="uploadBtn" value="Upload">Enviar Mensaje</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-6">
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate
+
+/** @var $block \Magento\Sales\Block\Order\Email\Items */
+?>
+<?php $_order = $block->getOrder() ?>
+<?php if ($_order) : ?>
+    <?php $_items = $_order->getAllItems(); ?>
+    <table class="email-items">       
+        <tr>
+            <th class="item-info">
+                <?= $block->escapeHtml(__('Producto(s)')) ?>
+            </th>
+            <th class="item-qty">
+                <?= $block->escapeHtml(__('Cantidad')) ?>
+            </th>
+            <th class="item-subtotal">
+                <?= $block->escapeHtml(__('Precio')) ?>
+            </th>
+        </tr> 
+        <?php foreach ($_items as $_item) : ?>
+            <?php if (!$_item->getParentItem()) : ?>                      
+                <td class="td"><?= $block->getItemHtml($_item) ?></td>
+            <?php endif; ?>
+        <?php endforeach; ?>
+        <tfoot class="order-totals text-right">
+            <?= $block->getChildHtml('order_totals') ?>
+        </tfoot>
+    </table>
+<?php endif; ?>

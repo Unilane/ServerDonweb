@@ -1,0 +1,57 @@
+<?php
+$reasons = $this->getData('cancellation_reasons');
+$url = $this->getData('cancellation_url');
+/** @var $block \Magento\OrderIngestion\Block\Adminhtml\CancelReasons */
+?>
+<div id='modal' style='display:none'>
+    <div class='modal-body-content'>
+        <form action='<?= $url ?>'>
+            <div class="admin__field-control fieldset-wrapper ">
+            <label class="admin__control-support-text label" for="cancellation_reason"><?= $block->escapeHtml(__('Cancellation reason')) ?></label>
+            <select class="admin__control-select" id='cancellation_reason' name='cancellation_reason'>
+                <?php foreach ($reasons as $reason) : ?>
+                    <option value="<?= $reason['code']?>"><?= $reason['label']?></option>
+                <?php endforeach; ?>
+            </select>
+                <input type="hidden" id="cancellation_label" name="cancellation_label" value="">
+            </div>
+            <div class="admin__field-control fieldset-wrapper ">
+                <button id="cancel-external-order-button">
+                    <?= $block->escapeHtml(__('Cancel Order')) ?>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type='text/javascript'>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/modal'
+    ],function($, modal) {
+        var options = {
+            type: 'slide',
+            responsive: true,
+            title: $.mage.__('Cancel Order'),
+            buttons: [{
+                text: $.mage.__('Close'),
+                class: '',
+                click: function () {
+                    this.closeModal();
+                }
+            }]
+        };
+        var popup = modal(options, $('#modal'));
+        $('#cancel-external-order').click(function() {
+            $('#modal').show();
+            $('#modal').modal('openModal');
+        });
+
+        $('#cancellation_reason').change(function() {
+            $('#cancellation_label').val($(this).find(":selected").html());
+        });
+        $(document).ready(function (){
+            $('#cancellation_label').val($("#cancellation_reason").find(":selected").html());
+        });
+    });
+</script>

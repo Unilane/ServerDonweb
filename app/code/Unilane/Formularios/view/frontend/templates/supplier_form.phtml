@@ -1,0 +1,100 @@
+<style>
+    .titulo {
+	color: #2D5D89;
+	font-weight: 700;
+	text-align: center;
+	margin: 10px 0;
+}
+</style>
+<div class="about-info cms-content">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h2 class="text-center titulo">Quiero ser proveedor</h2>
+            <h3 class="text-center">¡Únete a nosotros!</h3>
+            <br>
+            <br>
+            <p class="text-justify">
+                En Unilane estamos constantemente buscando sumar a nuestra empresa nuevos proveedores y socios comerciales para expandir la variedad de nuestro cat&aacutelogo y ofrecer m&aacutes opciones de compra a nuestros clientes. a nuestros clientes. Si tienes productos de calidad y te gustar&iacutea que formen parte de nuestro cat&aacutelogo podemos trabajar en conjunto como con cada uno de nuestros proveedores actuales para asegurarnos que tus productos se publiquen y promocionen de manera efectiva.
+                <br>
+                <br>
+                <strong>Al unirte como proveedor puedes esperar:</strong>
+                <br>
+                <br>
+                1.	<strong>Exposici&oacuten de tus productos:</strong> Tu marca y productos ser&aacuten presentados en nuestra tienda en l&iacutenea dentro de su categor&iacutea, brind&aacutendote visibilidad y acceso a una audiencia en crecimiento.<br>
+                2.	<strong>Amplia cobertura de mercado:</strong> Podr&aacutes llegar a clientes en diferentes regiones del pa&iacutes expandiendo tu alcance geogr&aacutefico.<br>
+                3.	<strong>Promoci&oacuten de productos:</strong> Aprovechar los esfuerzos de publicidad que actualmente hacemos a trav&eacutes de campa&ntildeas promocionales y otras estrategias de marketing digital que incluir&aacuten a tus productos.<br>
+                4.	<strong>Gesti&oacuten eficiente de pedidos:</strong> Te proporcionaremos un sistema de gesti&oacuten de pedidos f&aacutecil de usar que te permitir&aacute administrar tus productos, inventario y env&iacuteos de manera eficiente.<br>
+                5.	<strong>Pagos oportunos:</strong> Seguridad de nuestro compromiso en realizar pagos puntuales por tus productos.<br>
+                6.	<strong>Soporte y atenci&oacuten al cliente:</strong> Contar&aacutes con nuestro equipo de soporte dedicado a resolver cualquier consulta que t&uacute o los clientes interesados en tus productos puedan tener.
+                <br>
+                <br>
+                Completa el formulario o cont&aacutectanos directamente a trav&eacutes de los datos proporcionados en la p&aacutegina de Contacto.
+            </p>  
+        </div>
+        <div class="col-6"></div>
+    </div>    
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-10">
+        <form method="POST" action="<?= $block->escapeUrl($block->getFormAction()) ?>" enctype="multipart/form-data">      
+            <h3 class="text-center titulo">INFORMACIÓN DE LA EMPRESA</h3>
+            <div class="col-12 form-control"> 
+                <label for="name">Nombre o Razón Social<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="nombrerazon" placeholder="tu nombre completo o razón social"  required> 
+            </div>           
+            <div class="col-12 form-control"> 
+                <label for="name">Sitio web de la empresa (opcional)</label> 
+                <input class="form-control" type="text" id="name" name="sitioweb" placeholder="Sitio web de tu empresa" >
+            </div>               
+            <div class="col-12 form-control"> 
+                <label for="name">Cantidad de SKU’s<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="sku" placeholder="Cantidad de SKU’s"  required>
+            </div>
+            <div class="col-12 form-control"> 
+                <label for="name">Categoría de productos<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="productos" placeholder="Categoría de productos"  required>
+            </div>
+            <div class="col-12 form-control"> 
+                <label for="name">Marca(s) de los productos<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="marcas" placeholder="Marca(s) de los productos"  required>
+            </div>
+            <div class="col-12 form-control"> 
+                <label for="name">Ubicación de bodega(s):<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="ubicacion" placeholder="Ubicación de bodega(s)"  required>
+            </div>
+            <br>
+            <h3 class="text-center titulo">INFORMACIÓN DE CONTACTO</h3>
+            <div class="col-12 form-control"> 
+                <label for="name">Nombre completo<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="nombre" placeholder="Nombre completo"  required> 
+            </div>           
+            <div class="col-12 form-control"> 
+                <label for="name">Apellidos<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="apellidos" placeholder="Apellidos" required>
+            </div>               
+            <div class="col-12 form-control"> 
+                <label for="name">Teléfono (10 dígitos)<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="telefonoContacto" placeholder="Telefono"  required>
+            </div>
+            <div class="col-12 form-control"> 
+                <label for="name">Extensión (opcional)</label> 
+                <input class="form-control" type="text" id="name" name="extension" placeholder="Extensión"  >
+            </div>
+            <div class="col-12 form-control"> 
+                <label for="name">Correo electrónico<span style="color: red;"> *</span></label> 
+                <input class="form-control" type="text" id="name" name="correo" placeholder="Correo electrónico"  required>
+            </div>
+            <br>            
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" type="submit" name="uploadBtn" value="Upload">Enviar datos</button>
+            </div>              
+        </form>
+    </div>
+    <div class="col-6">
+    </div>
+</div>

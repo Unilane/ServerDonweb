@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Madkting Software (http://www.madkting.com)
+  ~
+  ~                                      ..-+::moossso`:.
+  ~                                    -``         ``ynnh+.
+  ~                                 .d                 -mmn.
+  ~     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+  ~    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+  ~    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+  ~    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+  ~    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+  ~    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+  ~    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+  ~                                 .ys .::-`
+  ~                                o.+`
+  ~
+  ~ @category Module
+  ~ @package Madkting\Connect
+  ~ @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+  ~ @author Israel Calderón Aguilar <israel@madkting.com>
+  ~ @link https://bitbucket.org/madkting/magento2
+  ~ @copyright Copyright (c) 2017 Madkting Software.
+  ~ @license See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <madkting_synchronization>
+            <orders>
+                <sync_orders>1</sync_orders>
+                <shipping_address_lacking>1</shipping_address_lacking>
+                <create_fulfillment_orders>0</create_fulfillment_orders>
+            </orders>
+            <products>
+                <permanent_sync>1</permanent_sync>
+                <no_managed_stock>1000</no_managed_stock>
+                <max_time_get_products>30</max_time_get_products>
+            </products>
+            <tasks_queue>
+                <success_lifetime>30</success_lifetime>
+                <failure_lifetime>60</failure_lifetime>
+            </tasks_queue>
+        </madkting_synchronization>
+        <payment>
+            <madkting>
+                <active>1</active>
+                <model>MadktingPaymentFacade</model>
+                <title>Madkting</title>
+                <payment_action>authorize</payment_action>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_use_checkout>0</can_use_checkout>
+                <can_use_internal>0</can_use_internal>
+                <is_gateway>1</is_gateway>
+            </madkting>
+        </payment>
+        <carriers>
+            <madkting>
+                <active>1</active>
+                <model>Madkting\Connect\Model\Carrier\Madkting</model>
+                <name>Madkting</name>
+                <price>0</price>
+                <title>Shipping</title>
+            </madkting>
+        </carriers>
+    </default>
+</config>

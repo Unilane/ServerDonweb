@@ -1,0 +1,32 @@
+{
+    "order_ingestion_external_order": {
+        "column": {
+            "id": true,
+            "order_id": true,
+            "external_order_id": true,
+            "commerce_order_id": true,
+            "store_view_code": true,
+            "sales_channel": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true,
+            "order_data": true,
+            "retries": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "EXTERNAL_ORDER_ORDER_ID": true
+        }
+    },
+    "sales_order": {
+        "column": {
+            "external_order_order_id": true
+        }
+    },
+    "sales_order_grid": {
+        "column": {
+            "ext_order_id": true,
+            "external_order_order_id": true
+        }
+    }
+}

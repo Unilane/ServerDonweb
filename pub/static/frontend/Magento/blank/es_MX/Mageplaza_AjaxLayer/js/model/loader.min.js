@@ -1,0 +1,1 @@
+define(['jquery'],function($){'use strict';return{startLoader:function(){$('.ln_overlay').show();},stopLoader:function(){$('.ln_overlay').hide();$('.swatch-option-tooltip').hide();}};});

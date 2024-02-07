@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="unilane_syncproducts">
+        <job name="import_product" instance="Unilane\SyncProducts\Cron\ImportCron" method="execute">
+            <schedule>30 00 * * *</schedule>
+        </job>
+    </group>
+
+    <group id="unilane_updatestock">
+        <job name="update_stock" instance="Unilane\SyncProducts\Cron\ImportCron" method="update">
+            <schedule>*/30 * * * *</schedule>
+        </job>
+    </group>
+
+    <group id="unilane_volumetria">
+        <job name="update_stock" instance="Unilane\SyncProducts\Cron\ImportCron" method="syncvolumetria">
+            <schedule>35 00 * * *</schedule>
+        </job>
+    </group>
+
+    <group id="unilane_ctspecs">
+        <job name="update_stock" instance="Unilane\SyncProducts\Cron\ImportCron" method="importSpecs">
+            <schedule>35 00 * * *</schedule>
+        </job>
+    </group>
+</config>

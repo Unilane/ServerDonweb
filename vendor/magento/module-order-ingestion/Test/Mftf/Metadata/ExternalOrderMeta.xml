@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="urn:magento:mftf:DataGenerator/etc/dataOperation.xsd">
+<operation name="CreateExternalOrder" dataType="externalOrder" type="create" auth="adminOauth" url="/V1/externalOrders" method="POST">
+    <contentType>application/json</contentType>
+    <object key="externalOrder" dataType="externalOrder">
+        <field key="order_id">string</field>
+        <field key="external_order_id">string</field>
+        <field key="store_view_code">string</field>
+        <field key="sales_channel">string</field>
+        <field key="status">string</field>
+        <field key="created_at">string</field>
+        <field key="updated_at">string</field>
+        <field key="order_data">string</field>
+    </object>
+</operation>
+<operation name="DeleteExternalOrder" dataType="externalOrder" type="delete" auth="adminOauth" url="/V1/externalOrders/{id}" method="DELETE">
+    <contentType>application/json</contentType>
+</operation>
+<operation name="GetExternalOrder" dataType="externalOrder" type="get" auth="adminOauth" url="/V1/externalOrders/{id}" method="GET">
+    <contentType>application/json</contentType>
+</operation>
+</operations>

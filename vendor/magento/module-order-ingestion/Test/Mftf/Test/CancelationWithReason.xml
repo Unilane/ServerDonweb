@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/testSchema.xsd">
+    <test name="CancelationWithReason" insertBefore="" insertAfter="">
+        <annotations>
+            <group value="OrderIngestion"/>
+            <stories value="Cancel External Order"/>
+            <title value="Cancel the external order coming from order service"/>
+            <description value="Cancel the external order coming from order service"/>
+            <testCaseId value="CHAN-5396"/>
+            <group value="order_ingestion"/>
+        </annotations>
+        <before>
+            <actionGroup ref="AdminLoginActionGroup" stepKey="loginAsAdmin"/>
+            <!-- Create Simple Product -->
+            <createData entity="SimpleProduct2" stepKey="simpleProduct">
+                <field key="sku">externalProduct</field>
+                <field key="price">10.00</field>
+            </createData>
+            <createData entity="externalOrder" stepKey="createExternalOrder"/>
+
+            <magentoCLI command="cron:run" arguments="--group order_ingestion" stepKey="createMagentoOrders"/>
+
+            <getData entity="externalOrder" stepKey="updatedExternalOrder">
+                <requiredEntity createDataKey="createExternalOrder"/>
+            </getData>
+
+        </before>
+        <after>
+            <deleteData createDataKey="createExternalOrder" stepKey="deleteExternalOrder"/>
+        </after>
+        <actionGroup ref="AdminNavigateMenuActionGroup" stepKey="navigateToSalesOrderPage">
+            <argument name="menuUiId" value="{{AdminMenuSales.dataUiId}}"/>
+            <argument name="submenuUiId" value="{{AdminMenuSalesOrders.dataUiId}}"/>
+        </actionGroup>
+
+        <amOnPage url="{{AdminOrderPage.url($updatedExternalOrder.commerce_order_id$)}}" stepKey="gotoOrderPage"/>
+        <waitForPageLoad stepKey="waitForPageLoad"/>
+        <click selector="#cancel-external-order" stepKey="clickCancelOrder"/>
+        <click selector="#cancel-external-order-button" stepKey="clickCancelOrderButton"/>
+
+        <see userInput='You canceled the order.' stepKey="seeCancellationMessage"/>
+        <see userInput="Cancellation reason"  stepKey="assertCancellationReason"/>
+        <see userInput="Price or other listing errors"  stepKey="assertCancellationReasonText"/>
+    </test>
+</tests>

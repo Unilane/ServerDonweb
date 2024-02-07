@@ -1,0 +1,283 @@
+
+<style>
+    .titulo {
+	color: #2D5D89;
+	font-weight: 700;
+	text-align: center;
+	margin: 10px 0;
+}
+.colorunico{
+    background: #efefef17;
+    border-top: 4px solid #2D5D89;
+    padding: 10px 0;
+    border-radius: 12px;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: -15px;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+	font-size:16px; 
+	font-weight:normal;
+	font-family: 'Lato';
+}
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #000;
+}
+
+
+</style>
+<div class="about-info cms-content">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h2 class="text-center titulo">FACTURACIÓN</h2>
+            <h3 class="text-center">Bienvenido al módulo de facturación</h3>
+            <p class="text-justify">
+                Bienvenido a la sección de facturación, aquí puedes solicitar factura de tus compras de manera rápida y sencilla. A continuación, te explicamos cómo hacerlo:<br><br>
+
+                — Indícanos el número de pedido o folio de tu orden<br>
+                — Registra tu información en los campos solicitados, o si lo prefieres adjunta tu constancia de situación fiscal<br>
+                — Ingresa los datos de contacto a los que enviaremos la factura<br>
+                — Déjanos algún comentario a considerar para efectos de la facturación.<br><br>
+
+                Recibirás tu factura en un plazo no mayor a 48 horas en presentación PDF y XML, recomendamos revisar la carpeta de correo no deseado en caso de no encontrar tu factura en la bandeja principal. Si necesitas asistencia durante el proceso o tienes alguna pregunta, nuestro equipo de atención al cliente está listo para ayudarte; no dudes en contactarnos por el medio de tu preferencia.
+
+            </p>
+            <br>
+            <br>  
+        </div>
+        <div class="col-6"></div>
+    </div>    
+</div>
+<div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-10">
+        <form method="POST" action="<?= $block->escapeUrl($block->getFormAction()) ?>" enctype="multipart/form-data">      
+            <h3 class="text-center titulo">Datos de facturación </h3>
+            <div class="row">
+                <div class="col-4 form-control"> 
+                    <label for="name">Folio Pedido o No. Orden: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="foliopedido" placeholder="Folio Pedido o No. Orden" required> 
+                </div>           
+                <div class="col-4 form-control"> 
+                    <label for="name">Razón Social: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="razonsocial" placeholder="Razón Social" required>
+                </div>               
+                <div class="col-4 form-control"> 
+                    <label for="name">Persona Física o Moral: <span style="color: red;">*</span></label> 
+                    <select class="form-control" name="fisicamoral" required>
+                        <option value="0">--Seleccione--</option>
+                        <option value="Fisica">Fisica</option>
+                        <option value="Moral">Moral</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 form-control"> 
+                    <label for="name">RFC: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="rfc" placeholder="RFC"  required>
+                </div>
+                <div class="col-4 form-control"> 
+                    <label for="name">Regimen Fiscal: <span style="color: red;">*</span></label> 
+                    <select id="regimenfiscal select2" class="form-control" name="regimenfiscal" required>
+                        <option value="0">--Seleccione--</option>
+                        <option value="601 – General de Ley Personas Morales">601 – General de Ley Personas Morales</option>
+                        <option value="603 – Personas Morales con Fines no Lucrativos">603 – Personas Morales con Fines no Lucrativos</option>
+                        <option value="605 – Sueldos y Salarios e Ingresos Asimilados a Salarios">605 – Sueldos y Salarios e Ingresos Asimilados a Salarios</option>
+                        <option value="606 – Arrendamiento">606 – Arrendamiento</option>
+                        <option value="607 – Régimen de Enajenación o Adquisición de Bienes">607 – Régimen de Enajenación o Adquisición de Bienes</option>
+                        <option value="608 – Demás ingresos">608 – Demás ingresos</option>
+                        <option value="609 – Consolidación">609 – Consolidación</option>
+                        <option value="610 – Residentes en el Extranjero sin Establecimiento">610 – Residentes en el Extranjero sin Establecimiento</option>
+                        <option value="611 – Ingresos por Dividendos (socios y accionistas)">611 – Ingresos por Dividendos (socios y accionistas)</option>
+                        <option value="612 – Personas Físicas con Actividades Empresariales y Profesionales">612 – Personas Físicas con Actividades Empresariales y Profesionales</option>
+                        <option value="614 – Ingresos por intereses">614 – Ingresos por intereses</option>
+                        <option value="616 – Sin Obligaciones Fiscales">616 – Sin Obligaciones Fiscales</option>
+                        <option value="620 – Sociedades Cooperativas de Producción que optan por diferir sus ingresos">620 – Sociedades Cooperativas de Producción que optan por diferir sus ingresos</option>
+                        <option value="621 – Incorporación Fiscal">621 – Incorporación Fiscal</option>
+                        <option value="622 – Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras con opción de diferimiento">622 – Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras con opción de diferimiento</option>
+                        <option value="623 – Opcional para grupos de sociedades">623 – Opcional para grupos de sociedades</option>
+                        <option value="624 – De los Coordinados">624 – De los Coordinados</option>
+                        <option value="625 – Régimen de las Actividades Empresariales con ingresos a través de Plataformas">625 – Régimen de las Actividades Empresariales con ingresos a través de Plataformas</option>
+                        <option value="626 – Regimen simplificado de confianza">626 – Regimen simplificado de confianza</option>
+                        <option value="634 – Del Régimen de los bienes usados">634 – Del Régimen de los bienes usados</option>
+                        <option value="636 – De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales">636 – De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales</option>
+                    </select>
+                </div>
+                <div class="col-4 form-control"> 
+                    <label for="name">Uso de CFDI: <span style="color: red;">*</span></label>                     
+                    <select class="form-control" name="cfdi" required>
+                        <option value="0">--Seleccione--</option>
+                        <option value="G01 – Adquisición de mercancias">G01 – Adquisición de mercancias</option>
+                        <option value="G03 – Gastos en general">G03 – Gastos en general</option>
+                        <option value="I01 – Construcciones">I01 – Construcciones</option>
+                        <option value="I02 – Mobilario y equipo de oficina">I02 – Mobilario y equipo de oficina</option>
+                        <option value="I03 – Equipo de transporte">I03 – Equipo de transporte</option>
+                        <option value="I04 – Equipo de computo y accesorios">I04 – Equipo de computo y accesorios</option>
+                        <option value="I06 – Comunicaciones telefónicas">I06 – Comunicaciones telefónicas</option>
+                        <option value="I07 – Comunicaciones satelitales">I07 – Comunicaciones satelitales</option>
+                        <option value="I08 – Otra maquinaria y equipo de procesos">I08 – Otra maquinaria y equipo de procesos</option>
+                        <option value="D04 – Donativos">D04 – Donativos</option>
+                        <option value="P01 – Por definir">P01 – Por definir</option>
+                    </select>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-4 form-control"> 
+                    <label for="name">Método de pago: <span style="color: red;">*</span></label>
+                    <select class="form-control select2" name="metodopago" required>
+                        <option value="0">--Seleccione--</option>
+                        <option value="1 – Efectivo">1 – Efectivo</option>
+                        <option value="2 – Cheque">2 – Cheque</option>
+                        <option value="3 – Transferencia electrónica">3 – Transferencia electrónica</option>
+                        <option value="4 – Tarjeta de crédito">4 – Tarjeta de crédito</option>
+                        <option value="28 – Tarjeta de débito">28 – Tarjeta de débito</option>
+                        <option value="29 – Tarjeta de servicios">29 – Tarjeta de servicios</option>
+                        <option value="30 – Aplicación de anticipos">30 – Aplicación de anticipos</option>
+                        <option value="31 – Intermediario pagos">31 – Intermediario pagos</option>
+                        <option value="60 – Pago por internet">60 – Pago por internet</option>
+                        <option value="61 – Servicios prestados por medios electrónicos">61 – Servicios prestados por medios electrónicos</option>
+                        <option value="63 – Pago por terceros">63 – Pago por terceros</option>
+                        <option value="65 – Pago por internet con intermediario pagos">65 – Pago por internet con intermediario pagos</option>
+                    </select> 
+                </div>
+                <div class="col-4 form-control"> 
+                    <label for="name">Importe Total: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="importeiva" name="importeiva" placeholder="Importe (Incluye IVA)"   required>
+                </div>
+            </div>
+            <br>
+            <h3 class="text-center titulo">Domicilio Fiscal</h3>
+            <div class="row">
+                <div class="col-3 form-control"> 
+                    <label for="name">Calle del domicilio: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="calle" placeholder="Calle del domicilio"   required> 
+                </div>
+                <div class="col-3 form-control">
+                    <label for="name">Número Externo: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="noexterno" placeholder="Número Externo" required>
+                </div>
+                <div class="col-3 form-control"> 
+                    <label for="name">No. Interno:</label> 
+                    <input class="form-control " type="text" id="name" name="nointerno" placeholder="No. Interno" >
+                </div>
+                <div class="col-3 form-control"> 
+                    <label for="name">Colonia: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="colonia" placeholder="Colonia"  required>
+                </div>                  
+            </div>
+            <div class="row">
+                <div class="col-3 form-control"> 
+                    <label for="name">Municipio: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="municipio" placeholder="Municipio"   required>
+                </div>                
+                <div class="col-3 form-control"> 
+                    <label for="name">Ciudad: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="ciudad" placeholder="Ciudad" >
+                </div> 
+                <div class="col-3 form-control"> 
+                    <label for="name">Estado: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="estado" placeholder="Estado"  required>
+                </div>
+                <div class="col-3 form-control"> 
+                    <label for="name">Código Postal: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="codigopostal" placeholder="Código Postal"  required>
+                </div>
+            </div>  
+            <br>
+            <h3 class="text-center titulo">Datos de contacto</h3>              
+            <div class="row">
+                <div class="col-6 form-control"> 
+                    <label for="name">Teléfono: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="telefono" placeholder="Teléfono"   required> 
+                </div>           
+                <div class="col-6 form-control"> 
+                    <label for="name">Correo Electrónico: <span style="color: red;">*</span></label> 
+                    <input class="form-control " type="text" id="name" name="correoelec" placeholder="Correo Electrónico"  required>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-12 form-control"> 
+                    <label for="name">Comentarios:<span style="color: red;">*</span></label> 
+                    <textarea class="form-control" type="textarea" rows="8" id="name" name="comentarios" placeholder="Indícanos el código de los productos que deseas facturar, de no hacerlo se facturará la totalidad de los artículos incluidos en la orden." required></textarea>            
+                </div> 
+            </div>           
+            <br>
+            <div class="colorunico col-12 text-center">
+                <input type="file" name="file-1" id="file-1" class="inputfile inputfile-1" style="display: none;"/>
+                <label for="file-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="iborrainputfile" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>
+                    <span class="iborrainputfile">Seleccionar archivo</span>
+                </label>
+            </div>  
+            <p class="text-center" style="font-size: smaller;">Adjuntar Constancia de Situación Fiscal (opcional)</p>
+            <br>            
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" type="submit" name="uploadBtn" value="Upload">Enviar datos para facturar</button>
+            </div>              
+        </form>
+    </div>
+    <div class="col-6">
+    </div>
+</div>
+<script>
+'use strict';
+
+;( function ( document, window, index )
+{
+	var inputs = document.querySelectorAll( '.inputfile' );
+	Array.prototype.forEach.call( inputs, function( input )
+	{
+		var label	 = input.nextElementSibling,
+			labelVal = label.innerHTML;
+
+		input.addEventListener( 'change', function( e )
+		{
+			var fileName = '';
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else
+				fileName = e.target.value.split( '\\' ).pop();
+
+			if( fileName )
+				label.querySelector( 'span' ).innerHTML = fileName;
+			else
+				label.innerHTML = labelVal;
+		});
+	});
+}( document, window, 0 ));
+</script>

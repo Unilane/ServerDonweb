@@ -1,0 +1,89 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ * 
+ */
+?>
+<style>
+        .tableclass {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .thclass, .tdclass {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .thclass {
+            background-color: #DDDFDD;
+            color: #000;
+        }
+
+        .trclass:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .trclass:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+<?php /** @var $block \Magento\Checkout\Block\Onepage\Success */ ?>
+<?php 
+    $items    = $block->getOrderItems();
+?>
+<?php if ($block->getOrderId()) :?>
+    <?php if ($block->getCanViewOrder()) :?>
+        <p><?= $block->escapeHtml(__('Your order number is: %1.', sprintf('<a href="%s" class="order-number"><strong>%s</strong></a>', $block->escapeUrl($block->getViewOrderUrl()), $block->getOrderId())), ['a', 'strong']) ?></p>
+    <?php  else :?>
+        <p><?= $block->escapeHtml(__('Your order # is: <span>%1</span>.', $block->getOrderId()), ['span']) ?></p>
+    <?php endif;?>
+        <p><?= $block->escapeHtml(__('We\'ll email you an order confirmation with details and tracking info. que pedo este es el vendor')) ?></p>
+<?php endif;?>
+<?php if ($items) : ?>
+    <table class="tableclass">
+        <tr class="trclass">
+            <th class="thclass"><?= $block->escapeHtml(__('Producto(s)')) ?></th>
+            <th class="thclass"><?= $block->escapeHtml(__('Cantidad')) ?></th>
+            <th class="thclass"><?= $block->escapeHtml(__('Precio')) ?></th>
+        </tr>
+        <tr class="trclass">
+            <?php foreach ($items as $_item) : ?>                
+                <?php 
+                    //Obtiene la informacion del producto
+                    $product    = $_item->getProduct();
+                    //Obtiene el nombre del producto en turno
+                    $name       = $_item->getName();
+                    //Obtiene la cantidad seleccionada del producto y elimina los 0
+                    $qty        = $_item->getQtyOrdered();
+                    $qtyOrdered = number_format($qty, 2);
+                    $qtyPre     = rtrim($qtyOrdered, '0');
+                    $qtyReal    = rtrim($qtyPre, '.');
+                    //Obtiene el total y formatea el numero para obtener solo dos decimales
+                    $total      = $_item->getRowTotal();
+                    $totalReal  = number_format($total, 2);
+                    //$image = $block->getImageHelper($_item->getProduct(), 'product_page_image_small');
+                ?>
+                <?php if (!$_item->getParentItem()) : ?>
+                    <td class="tdclass"><?= $name ?></td>
+                    <td class="tdclass"><?= $qtyReal ?></td>
+                    <td class="tdclass"><?= "$".$totalReal ?></td>                    
+                <?php endif; ?>
+            <?php endforeach; ?>            
+        </tr>
+    </table>   
+    <?= "%IVA: ".$items[0]->getTaxPercent()."%" ?>
+    <?= "IVA: "."$".$items[0]->getTaxAmount() ?>
+    <?= "IVA + Precio: "."$".$items[0]->getTax() + $items[0]->getRowTotal() ?>
+    <?= "Envio: "."$".$items[0]->getFreeShipping() ?>
+    <?= "Total: "."$".$items[0]->getTaxAmount() + $items[0]->getFreeShipping() + $items[0]->getTax() + $items[0]->getRowTotal()?>
+<?php endif; ?>
+<?= $block->getAdditionalInfoHtml() ?>
+<div class="actions-toolbar">
+    <div class="primary">
+        <a class="action primary continue" href="<?= $block->escapeUrl($block->getContinueUrl()) ?>"><span><?= $block->escapeHtml(__('Continue Shopping')) ?></span></a>
+    </div>
+</div>

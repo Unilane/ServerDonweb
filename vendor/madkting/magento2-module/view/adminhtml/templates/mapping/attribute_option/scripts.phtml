@@ -1,0 +1,106 @@
+<?php
+/**
+ * Madkting Software (http://www.madkting.com)
+ *
+ *                                      ..-+::moossso`:.
+ *                                    -``         ``ynnh+.
+ *                                 .d                 -mmn.
+ *     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+ *    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+ *    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+ *    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+ *    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+ *    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+ *    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+ *                                 .ys .::-`
+ *                                o.+`
+ *
+ * @category Module
+ * @package Madkting\Connect
+ * @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+ * @link https://bitbucket.org/madkting/magento2
+ * @copyright Copyright (c) 2017 Madkting Software.
+ * @license See LICENSE.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+<?php /** @var $block Madkting\Connect\Block\Adminhtml\AttributeMapping\Grid */ ?>
+<script>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/alert',
+        'mage/translate'
+    ], function ($, alert) {
+        'use strict';
+
+        $(function () {
+
+            /* Get grid by AJAX */
+            function getAjaxGrid() {
+                var madktingId = $('#madkting-attribute-select').val(),
+                    magentoId = $('#magento-attribute-select').val();
+
+                $.ajax({
+                    'url': '<?php echo $block->getUrl('*/attributeoptionmapping/ajaxgrid') ?>',
+                    'data': {'madktingId':madktingId, 'magentoId':magentoId},
+                    'dataType': 'json',
+                    'showLoader': true
+                }).done(function (data) {
+                    if (data.error) {
+                        alert({
+                            'title': '<?php echo __('Error') ?>',
+                            'content': data.message
+                        });
+                    } else {
+                        $('div.admin__data-grid-wrap').html(data.grid);
+                    }
+                });
+            }
+
+            /* Grid buttons action */
+            $('div.page-main-actions').on('click', '#save-attribute-option-mapping', function () {
+                $.ajax({
+                    'type': 'POST',
+                    'url': '<?php echo $block->getFormAction() ?>',
+                    'data': $('#<?php echo $block->getGridName() ?>-form').serialize(),
+                    'dataType': 'json',
+                    'showLoader': true
+                }).done(function (data) {
+                    alert({
+                        'title': data.title,
+                        'content': data.message
+                    });
+                });
+            });
+
+            /* Yuju's attribute selector event */
+            $('div.additional-options-header')
+                .on('change', '#madkting-attribute-select', function () {
+                    var madktingId = $(this).val();
+
+                    $.ajax({
+                        'url': '<?php echo $block->getUrl('*/attributeoptionmapping/getmagentoattributes') ?>',
+                        'data': {'madktingId':madktingId},
+                        'dataType': 'json',
+                        'showLoader': true
+                    }).done(function (data) {
+                        if (data.error) {
+                            $('#magento-attribute-select').html();
+                            $('#attribute-option-mapping-table').children('tbody').remove();
+                            alert({
+                                'title': '<?php echo __('Error') ?>',
+                                'content': data.message
+                            });
+                        } else {
+                            $('#magento-attribute-select').html(data.options);
+                            getAjaxGrid();
+                        }
+                    });
+                })
+                .on('change', '#magento-attribute-select', function () {
+                    getAjaxGrid();
+                });
+        });
+    });
+</script>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Madkting Software (http://www.madkting.com)
+  ~
+  ~                                      ..-+::moossso`:.
+  ~                                    -``         ``ynnh+.
+  ~                                 .d                 -mmn.
+  ~     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+  ~    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+  ~    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+  ~    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+  ~    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+  ~    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+  ~    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+  ~                                 .ys .::-`
+  ~                                o.+`
+  ~
+  ~ @category Module
+  ~ @package Madkting\Connect
+  ~ @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+  ~ @link https://bitbucket.org/madkting/magento2
+  ~ @copyright Copyright (c) 2017 Madkting Software.
+  ~ @license See LICENSE.txt for license details.
+  -->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="admin-2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_info">
+            <block class="Madkting\Connect\Block\Adminhtml\Order\View\Tab\Info" name="madkting_order_message" template="order/view/ordermessage.phtml" />
+        </referenceBlock>
+        <referenceBlock name="sales_order_tabs">
+            <action method="addTabAfter">
+                <argument name="name" xsi:type="string">order_madkting</argument>
+                <argument name="block" xsi:type="string">Madkting\Connect\Block\Adminhtml\Order\View\Tab\Info</argument>
+                <argument name="after" xsi:type="string">order_info</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>

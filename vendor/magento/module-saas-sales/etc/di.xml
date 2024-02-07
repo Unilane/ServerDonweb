@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--  Product Feed  -->
+    <virtualType name="Magento\SaaSSales\Model\OrdersFeedRegistry" type="Magento\SaaSCommon\Model\FeedRegistry">
+        <arguments>
+            <argument name="excludeFields" xsi:type="array">
+                <item name="modifiedAt" xsi:type="string">modifiedAt</item>
+                <item name="updatedAt" xsi:type="string">updatedAt</item>
+            </argument>
+            <argument name="uniqueFields" xsi:type="array">
+                <item name="orderId" xsi:type="string">id</item>
+            </argument>
+            <argument name="registryTable" xsi:type="string">sales_order_data_submitted_hash</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Magento\SaaSSales\Cron\OrdersSubmitFeed" type="Magento\SaaSCommon\Cron\SubmitFeed">
+        <arguments>
+            <argument name="feedName" xsi:type="string">salesOrders</argument>
+            <argument name="feedSyncFlag" xsi:type="string">orders-feed-version</argument>
+            <argument name="feedRegistry" xsi:type="object">Magento\SaaSSales\Model\OrdersFeedRegistry</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Magento\SaaSSales\Model\OrdersResyncManager" type="Magento\SaaSCommon\Model\ResyncManager">
+        <arguments>
+            <argument name="feedIndexer" xsi:type="object">Magento\SalesOrdersDataExporter\Model\Indexer\OrdersFeedIndexer</argument>
+            <argument name="submitFeed" xsi:type="object">Magento\SaaSSales\Cron\OrdersSubmitFeed</argument>
+            <argument name="feedInterface" xsi:type="object">Magento\SalesOrdersDataExporter\Model\OrdersFeed</argument>
+            <argument name="flagName" xsi:type="string">orders-feed-version</argument>
+            <argument name="indexerName" xsi:type="string">sales_order_data_exporter_v2</argument>
+            <argument name="registryTableName" xsi:type="string">sales_order_data_submitted_hash</argument>
+        </arguments>
+    </virtualType>
+
+
+    <!--  Resync registration  -->
+    <type name="Magento\SaaSCommon\Model\ResyncManagerPool">
+        <arguments>
+            <argument name="classMap" xsi:type="array">
+                <item name="orders" xsi:type="string">Magento\SaaSSales\Model\OrdersResyncManager</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\SaaSCommon\Console\Command\Resync">
+        <arguments>
+            <argument name="feedNames" xsi:type="array">
+                <item name="orders" xsi:type="string">Order</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

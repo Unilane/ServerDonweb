@@ -1,0 +1,99 @@
+Hover,Hover
+Click,Click
+True,True
+False,False
+Quickview,Quickview
+"Continue Shopping","Continue Shopping"
+"Go To Checkout","Go To Checkout"
+"Go To Product","Go To Product"
+"Add to Cart","Add to Cart"
+Qty,Qty
+"Quick View and Ajax Cart","Quick View and Ajax Cart"
+"Quick View and Ajax Cart General Settings","Quick View and Ajax Cart General Settings"
+"Enable on product listing","Enable on product listing"
+"Enable on mobile view","Enable on mobile view"
+"Quickview Type","Quickview Type"
+"Close on Background Click","Close on Background Click"
+"Remove product image","Remove product image"
+"Remove product image thumb","Remove product image thumb"
+"Remove short description","Remove short description"
+"Remove qty selector","Remove qty selector"
+"Enable go to product button","Enable go to product button"
+"Remove availability","Remove availability"
+"Remove sku","Remove sku"
+"Remove Estimated Arrival","Remove Estimated Arrival"
+"Button Style","Button Style"
+"Close quickview in X seconds after adding product to cart","Close quickview in X seconds after adding product to cart"
+"Auto scroll to top and open Quickcart","Auto scroll to top and open Quickcart"
+"Enable continue shopping/go to checkout buttons","Enable continue shopping/go to checkout buttons"
+"Custom CSS","Custom CSS"
+"Enable zoom","Enable zoom"
+"Top position of magnifier","Top position of magnifier"
+"Left position of magnifier","Left position of magnifier"
+"Width of magnifier block","Width of magnifier block"
+"Height of magnifier block","Height of magnifier block"
+"Action that activates zoom","Action that activates zoom"
+"Loading Overlay Background Color","Loading Overlay Background Color"
+"Set background color for Loading Overlay. Example: #0b0b0b <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","Set background color for Loading Overlay. Example: #0b0b0b <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Loading Overlay Opacity","Loading Overlay Opacity"
+"Set opacity for Loading Overlay. Use values between 0 and 1. Example: 0.8<br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","Set opacity for Loading Overlay. Use values between 0 and 1. Example: 0.8<br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Loading Placeholder","Loading Placeholder"
+"Enable to be able to choose your own placeholder for the loading period of the quickview. <br>
+                                Below you can upload your own file. <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","Enable to be able to choose your own placeholder for the loading period of the quickview. <br>
+                                Below you can upload your own file. <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Loading Icon","Loading Icon"
+"CDATA[ Only 'jpg', 'jpeg', 'gif', 'png', 'svg' is allowed.<br>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","CDATA[ Only 'jpg', 'jpeg', 'gif', 'png', 'svg' is allowed.<br>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Custom Global Message","Custom Global Message"
+"Enable Custom Global Message","Enable Custom Global Message"
+"Insert Custom Global Message displayed above QuickView pop-up.<br>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","Insert Custom Global Message displayed above QuickView pop-up.<br>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Enable Dynamic Custom Message","Enable Dynamic Custom Message"
+"Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Custom Global","Custom Global"
+"Custom Global Background Color","Custom Global Background Color"
+"Set background color for custom message. Example: #B05D5D <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","Set background color for custom message. Example: #B05D5D <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Custom Global Font Color","Custom Global Font Color"
+"Set font color for custom message. Example: #B2B2B2 <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality.","Set font color for custom message. Example: #B2B2B2 <br/>
+                                Only available in PRO version of this extension. <br>
+                                <a style=""font-size: 14px"" target=""_blank"" href=""https://www.weltpixel.com/advance-product-quick-view.html"">Upgrade to Pro version</a> to enable this functionality."
+"Custom Global Font Size","Custom Global Font Size"
+"Custom Css","Custom Css"
+"Seo Settings","Seo Settings"
+"Add no follow for the quickview link","Add no follow for the quickview link"
+"Add no index","Add no index"
+"Add canonical link","Add canonical link"
+"Ajax Cart Confirmation Pop-up General Settings (Pro version only)","Ajax Cart Confirmation Pop-up General Settings (Pro version only)"
+"Enable Ajax Cart Confirmation pop-up","Enable Ajax Cart Confirmation pop-up"
+"Popup Title","Popup Title"
+"Display Custom CMS Block","Display Custom CMS Block"
+"Select CMS Block","Select CMS Block"
+"Display Carousel","Display Carousel"
+"Carousel Type","Carousel Type"
+"Carousel Title","Carousel Title"

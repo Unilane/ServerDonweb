@@ -1,0 +1,7 @@
+{
+    "inventory_stock_status_data_submitted_hash": {
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

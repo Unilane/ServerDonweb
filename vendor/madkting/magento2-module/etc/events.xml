@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Madkting Software (http://www.madkting.com)
+  ~
+  ~                                      ..-+::moossso`:.
+  ~                                    -``         ``ynnh+.
+  ~                                 .d                 -mmn.
+  ~     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+  ~    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+  ~    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+  ~    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+  ~    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+  ~    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+  ~    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+  ~                                 .ys .::-`
+  ~                                o.+`
+  ~
+  ~ @category Module
+  ~ @package Madkting\Connect
+  ~ @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+  ~ @link https://bitbucket.org/madkting/magento2
+  ~ @copyright Copyright (c) 2017 Madkting Software.
+  ~ @license See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_model_service_quote_submit_before">
+        <observer name="madkting_quote_to_order" instance="Madkting\Connect\Observer\QuoteToOrder" />
+    </event>
+    <event name="catalog_product_save_commit_after">
+        <observer name="madkting_product_save_queue" instance="Madkting\Connect\Observer\QueueProductSave" />
+    </event>
+    <event name="catalog_product_import_finish_before">
+        <observer name="madkting_product_import" instance="Madkting\Connect\Observer\ImportProduct" />
+    </event>
+    <event name="catalog_product_delete_after_done">
+        <observer name="madkting_product_delete_queue" instance="Madkting\Connect\Observer\ProductDelete" />
+    </event>
+    <event name="cataloginventory_stock_item_save_after">
+        <observer name="madkting_stock_change" instance="Madkting\Connect\Observer\MadktingStockChange" />
+    </event>
+    <event name="checkout_submit_all_after">
+        <observer name="madkting_stock_place_order" instance="Madkting\Connect\Observer\MadktingStockPlaceOrder" />
+    </event>
+    <event name="sales_order_item_cancel">
+        <observer name="madkting_stock_cancel_order" instance="Madkting\Connect\Observer\MadktingStockCancelOrder"/>
+    </event>
+</config>

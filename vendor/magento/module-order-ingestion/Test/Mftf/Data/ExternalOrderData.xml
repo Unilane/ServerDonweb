@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:mftf:DataGenerator/etc/dataProfileSchema.xsd">
+    <entity name="externalOrder" type="externalOrder">
+        <data key="order_id" unique="suffix">order</data>
+        <data key="external_order_id" unique="suffix">order</data>
+        <data key="store_view_code">default</data>
+        <data key="sales_channel">WALMART</data>
+        <data key="status">RECEIVED</data>
+        <data key="created_at">2022-01-01 00:00:00</data>
+        <data key="updated_at">2022-01-01 00:00:00</data>
+        <data key="order_data">
+            {"orderId":{"id":"ORDER_ID_WITH_TAX"},"externalId":{"id":"magento-order-1","salesChannel":"WMT"},"createdAt":"2021-10-14T16:46:33Z","updatedAt":"1970-01-01T00:00:00Z","state":"NEW","status":"new","storeViewCode":"default","customerEmail":"demo@examle.com","customerNote":"","shipping":{"shippingAddress":{"phone":"512-000-00-88","region":"TX","postcode":"78758","street":"11501 Domain Drive","city":"Austin","country":"US","firstname":"John","lastname":"Doe"},"shippingMethodName":"DHL","shippingMethodCode":"some-code-123","shippingAmount":12.1,"shippingTax":1.1},"payment":{"billingAddress":{"phone":"512-000-00-88","region":"TX","postcode":"78758","street":"11501 Domain Drive","city":"Austin","country":"US","firstname":"John","lastname":"Doe"},"paymentMethodName":"cc","paymentMethodCode":"some-code-321","totalAmount":123.4,"taxAmount":12,"currency":"USD"},"items":[{"itemId":{"id":"90eff968-b367-4fe7-b3b7-36b06e10683a"},"sku":"externalProduct","name":"Some sugar","qty":1,"unitPrice":0,"itemPrice":10,"discountAmount":0,"taxAmount":0.1,"totalAmount":15.6,"weight":1.1,"createdAt":"2021-10-14T16:46:33Z","additionalInformation":[{"name":"some","value":"item data"}]},{"itemId":{"id":"90eff968-b367-4fe7-b3b7-36b06e10683b"},"sku":"externalProduct","name":"Some sugar","qty":1,"unitPrice":0,"itemPrice":10,"discountAmount":0,"taxAmount":0.1,"totalAmount":15.6,"weight":1.1,"createdAt":"2021-10-14T16:46:33Z","additionalInformation":[{"name":"some","value":"item data"}]}],"isVirtual":false,"additionalInformation":[{"name":"some","value":"order data"}]}
+        </data>
+    </entity>
+</entities>

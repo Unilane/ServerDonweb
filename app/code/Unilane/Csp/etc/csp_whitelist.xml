@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+        <policies>
+            <policy id="img-src">
+                <values>
+                    <value id="icecat" type="host">https://*.icecat.biz</value>
+		    <value id="inishop" type="host">https://inishop.com/</value>
+                </values>
+            </policy>
+            <policy id="script-src">
+                <values>
+                   <value id="icecatsc" type="host">https://pet.icecat.biz/static/framework/*.min.js</value>
+                   <value id="icecat759" type="host">https://pet.icecat.biz/static/framework/759.pet.js</value>
+                   <value id="icecat700" type="host">https://pet.icecat.biz/static/framework/700.pet.js</value>
+                   <value id="icecat500" type="host">https://pet.icecat.biz/static/framework/580.pet.js</value>
+                   <value id="icecatpet" type="host">https://pet.icecat.biz/static/framework/445.pet.js</value>
+                   <value id="icecatjs" type="host">https://pet.icecat.biz/static/framework/pet.js</value>
+	           <value id="static" type="host">https://static.elfsight.com/platform/platform.js</value>
+                </values>
+            </policy>
+            <policy id="style-src">
+                <values>
+                    <value id="icecatcss" type="host">https://pet.icecat.biz/static/framework/pet.css</value>
+                    <value id="icecatll" type="host">https://pet.icecat.biz/static/layouts/dell/index.css</value>
+                </values>
+            </policy>
+            <policy id="connect-src">
+                <values>
+                    <value id="connect" type="host">https://pet.icecat.biz/api/statistics/collect</value>
+                </values>
+            </policy>
+        </policies>
+</csp_whitelist>

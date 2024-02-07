@@ -1,0 +1,23 @@
+{
+	"name" : "vnecoms/module-vendors-smtheme",
+	"description" : "Fix SM themes to work with marketplace extension",
+	"authors": [
+		{
+				"name": "VNECOMS",
+				"email": "support@vnecoms.com"
+		}
+	],
+	"require": {
+		"magento/framework": ">=103.0.0"
+	},
+	"type" : "magento2-module",
+	"version" : "2.4.1",
+	"autoload" : {
+		"files" : [
+			"registration.php"
+		],
+		"psr-4" : {
+			"Vnecoms\\SmTheme\\" : ""
+		}
+	}
+}

@@ -1,0 +1,30 @@
+<?php
+/** @var \Magento\Sales\Block\Order\Item\Renderer\DefaultRenderer $block */
+$_item = $block->getItem();
+$prantBlock = $block->getParentBlock();
+$priceDisplaySettings = $prantBlock->getDisplaySettings();
+?>
+<?php if ($priceDisplaySettings['price'] == 3 || $priceDisplaySettings['price'] == 1): ?>
+<span class="price-excluding-tax" data-label="<?= $block->escapeHtml(__('Excl. Tax')) ?>">
+    <span class="cart-price">
+         <?php if ($priceDisplaySettings['price'] == 3 ): ?>
+             <span class="price-label">
+        <?= $block->escapeHtml(__('Excl. Tax')) ?>
+        </span>
+         <?php endif; ?>
+        <?= /* @noEscape */ $block->getOrder()->formatPrice($block->getItem()->getRowTotal()) ?>
+    </span>
+</span>
+<?php endif; ?>
+<?php if ($priceDisplaySettings['price'] == 3 || $priceDisplaySettings['price'] == 2): ?>
+<span class="price-excluding-tax" data-label="<?= $block->escapeHtml(__('Incl. Tax')) ?>">
+    <span class="cart-price">
+         <?php if ($priceDisplaySettings['price'] == 3 ): ?>
+             <span class="price-label">
+        <?= $block->escapeHtml(__('Incl. Tax')) ?>
+        </span>
+         <?php endif; ?>
+        <?= /* @noEscape */ $block->getOrder()->formatPrice($block->getItem()->getRowTotalInclTax()) ?>
+    </span>
+</span>
+<?php endif; ?>

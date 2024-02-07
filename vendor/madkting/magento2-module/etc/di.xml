@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Madkting Software (http://www.madkting.com)
+  ~
+  ~                                      ..-+::moossso`:.
+  ~                                    -``         ``ynnh+.
+  ~                                 .d                 -mmn.
+  ~     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+  ~    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+  ~    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+  ~    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+  ~    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+  ~    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+  ~    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+  ~                                 .ys .::-`
+  ~                                o.+`
+  ~
+  ~ @category Module
+  ~ @package Madkting\Connect
+  ~ @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+  ~ @link https://bitbucket.org/madkting/magento2
+  ~ @copyright Copyright (c) 2017 Madkting Software.
+  ~ @license See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Massive attributes change plugin -->
+    <type name="Magento\Catalog\Controller\Adminhtml\Product\Action\Attribute\Save">
+        <plugin name="madkting_massive_attributes_change" type="Madkting\Connect\Plugin\QueueProductMassiveChangePlugin" sortOrder="1" />
+    </type>
+
+    <!-- CSRF bypass -->
+    <type name="Magento\Framework\App\Request\CsrfValidator">
+        <plugin name="csrf_bypass" type="Madkting\Connect\Plugin\CsrfBypassPlugin" />
+    </type>
+
+    <!-- Madkting's CLI commands -->
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="run-next-tasks" xsi:type="object">Madkting\Connect\Console\Command\RunNextTasksCommand</item>
+                <item name="clean-finished-tasks" xsi:type="object">Madkting\Connect\Console\Command\CleanFinishedTasksCommand</item>
+                <item name="consult-unfinished-feeds" xsi:type="object">Madkting\Connect\Console\Command\ConsultUnfinishedFeedsCommand</item>
+                <item name="update-products" xsi:type="object">Madkting\Connect\Console\Command\UpdateProducts</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- Order grid columns -->
+    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid">
+        <arguments>
+            <argument name="columns" xsi:type="array">
+                <item name="madkting_pk" xsi:type="string">sales_order.madkting_pk</item>
+                <item name="madkting_marketplace_reference" xsi:type="string">sales_order.madkting_marketplace_reference</item>
+                <item name="madkting_marketplace_pk" xsi:type="string">sales_order.madkting_marketplace_pk</item>
+                <item name="madkting_status" xsi:type="string">sales_order.madkting_status</item>
+                <item name="madkting_shop_pk" xsi:type="string">sales_order.madkting_shop_pk</item>
+                <item name="madkting_fulfillment" xsi:type="string">sales_order.madkting_fulfillment</item>
+                <item name="madkting_mercashop" xsi:type="string">sales_order.madkting_mercashop</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <!-- Order status match grid -->
+    <virtualType name="OrderStatusMappingGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="OrderStatusMappingGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Madkting\Connect\Model\ResourceModel\OrderStatus\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">OrderStatusMappingGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <type name="Madkting\Connect\Model\ResourceModel\OrderStatus\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">madkting_mapping_order_status</argument>
+            <argument name="eventPrefix" xsi:type="string">madkting_mapping_order_status_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">order_status_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Madkting\Connect\Model\ResourceModel\OrderStatus</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="madkting_mapping_order_status_listing_data_source" xsi:type="string">Madkting\Connect\Model\ResourceModel\OrderStatus\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!--Madkting logger-->
+    <type name="Madkting\Connect\Logger\MadktingLogger">
+        <arguments>
+            <argument name="name" xsi:type="string">madkting</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="debug" xsi:type="object">Madkting\Connect\Logger\Handler\Debug</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- Madkting payment configuration -->
+    <virtualType name="MadktingPaymentFacade" type="Magento\Payment\Model\Method\Adapter">
+        <arguments>
+            <argument name="code" xsi:type="string">madkting</argument>
+            <argument name="formBlockType" xsi:type="string">Magento\Payment\Block\Form</argument>
+            <argument name="infoBlockType" xsi:type="string">Madkting\Connect\Block\Payment\Info</argument>
+            <argument name="valueHandlerPool" xsi:type="object">MadktingPaymentValueHandlerPool</argument>
+            <argument name="commandPool" xsi:type="object">MadktingPaymentCommandPool</argument>
+        </arguments>
+    </virtualType>
+    <!-- Configuration reader -->
+    <virtualType name="MadktingPaymentConfig" type="Magento\Payment\Gateway\Config\Config">
+        <arguments>
+            <argument name="methodCode" xsi:type="string">madkting</argument>
+        </arguments>
+    </virtualType>
+    <!-- Commands infrastructure -->
+    <virtualType name="MadktingPaymentCommandPool" type="Magento\Payment\Gateway\Command\CommandPool">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="authorize" xsi:type="string">MadktingPaymentAuthorizeCommand</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <!-- Authorize command -->
+    <virtualType name="MadktingPaymentAuthorizeCommand" type="Magento\Payment\Gateway\Command\GatewayCommand">
+        <arguments>
+            <argument name="requestBuilder" xsi:type="object">Madkting\Connect\Gateway\Request\AuthorizeRequest</argument>
+            <argument name="handler" xsi:type="object">Madkting\Connect\Gateway\Response\GenericResponse</argument>
+            <argument name="transferFactory" xsi:type="object">Madkting\Connect\Gateway\Http\TransferFactory</argument>
+            <argument name="client" xsi:type="object">Madkting\Connect\Gateway\Http\Client\Mock</argument>
+        </arguments>
+    </virtualType>
+    <!-- Value handlers infrastructure -->
+    <virtualType name="MadktingPaymentValueHandlerPool" type="Magento\Payment\Gateway\Config\ValueHandlerPool">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="default" xsi:type="string">MadktingPaymentConfigValueHandler</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="MadktingPaymentConfigValueHandler" type="Magento\Payment\Gateway\Config\ConfigValueHandler">
+        <arguments>
+            <argument name="configInterface" xsi:type="object">MadktingPaymentConfig</argument>
+        </arguments>
+    </virtualType>
+    <type name="Madkting\Connect\Block\Payment\Info">
+        <arguments>
+            <argument name="config" xsi:type="object">MadktingPaymentConfig</argument>
+        </arguments>
+    </type>
+</config>

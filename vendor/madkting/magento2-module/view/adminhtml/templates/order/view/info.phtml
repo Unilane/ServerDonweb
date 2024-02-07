@@ -1,0 +1,164 @@
+<?php
+/**
+ * Madkting Software (http://www.madkting.com)
+ *
+ *                                      ..-+::moossso`:.
+ *                                    -``         ``ynnh+.
+ *                                 .d                 -mmn.
+ *     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+ *    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+ *    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+ *    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+ *    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+ *    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+ *    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+ *                                 .ys .::-`
+ *                                o.+`
+ *
+ * @category Module
+ * @package Madkting\Connect
+ * @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+ * @link https://bitbucket.org/madkting/magento2
+ * @copyright Copyright (c) 2017 Madkting Software.
+ * @license See LICENSE.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+<?php /** @var $block Madkting\Connect\Block\Adminhtml\Order\View\Info */ ?>
+<section class="admin__page-section order-madkting-information">
+    <div class="admin__page-section-title">
+        <span class="title"><?php /* @escapeNotVerified */ echo __('Yuju Order Information') ?></span>
+    </div>
+    <div class="admin__page-section-content madkting-order-information">
+        <div class="admin__page-section-item marketplace-information order-information">
+            <div class="admin__page-section-item-content">
+                <table class="admin__table-secondary marketplace-order-information-table order-information-table">
+                    <tr>
+                        <th><?php /* @escapeNotVerified */ echo __('Order ID') ?></th>
+                        <td><span><?php /* @escapeNotVerified */ echo $block->getMarketPlaceOrderPk() ?></span></td>
+                    </tr>
+                    <tr>
+                        <th><?php /* @escapeNotVerified */ echo __('Order Status') ?></th>
+                        <td><span><?php /* @escapeNotVerified */ echo !empty($block->getMadktingStatus()) ? $block->getMadktingStatus() : __('N/D') ?></span></td>
+                    </tr>
+                    <tr>
+                        <th><?php /* @escapeNotVerified */ echo __('Marketplace') ?></th>
+                        <td><span><?php /* @escapeNotVerified */ echo $block->getMarketplace() ?></span></td>
+                    </tr>
+                    <tr>
+                        <th><?php /* @escapeNotVerified */ echo __('Payment Method') ?></th>
+                        <td><span><?php /* @escapeNotVerified */ echo $block->getPaymentMethod() ?></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="admin__page-section actions-madkting-information">
+    <div class="admin__page-section-title">
+        <span class="title"><?php /* @escapeNotVerified */ echo __('Actions Information') ?></span>
+    </div>
+    <div class="admin__page-section-content actions-information">
+        <div class="admin__page-section-item madkting-actions-information">
+            <div class="admin__page-section-item-content">
+                <table class="admin__table-secondary madkting-actions-information-table">
+                <?php
+                    if (!empty($actions = $block->getOrderActions())):
+                        foreach ($actions as $action):
+                            switch ($action['action']):
+                                case 'print_delivery_label':
+                ?>
+                    <tr>
+                        <th><?php echo __('Download delivery label') ?></th>
+                        <td>
+                            <button class="action-button"
+                                    data-link="<?php echo $block->getUrl('madkting/order/shippinglabel') ?>"
+                                    data-params="<?php echo $block->getStatusUrlParams(['format' => 'pdf']) ?>">
+                                <?php echo __('Download PDF') ?>
+                            </button>
+                            <button class="action-button"
+                                    data-link="<?php echo $block->getUrl('madkting/order/shippinglabel') ?>"
+                                    data-params="<?php echo $block->getStatusUrlParams(['format' => 'zpl']) ?>">
+                                <?php echo __('Download ZPL') ?>
+                            </button>
+                        </td>
+                    </tr>
+                <?php
+                                    break;
+                                case 'set_ready_to_ship':
+                ?>
+                    <tr>
+                        <th><?php echo __('Set ready to ship') ?></th>
+                        <td>
+                            <?php if (empty($action['done'])): ?>
+                            <button class="action-button"
+                                    data-link="<?php echo $block->getUrl('madkting/order/status') ?>"
+                                    data-params="<?php echo $block->getStatusUrlParams(['status' => 'ready_to_ship']) ?>">
+                                <?php echo __('Set Status') ?>
+                            </button>
+                            <?php
+                            else:
+                                echo __('Done');
+                            endif;
+                            ?>
+                        </td>
+                    </tr>
+                <?php
+                                    break;
+                                default:
+                ?>
+                    <tr>
+                        <td><?php echo __('There are no available actions to do in this order yet.') ?></td>
+                    </tr>
+                <?php
+                            endswitch;
+                        endforeach;
+                    else:
+                ?>
+                    <tr>
+                        <td><?php echo __('There are no available actions to do in this order yet.') ?></td>
+                    </tr>
+                <?php endif; ?>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/alert'
+    ], function ($, alert) {
+        'use strict';
+
+        $(function () {
+            $('table.madkting-actions-information-table').on('click', 'button.action-button', function () {
+                var self = $(this),
+                    uri = self.data('link'),
+                    params = self.data('params');
+                $.ajax({
+                    url: uri,
+                    data: params,
+                    dataType: 'json',
+                    showLoader: true
+                }).done(function (data) {
+                    if (data.error) {
+                        alert({
+                            'title': '<?php echo __('Error') ?>',
+                            'content': data.message
+                        });
+                    } else {
+                        if (data.action === 'self') {
+                            self.parent('td').html(data.message);
+                        } elseif (data.action === 'blank') {
+                            if (data.location) {
+                                window.open(data.location, '_blank');
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    });
+</script>

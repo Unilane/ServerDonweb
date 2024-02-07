@@ -1,0 +1,1 @@
+{"0":"Invalid return type","1":"#1 Magento\\Framework\\App\\Http\\Interceptor->launch() called at [vendor\\magento\\framework\\App\\Bootstrap.php:264]\n#2 Magento\\Framework\\App\\Bootstrap->run() called at [pub\\index.php:30]\n","url":"\/forms\/index\/teampost\/","script_name":"\/index.php","report_id":"bad17fe12f0bfa83eec2fc28d0123fface399531ed0c37c9f51b179328f9faa8"}

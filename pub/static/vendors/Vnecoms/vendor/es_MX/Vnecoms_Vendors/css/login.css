@@ -1,0 +1,2 @@
+.login-page, .register-page{background: #FCFCFC;}
+.has-feedback label ~ .form-control-feedback{top: 0;}

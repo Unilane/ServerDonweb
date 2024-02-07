@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Madkting Software (http://www.madkting.com)
+  ~
+  ~                                      ..-+::moossso`:.
+  ~                                    -``         ``ynnh+.
+  ~                                 .d                 -mmn.
+  ~     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+  ~    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+  ~    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+  ~    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+  ~    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+  ~    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+  ~    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+  ~                                 .ys .::-`
+  ~                                o.+`
+  ~
+  ~ @category Module
+  ~ @package Madkting\Connect
+  ~ @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+  ~ @author Israel Calderón Aguilar <israel@madkting.com>
+  ~ @link https://bitbucket.org/madkting/magento2
+  ~ @copyright Copyright (c) 2017 Madkting Software.
+  ~ @license See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Madkting_Connect::main_menu" title="Madkting" translate="title" sortOrder="10">
+                    <resource id="Madkting_Connect::configuration" title="Configuration" translate="title" sortOrder="10">
+                        <resource id="Madkting_Connect::general" title="General" translate="title" sortOrder="10" />
+                        <resource id="Madkting_Connect::synchronization" title="Synchronization" translate="title" sortOrder="20" />
+                    </resource>
+                    <resource id="Madkting_Connect::mapping" title="Match" translate="title" sortOrder="20">
+                        <resource id="Madkting_Connect::categories" title="Categories" translate="title" sortOrder="10" />
+                        <resource id="Madkting_Connect::attributes" title="Attributes" translate="title" sortOrder="20" />
+                        <resource id="Madkting_Connect::attribute_options" title="Attribute Options" translate="title" sortOrder="30" />
+                        <resource id="Madkting_Connect::order_status" title="Order Status" translate="title" sortOrder="40" />
+                    </resource>
+                    <resource id="Madkting_Connect::products_management" title="Products Management" translate="title" sortOrder="30">
+                        <resource id="Madkting_Connect::product_create" title="Create" translate="title" sortOrder="10" />
+                        <resource id="Madkting_Connect::product_update" title="Update" translate="title" sortOrder="20" />
+                        <resource id="Madkting_Connect::product_delete" title="Delete" translate="title" sortOrder="30" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

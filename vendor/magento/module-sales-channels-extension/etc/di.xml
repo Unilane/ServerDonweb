@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\SalesChannels\Model\ServiceClientInterface" type="Magento\SalesChannels\Model\ServiceClient" />
+
+    <!-- Logger -->
+    <virtualType name="ChannelManagerLogger" type="Magento\SalesChannels\Model\Logging\Monolog">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="error" xsi:type="object">Magento\SalesChannels\Model\Logging\Error</item>
+                <item name="system" xsi:type="object">Magento\SalesChannels\Model\Logging\Base</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <preference for="Magento\SalesChannels\Model\Logging\ChannelManagerLoggerInterface" type="ChannelManagerLogger"/>
+
+    <type name="Magento\SalesChannels\Service\GraphQlService">
+        <arguments>
+            <argument name="serviceClient" xsi:type="object">Magento\SalesChannels\Model\ServiceClientInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <preference for="Magento\Sales\Api\OrderRepositoryInterface" type="Magento\Sales\Model\OrderRepository"/>
+</config>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Madkting Software (http://www.madkting.com)
+  ~
+  ~                                      ..-+::moossso`:.
+  ~                                    -``         ``ynnh+.
+  ~                                 .d                 -mmn.
+  ~     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+  ~    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+  ~    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+  ~    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+  ~    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+  ~    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+  ~    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+  ~                                 .ys .::-`
+  ~                                o.+`
+  ~
+  ~ @category Module
+  ~ @package Madkting\Connect
+  ~ @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+  ~ @author Israel Calderón Aguilar <israel@madkting.com>
+  ~ @link https://bitbucket.org/madkting/magento2
+  ~ @copyright Copyright (c) 2017 Madkting Software.
+  ~ @license See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <menu>
+        <add id="Madkting_Connect::main_menu" title="Yuju" translate="title" module="Madkting_Connect" sortOrder="10" resource="Madkting_Connect::main_menu" />
+        <add id="Madkting_Connect::configuration" title="Configuration" translate="title" module="Madkting_Connect" sortOrder="10" parent="Madkting_Connect::main_menu" resource="Madkting_Connect::configuration" />
+        <add id="Madkting_Connect::general" title="General" translate="title" module="Madkting_Connect" sortOrder="10" parent="Madkting_Connect::configuration" action="adminhtml/system_config/edit/section/madkting_general" resource="Madkting_Connect::general" />
+        <add id="Madkting_Connect::synchronization" title="Synchronization" translate="title" module="Madkting_Connect" sortOrder="10" parent="Madkting_Connect::configuration" action="adminhtml/system_config/edit/section/madkting_synchronization" resource="Madkting_Connect::synchronization" />
+        <add id="Madkting_Connect::mapping" title="Match" translate="title" module="Madkting_Connect" sortOrder="30" parent="Madkting_Connect::main_menu" resource="Madkting_Connect::mapping" />
+        <add id="Madkting_Connect::categories" title="Categories" translate="title" module="Madkting_Connect" sortOrder="10" parent="Madkting_Connect::mapping" action="madkting/mapping/categories" resource="Madkting_Connect::categories" />
+        <add id="Madkting_Connect::attributes" title="Attributes" translate="title" module="Madkting_Connect" sortOrder="20" parent="Madkting_Connect::mapping" action="madkting/mapping/attributes" resource="Madkting_Connect::attributes" />
+        <add id="Madkting_Connect::attribute_options" title="Attribute Options" translate="title" module="Madkting_Connect" sortOrder="30" parent="Madkting_Connect::mapping" action="madkting/mapping/attributeoptions" resource="Madkting_Connect::attribute_options" />
+        <add id="Madkting_Connect::order_status" title="Order Status" translate="title" module="Madkting_Connect" sortOrder="40" parent="Madkting_Connect::mapping" action="madkting/mapping/orderstatus" resource="Madkting_Connect::order_status" />
+    </menu>
+</config>

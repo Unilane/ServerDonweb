@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="order_ingestion_external_order" resource="default" engine="innodb">
+        <column name="id" xsi:type="int" padding="10" unsigned="true" identity="true" nullable="false"/>
+        <column xsi:type="varchar" name="order_id" nullable="false" />
+        <column xsi:type="varchar" name="external_order_id" nullable="false" />
+        <column xsi:type="varchar" name="commerce_order_id" nullable="true" />
+        <column xsi:type="varchar" name="store_view_code"  nullable="false" />
+        <column xsi:type="varchar" name="sales_channel"  nullable="false" />
+        <column xsi:type="varchar" name="status" nullable="false" length="255" comment="Status"/>
+        <column xsi:type="int" name="retries" nullable="true" comment="Number of retries"/>
+        <column xsi:type="datetime" name="created_at" default="CURRENT_TIMESTAMP" comment="Created"/>
+        <column xsi:type="datetime" name="updated_at" default="CURRENT_TIMESTAMP" comment="Updated"/>
+        <column xsi:type="json" name="order_data" comment="Order data"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+
+        <constraint xsi:type="unique" referenceId="EXTERNAL_ORDER_UNIQUE_ORDER_ID">
+            <column name="order_id"/>
+        </constraint>
+    </table>
+    <table name="sales_order" resource="sales" engine="innodb" comment="Sales Order">
+        <column xsi:type="varchar" length="256" name="external_order_order_id" disabled="true"/>
+    </table>
+    <table name="sales_order_grid" resource="sales" engine="innodb" comment="Sales Order">
+        <column xsi:type="varchar" length="256" name="ext_order_id" nullable="true" comment="External order id"/>
+        <column xsi:type="varchar" length="256" name="external_order_order_id" disabled="true"/>
+    </table>
+</schema>

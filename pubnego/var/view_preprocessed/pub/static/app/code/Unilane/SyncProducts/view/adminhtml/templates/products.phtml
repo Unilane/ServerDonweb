@@ -1,0 +1,23 @@
+<?php /** * Copyright © Magento, Inc. All rights reserved. * See COPYING.txt for license details. */ /** * @var \Unilane\SyncProducts\Block\Adminhtml\System\Config\Form\Field\Import $block */ ?> <?= $block->getChildHtml('button'); ?> <!-- <script type="text/x-magento-init">
+{
+    "*": {
+        Unilane_SyncProducts/js/products
+    }
+}</script> --><script>
+require(['jquery'], function ($) {
+
+    'use strict';
+    var url = window.location.origin+"/V1/syncproduct";
+    $('#sync-products').click(function () {
+        console.log("url",url);
+        console.log("ejecucion");
+        $.ajax({
+        type: "POST", 
+        url,        
+        showLoader: true,
+        data: {form_key: window.FORM_KEY}
+        }).done(function (data) {
+            console.log("si entra",data);
+        });
+    }); 
+});</script>

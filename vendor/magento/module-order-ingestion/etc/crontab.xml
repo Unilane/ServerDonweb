@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="order_ingestion">
+        <job name="import_order_service_orders" instance="Magento\OrderIngestion\Cron\ImportExternalOrders" method="execute" >
+            <schedule>*/5 * * * *</schedule>
+        </job>
+        <job name="create_magento_orders" instance="Magento\OrderIngestion\Cron\CreateOrders" method="execute" >
+            <schedule>*/5 * * * *</schedule>
+        </job>
+        <job name="retry_magento_orders" instance="Magento\OrderIngestion\Cron\RetryOrders" method="execute" >
+            <schedule>*/15 * * * *</schedule>
+        </job>
+    </group>
+</config>

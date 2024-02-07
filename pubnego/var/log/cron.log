@@ -1,0 +1,683 @@
+[2023-08-23T23:55:15.521255+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-23T23:55:15.792583+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.27188205718994,"count":1,"realmem":0,"emalloc":586888,"realmem_start":117440512,"emalloc_start":113977936} [] []
+[2023-08-23T23:55:15.827183+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-23T23:55:16.194857+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.36779499053955,"count":1,"realmem":2097152,"emalloc":325640,"realmem_start":117440512,"emalloc_start":114568184} [] []
+[2023-08-23T23:55:23.523636+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T00:05:51.482088+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T00:05:51.612552+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.13127613067627,"count":1,"realmem":0,"emalloc":541896,"realmem_start":117440512,"emalloc_start":113330504} [] []
+[2023-08-24T00:05:51.641384+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T00:05:51.751371+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.10990309715271,"count":1,"realmem":0,"emalloc":225000,"realmem_start":117440512,"emalloc_start":113875568} [] []
+[2023-08-24T00:05:54.880599+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T00:05:55.038137+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.1578049659729,"count":1,"realmem":0,"emalloc":212208,"realmem_start":117440512,"emalloc_start":113661864} [] []
+[2023-08-24T00:05:58.507844+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2023-08-24T00:06:05.894951+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T00:06:06.651134+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.7566351890564,"count":1,"realmem":6291456,"emalloc":6947808,"realmem_start":117440512,"emalloc_start":114331184} [] []
+[2023-08-24T00:06:06.734698+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T00:06:06.768098+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.033383131027222,"count":1,"realmem":0,"emalloc":1512,"realmem_start":123731968,"emalloc_start":121310680} [] []
+[2023-08-24T00:06:06.848918+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T00:06:06.877650+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.028787136077881,"count":1,"realmem":0,"emalloc":25248,"realmem_start":123731968,"emalloc_start":121362104} [] []
+[2023-08-24T00:06:06.956237+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T00:06:06.985331+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.028952121734619,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":121415560} [] []
+[2023-08-24T16:28:47.639184+00:00] main.INFO: 4 cron jobs were cleaned [] []
+[2023-08-24T16:28:47.865911+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T16:28:47.975085+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.10989308357239,"count":1,"realmem":0,"emalloc":536040,"realmem_start":117440512,"emalloc_start":113329128} [] []
+[2023-08-24T16:28:48.061067+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T16:28:48.272318+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.211177110672,"count":1,"realmem":0,"emalloc":238864,"realmem_start":117440512,"emalloc_start":113870616} [] []
+[2023-08-24T16:28:50.696090+00:00] main.INFO: 20 cron jobs were cleaned [] []
+[2023-08-24T16:28:54.038271+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T16:28:54.197201+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.15910506248474,"count":1,"realmem":0,"emalloc":226672,"realmem_start":121634816,"emalloc_start":118967528} [] []
+[2023-08-24T16:28:56.560522+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2023-08-24T16:28:56.639267+00:00] main.INFO: 4 cron jobs were cleaned [] []
+[2023-08-24T16:29:11.291335+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T16:29:12.010764+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.71994495391846,"count":1,"realmem":6291456,"emalloc":6770960,"realmem_start":117440512,"emalloc_start":114426496} [] []
+[2023-08-24T16:29:12.081435+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T16:29:12.106986+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.025102138519287,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":121228632} [] []
+[2023-08-24T16:29:12.265262+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T16:29:12.292305+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.026891946792603,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":121258072} [] []
+[2023-08-24T16:29:12.383506+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T16:29:12.400106+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.016507863998413,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121452472} [] []
+[2023-08-24T16:29:12.461374+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T16:29:12.478237+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.016752958297729,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121456448} [] []
+[2023-08-24T16:29:12.547328+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T16:29:12.564275+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.016838073730469,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121459768} [] []
+[2023-08-24T16:29:12.621954+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T16:29:12.638959+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.016879081726074,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121463088} [] []
+[2023-08-24T16:29:12.767567+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T16:29:12.784442+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.016777992248535,"count":1,"realmem":0,"emalloc":976,"realmem_start":123731968,"emalloc_start":122422480} [] []
+[2023-08-24T16:34:13.920671+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T16:34:14.036326+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.1161150932312,"count":1,"realmem":0,"emalloc":541896,"realmem_start":117440512,"emalloc_start":113323272} [] []
+[2023-08-24T16:34:14.131907+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T16:34:14.408857+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.27682781219482,"count":1,"realmem":0,"emalloc":238864,"realmem_start":117440512,"emalloc_start":113870616} [] []
+[2023-08-24T16:34:33.991762+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T16:34:34.493182+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.50273585319519,"count":1,"realmem":0,"emalloc":232488,"realmem_start":121634816,"emalloc_start":118967272} [] []
+[2023-08-24T16:34:37.668054+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2023-08-24T16:34:41.909757+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T16:34:42.822227+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.91310286521912,"count":1,"realmem":4194304,"emalloc":6770960,"realmem_start":109051904,"emalloc_start":99643368} [] []
+[2023-08-24T16:34:42.903328+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T16:34:42.924255+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.020493984222412,"count":1,"realmem":0,"emalloc":1448,"realmem_start":113246208,"emalloc_start":106511232} [] []
+[2023-08-24T16:34:43.008883+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T16:34:43.036536+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.027261018753052,"count":1,"realmem":0,"emalloc":25248,"realmem_start":113246208,"emalloc_start":106562552} [] []
+[2023-08-24T16:34:43.123868+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T16:34:43.182120+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.058393001556396,"count":1,"realmem":0,"emalloc":1448,"realmem_start":113246208,"emalloc_start":106616008} [] []
+[2023-08-24T16:34:43.289085+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T16:34:43.305924+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.016718149185181,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":106745064} [] []
+[2023-08-24T16:34:43.379053+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T16:34:43.398244+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.018922090530396,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":106749232} [] []
+[2023-08-24T16:34:43.467606+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T16:34:43.483957+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.016209840774536,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":106752744} [] []
+[2023-08-24T16:34:43.556192+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T16:34:43.578537+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.021920919418335,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":106756256} [] []
+[2023-08-24T16:34:43.714462+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T16:34:43.735671+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.020730972290039,"count":1,"realmem":0,"emalloc":976,"realmem_start":115343360,"emalloc_start":107781376} [] []
+[2023-08-24T16:34:43.995234+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T16:34:44.016436+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.021036863327026,"count":1,"realmem":0,"emalloc":1072,"realmem_start":115343360,"emalloc_start":108997080} [] []
+[2023-08-24T16:34:44.268452+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T16:34:44.298817+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.03020715713501,"count":1,"realmem":0,"emalloc":1072,"realmem_start":117440512,"emalloc_start":109500192} [] []
+[2023-08-24T16:34:44.522755+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T16:34:44.541514+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.018448114395142,"count":1,"realmem":0,"emalloc":1072,"realmem_start":117440512,"emalloc_start":110184160} [] []
+[2023-08-24T16:34:44.613212+00:00] main.INFO: Cron Job captcha_delete_old_attempts is run [] []
+[2023-08-24T16:34:44.650883+00:00] main.INFO: Cron Job captcha_delete_old_attempts is successfully finished. Statistics: {"sum":0.037694931030273,"count":1,"realmem":0,"emalloc":27224,"realmem_start":117440512,"emalloc_start":110187984} [] []
+[2023-08-24T16:34:44.738800+00:00] main.INFO: Cron Job captcha_delete_expired_images is run [] []
+[2023-08-24T16:34:45.355108+00:00] main.INFO: Cron Job captcha_delete_expired_images is successfully finished. Statistics: {"sum":0.61608505249023,"count":1,"realmem":0,"emalloc":1299728,"realmem_start":117440512,"emalloc_start":110254792} [] []
+[2023-08-24T16:34:45.455490+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T16:34:45.482424+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.026693105697632,"count":1,"realmem":0,"emalloc":1072,"realmem_start":117440512,"emalloc_start":111638480} [] []
+[2023-08-24T16:34:45.912891+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T16:34:45.935210+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.022415161132812,"count":1,"realmem":0,"emalloc":1072,"realmem_start":119537664,"emalloc_start":112807400} [] []
+[2023-08-24T16:34:46.035115+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T16:34:46.597258+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.56178998947144,"count":1,"realmem":0,"emalloc":917872,"realmem_start":119537664,"emalloc_start":112891672} [] []
+[2023-08-24T16:34:46.664311+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T16:34:46.687454+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.022860050201416,"count":1,"realmem":0,"emalloc":1608,"realmem_start":121634816,"emalloc_start":113818008} [] []
+[2023-08-24T16:34:46.753809+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is run [] []
+[2023-08-24T16:34:46.782422+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is successfully finished. Statistics: {"sum":0.028144121170044,"count":1,"realmem":0,"emalloc":1448,"realmem_start":121634816,"emalloc_start":113848792} [] []
+[2023-08-24T16:35:21.293755+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T16:35:21.397763+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.10472893714905,"count":1,"realmem":0,"emalloc":541896,"realmem_start":117440512,"emalloc_start":113303120} [] []
+[2023-08-24T16:35:21.429722+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T16:35:21.520491+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.090785980224609,"count":1,"realmem":0,"emalloc":225320,"realmem_start":117440512,"emalloc_start":113848056} [] []
+[2023-08-24T16:35:23.976259+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T16:35:24.089868+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.11397314071655,"count":1,"realmem":0,"emalloc":212208,"realmem_start":117440512,"emalloc_start":113666912} [] []
+[2023-08-24T16:35:26.935916+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T16:35:27.524309+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.58994293212891,"count":1,"realmem":6291456,"emalloc":6957744,"realmem_start":117440512,"emalloc_start":113746872} [] []
+[2023-08-24T16:35:27.594541+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T16:35:27.627994+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.033133983612061,"count":1,"realmem":0,"emalloc":1512,"realmem_start":123731968,"emalloc_start":120735984} [] []
+[2023-08-24T16:35:27.720433+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T16:35:27.748738+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.028158903121948,"count":1,"realmem":0,"emalloc":25248,"realmem_start":123731968,"emalloc_start":120787408} [] []
+[2023-08-24T16:35:27.818407+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T16:35:27.838843+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.020319938659668,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":120840864} [] []
+[2023-08-24T16:35:27.926944+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T16:35:27.943978+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.016908168792725,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121002688} [] []
+[2023-08-24T16:35:28.010251+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T16:35:28.025077+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.014952898025513,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121006856} [] []
+[2023-08-24T16:35:28.088110+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T16:35:28.104868+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.016650915145874,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121010368} [] []
+[2023-08-24T16:35:28.170753+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T16:35:28.187673+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.016627073287964,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121013880} [] []
+[2023-08-24T16:35:28.331400+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T16:35:28.354640+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.023336887359619,"count":1,"realmem":0,"emalloc":976,"realmem_start":123731968,"emalloc_start":122039000} [] []
+[2023-08-24T16:35:28.447128+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T16:35:28.463935+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.016772985458374,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":122496160} [] []
+[2023-08-24T16:35:28.567214+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T16:35:28.584433+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.017155170440674,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123063128} [] []
+[2023-08-24T16:35:28.708233+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T16:35:28.727611+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.019195079803467,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123550984} [] []
+[2023-08-24T16:35:28.819832+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T16:35:28.839080+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.018838882446289,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123697288} [] []
+[2023-08-24T16:35:28.992963+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T16:35:29.010395+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.017806053161621,"count":1,"realmem":0,"emalloc":944,"realmem_start":125829120,"emalloc_start":124708488} [] []
+[2023-08-24T16:35:29.074933+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T16:35:29.134975+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.05994701385498,"count":1,"realmem":2097152,"emalloc":698512,"realmem_start":125829120,"emalloc_start":124718536} [] []
+[2023-08-24T16:35:29.199720+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T16:35:29.221529+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.021672010421753,"count":1,"realmem":0,"emalloc":1608,"realmem_start":127926272,"emalloc_start":125424872} [] []
+[2023-08-24T16:36:53.666306+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T16:36:53.771661+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.10579204559326,"count":1,"realmem":0,"emalloc":541896,"realmem_start":117440512,"emalloc_start":113303120} [] []
+[2023-08-24T16:36:53.803516+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T16:36:53.899519+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.095978021621704,"count":1,"realmem":0,"emalloc":225320,"realmem_start":117440512,"emalloc_start":113848056} [] []
+[2023-08-24T16:36:56.408904+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T16:36:56.537576+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.12913084030151,"count":1,"realmem":0,"emalloc":212208,"realmem_start":117440512,"emalloc_start":113665800} [] []
+[2023-08-24T16:36:59.363344+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T16:36:59.961436+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.59951400756836,"count":1,"realmem":6291456,"emalloc":6957744,"realmem_start":117440512,"emalloc_start":113728808} [] []
+[2023-08-24T16:37:00.037997+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T16:37:00.059639+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.021538019180298,"count":1,"realmem":0,"emalloc":1512,"realmem_start":123731968,"emalloc_start":120717920} [] []
+[2023-08-24T16:37:00.140156+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T16:37:00.160191+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.019750833511353,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":120747616} [] []
+[2023-08-24T16:37:00.266524+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T16:37:00.283541+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.016829967498779,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120876672} [] []
+[2023-08-24T16:37:00.352945+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T16:37:00.371011+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.017936944961548,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120880840} [] []
+[2023-08-24T16:37:00.453485+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T16:37:00.482865+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.029305934906006,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120884352} [] []
+[2023-08-24T16:37:00.565853+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T16:37:00.584535+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.018598079681396,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120887864} [] []
+[2023-08-24T16:37:00.710177+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T16:37:00.728244+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.017812013626099,"count":1,"realmem":0,"emalloc":976,"realmem_start":123731968,"emalloc_start":121945752} [] []
+[2023-08-24T16:37:00.826213+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T16:37:00.844517+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.018134117126465,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":122402592} [] []
+[2023-08-24T16:37:00.963698+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T16:37:00.981566+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.017738103866577,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":122969880} [] []
+[2023-08-24T16:37:01.081005+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T16:37:01.098920+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.018043041229248,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123457736} [] []
+[2023-08-24T16:37:01.184254+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T16:37:01.202922+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.01854395866394,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123538504} [] []
+[2023-08-24T16:37:01.374380+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T16:37:01.392721+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.018270015716553,"count":1,"realmem":0,"emalloc":944,"realmem_start":125829120,"emalloc_start":124615240} [] []
+[2023-08-24T16:37:01.471473+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T16:37:01.491784+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.02007007598877,"count":1,"realmem":0,"emalloc":1608,"realmem_start":125829120,"emalloc_start":124624048} [] []
+[2023-08-24T17:40:44.209039+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T17:40:44.303448+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.095020055770874,"count":1,"realmem":0,"emalloc":542008,"realmem_start":117440512,"emalloc_start":113977344} [] []
+[2023-08-24T17:40:44.331981+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T17:40:44.507048+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.17505097389221,"count":1,"realmem":2097152,"emalloc":304720,"realmem_start":117440512,"emalloc_start":114522392} [] []
+[2023-08-24T17:40:50.547089+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T17:40:50.723069+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.17654418945312,"count":1,"realmem":0,"emalloc":251504,"realmem_start":121634816,"emalloc_start":119588328} [] []
+[2023-08-24T17:40:53.238351+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2023-08-24T17:40:56.748114+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T17:40:57.099913+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.35225486755371,"count":1,"realmem":6291456,"emalloc":6913528,"realmem_start":117440512,"emalloc_start":114637344} [] []
+[2023-08-24T17:40:57.140595+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T17:40:57.148639+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.0079710483551025,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":121582240} [] []
+[2023-08-24T17:40:57.180721+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T17:40:57.193805+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.012979030609131,"count":1,"realmem":0,"emalloc":25248,"realmem_start":123731968,"emalloc_start":121633560} [] []
+[2023-08-24T17:40:57.246931+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T17:40:57.257618+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.010854005813599,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":121687016} [] []
+[2023-08-24T17:40:57.312813+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T17:40:57.320097+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.0071399211883545,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121816072} [] []
+[2023-08-24T17:40:57.352041+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T17:40:57.364659+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.012623071670532,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121820240} [] []
+[2023-08-24T17:40:57.407163+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T17:40:57.413920+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.0068590641021729,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121823752} [] []
+[2023-08-24T17:40:57.445312+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T17:40:57.451901+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.006598949432373,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121827264} [] []
+[2023-08-24T17:40:57.544684+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T17:40:57.552513+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.0077822208404541,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":122993040} [] []
+[2023-08-24T17:40:57.620697+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T17:40:57.626409+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.005687952041626,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123644704} [] []
+[2023-08-24T17:40:57.792852+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T17:40:57.807578+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.01483416557312,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124312808} [] []
+[2023-08-24T17:40:57.894668+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T17:40:57.902051+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.0073959827423096,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":124996776} [] []
+[2023-08-24T17:40:57.938947+00:00] main.INFO: Cron Job captcha_delete_expired_images is run [] []
+[2023-08-24T17:40:57.980564+00:00] main.INFO: Cron Job captcha_delete_expired_images is successfully finished. Statistics: {"sum":0.0417160987854,"count":1,"realmem":0,"emalloc":1300096,"realmem_start":127926272,"emalloc_start":125033032} [] []
+[2023-08-24T17:40:58.050701+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T17:40:58.060925+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.010399103164673,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":126434192} [] []
+[2023-08-24T17:40:58.282459+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T17:40:58.288831+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.0063660144805908,"count":1,"realmem":0,"emalloc":1072,"realmem_start":130023424,"emalloc_start":127715664} [] []
+[2023-08-24T17:40:58.335725+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T17:40:58.534345+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.19854402542114,"count":1,"realmem":0,"emalloc":980696,"realmem_start":130023424,"emalloc_start":127734400} [] []
+[2023-08-24T17:40:58.565227+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T17:40:58.572798+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.0078508853912354,"count":1,"realmem":0,"emalloc":1608,"realmem_start":130023424,"emalloc_start":128722920} [] []
+[2023-08-24T17:40:58.608857+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is run [] []
+[2023-08-24T17:40:58.617694+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is successfully finished. Statistics: {"sum":0.0087318420410156,"count":1,"realmem":0,"emalloc":1448,"realmem_start":130023424,"emalloc_start":128754344} [] []
+[2023-08-24T20:00:31.676329+00:00] main.INFO: 2 cron jobs were cleaned [] []
+[2023-08-24T20:00:31.919612+00:00] main.INFO: Cron Job indexer_clean_all_changelogs is run [] []
+[2023-08-24T20:00:32.231354+00:00] main.INFO: Cron Job indexer_clean_all_changelogs is successfully finished. Statistics: {"sum":0.31305003166199,"count":1,"realmem":0,"emalloc":716272,"realmem_start":117440512,"emalloc_start":113312488} [] []
+[2023-08-24T20:00:32.334389+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T20:00:32.480600+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.1461660861969,"count":1,"realmem":0,"emalloc":19392,"realmem_start":117440512,"emalloc_start":114088784} [] []
+[2023-08-24T20:00:32.603075+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T20:00:32.739467+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.1363480091095,"count":1,"realmem":0,"emalloc":1072,"realmem_start":117440512,"emalloc_start":114112848} [] []
+[2023-08-24T20:00:36.944829+00:00] main.INFO: 1 cron jobs were cleaned [] []
+[2023-08-24T20:00:44.025456+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T20:00:44.390816+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.36580300331116,"count":1,"realmem":0,"emalloc":226672,"realmem_start":121634816,"emalloc_start":119019648} [] []
+[2023-08-24T20:00:48.838115+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2023-08-24T20:00:48.930068+00:00] main.INFO: 18 cron jobs were cleaned [] []
+[2023-08-24T20:01:05.025943+00:00] main.INFO: Cron Job security_deactivate_expired_users is run [] []
+[2023-08-24T20:01:05.101087+00:00] main.INFO: Cron Job security_deactivate_expired_users is successfully finished. Statistics: {"sum":0.075855016708374,"count":1,"realmem":0,"emalloc":269976,"realmem_start":117440512,"emalloc_start":115000440} [] []
+[2023-08-24T20:01:05.246667+00:00] main.INFO: Cron Job catalog_index_refresh_price is run [] []
+[2023-08-24T20:01:05.284639+00:00] main.INFO: Cron Job catalog_index_refresh_price is successfully finished. Statistics: {"sum":0.037912130355835,"count":1,"realmem":2097152,"emalloc":1014880,"realmem_start":117440512,"emalloc_start":115302792} [] []
+[2023-08-24T20:01:05.380531+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T20:01:06.173719+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.79312515258789,"count":1,"realmem":4194304,"emalloc":6181448,"realmem_start":119537664,"emalloc_start":116459280} [] []
+[2023-08-24T20:01:06.265359+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T20:01:06.300397+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.034834861755371,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":122671320} [] []
+[2023-08-24T20:01:06.394127+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T20:01:06.426277+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.03207802772522,"count":1,"realmem":0,"emalloc":25248,"realmem_start":123731968,"emalloc_start":122722448} [] []
+[2023-08-24T20:01:06.518218+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T20:01:06.540748+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.023239135742188,"count":1,"realmem":2097152,"emalloc":1448,"realmem_start":123731968,"emalloc_start":122775712} [] []
+[2023-08-24T20:01:06.620571+00:00] main.INFO: Cron Job expired_tokens_cleanup is run [] []
+[2023-08-24T20:01:06.650490+00:00] main.INFO: Cron Job expired_tokens_cleanup is successfully finished. Statistics: {"sum":0.030040979385376,"count":1,"realmem":0,"emalloc":2896,"realmem_start":125829120,"emalloc_start":122896384} [] []
+[2023-08-24T20:01:06.975803+00:00] main.INFO: Cron Job sales_clean_orders is run [] []
+[2023-08-24T20:01:07.054927+00:00] main.INFO: Cron Job sales_clean_orders is successfully finished. Statistics: {"sum":0.077922105789185,"count":1,"realmem":2097152,"emalloc":293792,"realmem_start":125829120,"emalloc_start":124580408} [] []
+[2023-08-24T20:01:07.184484+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T20:01:07.206006+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.021672010421753,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125001624} [] []
+[2023-08-24T20:01:07.292860+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T20:01:07.314364+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.021126985549927,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125005920} [] []
+[2023-08-24T20:01:07.395242+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T20:01:07.414751+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.019379138946533,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125009240} [] []
+[2023-08-24T20:01:07.495344+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T20:01:07.514421+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.018702030181885,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125012560} [] []
+[2023-08-24T20:01:07.606710+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T20:01:07.627530+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.020983219146729,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125042936} [] []
+[2023-08-24T20:01:07.740305+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T20:01:07.758777+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.017657995223999,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125499640} [] []
+[2023-08-24T20:01:07.931561+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T20:01:07.954122+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.021432161331177,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":126113008} [] []
+[2023-08-24T20:01:08.098447+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T20:01:08.121637+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.022597789764404,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":126666208} [] []
+[2023-08-24T20:01:08.213390+00:00] main.INFO: Cron Job analytics_subscribe is run [] []
+[2023-08-24T20:01:14.463405+00:00] main.INFO: Cron Job analytics_subscribe is successfully finished. Statistics: {"sum":6.249764919281,"count":1,"realmem":6291456,"emalloc":3996192,"realmem_start":127926272,"emalloc_start":126678880} [] []
+[2023-08-24T20:01:14.548684+00:00] main.INFO: Cron Job captcha_delete_old_attempts is run [] []
+[2023-08-24T20:01:14.580874+00:00] main.INFO: Cron Job captcha_delete_old_attempts is successfully finished. Statistics: {"sum":0.032052040100098,"count":1,"realmem":0,"emalloc":27184,"realmem_start":134217728,"emalloc_start":130682808} [] []
+[2023-08-24T20:01:14.674861+00:00] main.INFO: Cron Job captcha_delete_expired_images is run [] []
+[2023-08-24T20:01:14.795179+00:00] main.INFO: Cron Job captcha_delete_expired_images is successfully finished. Statistics: {"sum":0.12059497833252,"count":1,"realmem":0,"emalloc":723432,"realmem_start":134217728,"emalloc_start":130815016} [] []
+[2023-08-24T20:01:14.895035+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T20:01:14.917351+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.021801948547363,"count":1,"realmem":0,"emalloc":1072,"realmem_start":134217728,"emalloc_start":131649440} [] []
+[2023-08-24T20:01:15.029798+00:00] main.INFO: Cron Job messagequeue_clean_outdated_locks is run [] []
+[2023-08-24T20:01:15.060440+00:00] main.INFO: Cron Job messagequeue_clean_outdated_locks is successfully finished. Statistics: {"sum":0.030763149261475,"count":1,"realmem":0,"emalloc":1448,"realmem_start":134217728,"emalloc_start":131680592} [] []
+[2023-08-24T20:01:15.315539+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T20:01:15.336757+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.020646810531616,"count":1,"realmem":0,"emalloc":944,"realmem_start":136314880,"emalloc_start":132684312} [] []
+[2023-08-24T20:01:15.417446+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T20:01:15.762064+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.34452486038208,"count":1,"realmem":0,"emalloc":668968,"realmem_start":136314880,"emalloc_start":132694168} [] []
+[2023-08-24T20:01:15.845512+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T20:01:15.875457+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.029799938201904,"count":1,"realmem":0,"emalloc":1608,"realmem_start":136314880,"emalloc_start":133370768} [] []
+[2023-08-24T20:01:15.961847+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is run [] []
+[2023-08-24T20:01:15.992411+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is successfully finished. Statistics: {"sum":0.03034496307373,"count":1,"realmem":0,"emalloc":1448,"realmem_start":136314880,"emalloc_start":133466896} [] []
+[2023-08-24T20:01:16.075472+00:00] main.INFO: Cron Job core_process_feed is run [] []
+[2023-08-24T20:01:16.647881+00:00] main.INFO: Cron Job core_process_feed is successfully finished. Statistics: {"sum":0.57263994216919,"count":1,"realmem":0,"emalloc":221072,"realmem_start":136314880,"emalloc_start":133502512} [] []
+[2023-08-24T20:03:41.646410+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T20:03:41.784611+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.1391761302948,"count":1,"realmem":0,"emalloc":541896,"realmem_start":117440512,"emalloc_start":113324144} [] []
+[2023-08-24T20:03:41.843864+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T20:03:42.016522+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.17252492904663,"count":1,"realmem":0,"emalloc":225000,"realmem_start":117440512,"emalloc_start":113870096} [] []
+[2023-08-24T20:03:45.154409+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T20:03:45.345550+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.19235396385193,"count":1,"realmem":0,"emalloc":212208,"realmem_start":117440512,"emalloc_start":113661224} [] []
+[2023-08-24T20:03:49.815505+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T20:03:51.028198+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":1.2183530330658,"count":1,"realmem":6291456,"emalloc":6957744,"realmem_start":117440512,"emalloc_start":113666544} [] []
+[2023-08-24T20:03:51.119654+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T20:03:51.145963+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.026185989379883,"count":1,"realmem":0,"emalloc":1512,"realmem_start":123731968,"emalloc_start":120655656} [] []
+[2023-08-24T20:03:51.225870+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T20:03:51.246726+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.020653009414673,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":120685352} [] []
+[2023-08-24T20:03:51.352284+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T20:03:51.369404+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.017023086547852,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120814408} [] []
+[2023-08-24T20:03:51.427786+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T20:03:51.442615+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.014736175537109,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120818576} [] []
+[2023-08-24T20:03:51.502537+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T20:03:51.520884+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.018385887145996,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120822088} [] []
+[2023-08-24T20:03:51.599123+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T20:03:51.619576+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.020437955856323,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120825600} [] []
+[2023-08-24T20:03:51.767775+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T20:03:51.783538+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.015650033950806,"count":1,"realmem":0,"emalloc":976,"realmem_start":123731968,"emalloc_start":121850720} [] []
+[2023-08-24T20:03:51.874846+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T20:03:51.891446+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.016480922698975,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":122340328} [] []
+[2023-08-24T20:03:52.025875+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T20:03:52.048966+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.022874116897583,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":122907616} [] []
+[2023-08-24T20:03:52.196709+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T20:03:52.219113+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.022053956985474,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123395472} [] []
+[2023-08-24T20:03:52.347148+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T20:03:52.367331+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.020297050476074,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123476240} [] []
+[2023-08-24T20:03:52.584654+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T20:03:52.612205+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.027245998382568,"count":1,"realmem":0,"emalloc":944,"realmem_start":125829120,"emalloc_start":124552976} [] []
+[2023-08-24T20:03:52.710520+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T20:03:52.746326+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.036208868026733,"count":1,"realmem":0,"emalloc":1608,"realmem_start":125829120,"emalloc_start":124561784} [] []
+[2023-08-24T20:10:09.107554+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T20:10:09.257300+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.15053486824036,"count":1,"realmem":0,"emalloc":541896,"realmem_start":117440512,"emalloc_start":113330712} [] []
+[2023-08-24T20:10:09.362555+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T20:10:09.492053+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.12936210632324,"count":1,"realmem":0,"emalloc":225000,"realmem_start":117440512,"emalloc_start":113878752} [] []
+[2023-08-24T20:10:13.377532+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T20:10:13.575024+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.19787192344666,"count":1,"realmem":0,"emalloc":212208,"realmem_start":117440512,"emalloc_start":113660112} [] []
+[2023-08-24T20:10:17.215980+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T20:10:17.857275+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.64240384101868,"count":1,"realmem":6291456,"emalloc":6957744,"realmem_start":117440512,"emalloc_start":113634352} [] []
+[2023-08-24T20:10:17.933799+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T20:10:17.958493+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.024638891220093,"count":1,"realmem":0,"emalloc":1512,"realmem_start":123731968,"emalloc_start":120623464} [] []
+[2023-08-24T20:10:18.038122+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T20:10:18.066476+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.028197050094604,"count":1,"realmem":0,"emalloc":25248,"realmem_start":123731968,"emalloc_start":120674888} [] []
+[2023-08-24T20:10:18.139687+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T20:10:18.160837+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.020998954772949,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":120728344} [] []
+[2023-08-24T20:10:18.257892+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T20:10:18.283122+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.024848937988281,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120857400} [] []
+[2023-08-24T20:10:18.356531+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T20:10:18.374376+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.017818927764893,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120861568} [] []
+[2023-08-24T20:10:18.437477+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T20:10:18.455465+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.01783013343811,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120865080} [] []
+[2023-08-24T20:10:18.523462+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T20:10:18.539377+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.015805006027222,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":120868592} [] []
+[2023-08-24T20:10:18.676118+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T20:10:18.694614+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.018385887145996,"count":1,"realmem":0,"emalloc":976,"realmem_start":123731968,"emalloc_start":121893712} [] []
+[2023-08-24T20:10:18.783256+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T20:10:18.800131+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.016489028930664,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":122350872} [] []
+[2023-08-24T20:10:18.905543+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T20:10:18.922283+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.016621828079224,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":122950608} [] []
+[2023-08-24T20:10:19.014047+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T20:10:19.030103+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.016103982925415,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123438464} [] []
+[2023-08-24T20:10:19.108909+00:00] main.INFO: Cron Job captcha_delete_expired_images is run [] []
+[2023-08-24T20:10:19.215903+00:00] main.INFO: Cron Job captcha_delete_expired_images is successfully finished. Statistics: {"sum":0.10648393630981,"count":1,"realmem":0,"emalloc":1235792,"realmem_start":125829120,"emalloc_start":123540288} [] []
+[2023-08-24T20:10:19.322818+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T20:10:19.350059+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.026915073394775,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124925576} [] []
+[2023-08-24T20:10:19.512891+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T20:10:19.539204+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.025956153869629,"count":1,"realmem":0,"emalloc":944,"realmem_start":127926272,"emalloc_start":125971904} [] []
+[2023-08-24T20:10:19.616544+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T20:10:19.687338+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.070685863494873,"count":1,"realmem":0,"emalloc":657504,"realmem_start":127926272,"emalloc_start":125981952} [] []
+[2023-08-24T20:10:19.751523+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T20:10:19.772914+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.02124285697937,"count":1,"realmem":0,"emalloc":1608,"realmem_start":127926272,"emalloc_start":126647280} [] []
+[2023-08-24T20:10:19.846448+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is run [] []
+[2023-08-24T20:10:19.877172+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is successfully finished. Statistics: {"sum":0.030323028564453,"count":1,"realmem":0,"emalloc":1448,"realmem_start":127926272,"emalloc_start":126678704} [] []
+[2023-08-24T22:48:28.111273+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2023-08-24T22:48:28.207371+00:00] main.INFO: 58 cron jobs were cleaned [] []
+[2023-08-24T22:48:45.860167+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T22:48:46.726554+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.8674168586731,"count":1,"realmem":4194304,"emalloc":6825872,"realmem_start":109051904,"emalloc_start":100077264} [] []
+[2023-08-24T22:48:46.821573+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T22:48:46.845415+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.023669004440308,"count":1,"realmem":0,"emalloc":1448,"realmem_start":113246208,"emalloc_start":106934312} [] []
+[2023-08-24T22:48:46.937675+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T22:48:46.959051+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.021263837814331,"count":1,"realmem":0,"emalloc":1448,"realmem_start":113246208,"emalloc_start":106963752} [] []
+[2023-08-24T22:48:47.065077+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T22:48:47.088356+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.023506164550781,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":107092616} [] []
+[2023-08-24T22:48:47.166314+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T22:48:47.183109+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.016855955123901,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":107096592} [] []
+[2023-08-24T22:48:47.262067+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T22:48:47.279359+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.017075061798096,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":107099912} [] []
+[2023-08-24T22:48:47.347408+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T22:48:47.370909+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.023349046707153,"count":1,"realmem":0,"emalloc":1072,"realmem_start":113246208,"emalloc_start":107103232} [] []
+[2023-08-24T22:48:47.527574+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T22:48:47.545007+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.017162084579468,"count":1,"realmem":0,"emalloc":976,"realmem_start":115343360,"emalloc_start":108128160} [] []
+[2023-08-24T22:48:47.652457+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T22:48:47.677543+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.024745941162109,"count":1,"realmem":0,"emalloc":1072,"realmem_start":115343360,"emalloc_start":108584808} [] []
+[2023-08-24T22:48:47.832008+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T22:48:47.849653+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.017534971237183,"count":1,"realmem":0,"emalloc":1072,"realmem_start":115343360,"emalloc_start":109151904} [] []
+[2023-08-24T22:48:47.998787+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T22:48:48.018615+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.019508838653564,"count":1,"realmem":0,"emalloc":1072,"realmem_start":115343360,"emalloc_start":109639960} [] []
+[2023-08-24T22:48:48.126139+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T22:48:48.143959+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.018213033676147,"count":1,"realmem":0,"emalloc":1072,"realmem_start":115343360,"emalloc_start":109720536} [] []
+[2023-08-24T22:48:48.373876+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T22:48:48.399948+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.025938987731934,"count":1,"realmem":0,"emalloc":944,"realmem_start":117440512,"emalloc_start":110795544} [] []
+[2023-08-24T22:48:48.479471+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T22:48:48.508349+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.028774976730347,"count":1,"realmem":0,"emalloc":1608,"realmem_start":117440512,"emalloc_start":110804160} [] []
+[2023-08-24T23:05:28.574375+00:00] main.INFO: 7 cron jobs were cleaned [] []
+[2023-08-24T23:05:28.744761+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T23:05:28.835055+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.090404033660889,"count":1,"realmem":0,"emalloc":536040,"realmem_start":117440512,"emalloc_start":113330144} [] []
+[2023-08-24T23:05:28.896774+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T23:05:28.981831+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.085022926330566,"count":1,"realmem":0,"emalloc":225000,"realmem_start":117440512,"emalloc_start":113871632} [] []
+[2023-08-24T23:05:31.472147+00:00] main.INFO: 3 cron jobs were cleaned [] []
+[2023-08-24T23:05:32.203019+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T23:05:32.331098+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.12818002700806,"count":1,"realmem":0,"emalloc":206136,"realmem_start":117440512,"emalloc_start":115005680} [] []
+[2023-08-24T23:05:34.885692+00:00] main.INFO: 0 cron jobs were cleaned [] []
+[2023-08-24T23:05:40.420940+00:00] main.INFO: Cron Job security_deactivate_expired_users is run [] []
+[2023-08-24T23:05:40.480870+00:00] main.INFO: Cron Job security_deactivate_expired_users is successfully finished. Statistics: {"sum":0.060182094573975,"count":1,"realmem":0,"emalloc":204440,"realmem_start":117440512,"emalloc_start":114625432} [] []
+[2023-08-24T23:05:40.560999+00:00] main.INFO: Cron Job catalog_index_refresh_price is run [] []
+[2023-08-24T23:05:40.607032+00:00] main.INFO: Cron Job catalog_index_refresh_price is successfully finished. Statistics: {"sum":0.045783042907715,"count":1,"realmem":2097152,"emalloc":1017440,"realmem_start":117440512,"emalloc_start":114862248} [] []
+[2023-08-24T23:05:40.741638+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T23:05:41.229996+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.48823094367981,"count":1,"realmem":4194304,"emalloc":6405776,"realmem_start":119537664,"emalloc_start":116038480} [] []
+[2023-08-24T23:05:41.353275+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T23:05:41.374923+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.021547079086304,"count":1,"realmem":0,"emalloc":1512,"realmem_start":123731968,"emalloc_start":122476432} [] []
+[2023-08-24T23:05:41.473538+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T23:05:41.509778+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.035998821258545,"count":1,"realmem":0,"emalloc":25248,"realmem_start":123731968,"emalloc_start":122528552} [] []
+[2023-08-24T23:05:41.641045+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T23:05:41.661171+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.020022869110107,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":122583400} [] []
+[2023-08-24T23:05:41.736938+00:00] main.INFO: Cron Job expired_tokens_cleanup is run [] []
+[2023-08-24T23:05:41.768798+00:00] main.INFO: Cron Job expired_tokens_cleanup is successfully finished. Statistics: {"sum":0.031795024871826,"count":1,"realmem":0,"emalloc":2896,"realmem_start":123731968,"emalloc_start":122638536} [] []
+[2023-08-24T23:05:41.944225+00:00] main.INFO: Cron Job sales_clean_orders is run [] []
+[2023-08-24T23:05:42.009420+00:00] main.INFO: Cron Job sales_clean_orders is successfully finished. Statistics: {"sum":0.065044164657593,"count":1,"realmem":0,"emalloc":293792,"realmem_start":125829120,"emalloc_start":123733944} [] []
+[2023-08-24T23:05:42.168256+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T23:05:42.190688+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.022119045257568,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124156744} [] []
+[2023-08-24T23:05:42.315704+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T23:05:42.330677+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.014971017837524,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124162624} [] []
+[2023-08-24T23:05:42.435041+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T23:05:42.450142+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.014710187911987,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124167528} [] []
+[2023-08-24T23:05:42.600576+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T23:05:42.626858+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.025239944458008,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124172432} [] []
+[2023-08-24T23:05:42.754269+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T23:05:42.776559+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.020984888076782,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124204392} [] []
+[2023-08-24T23:05:42.936387+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T23:05:42.953606+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.01711106300354,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":124728216} [] []
+[2023-08-24T23:05:43.115217+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T23:05:43.143486+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.028095960617065,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125277632} [] []
+[2023-08-24T23:05:43.313641+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T23:05:43.330494+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.016741037368774,"count":1,"realmem":0,"emalloc":1072,"realmem_start":127926272,"emalloc_start":125832416} [] []
+[2023-08-24T23:05:43.407680+00:00] main.INFO: Cron Job analytics_subscribe is run [] []
+[2023-08-24T23:05:47.085685+00:00] main.INFO: Cron Job analytics_subscribe is successfully finished. Statistics: {"sum":3.6778450012207,"count":1,"realmem":4194304,"emalloc":3498728,"realmem_start":127926272,"emalloc_start":125845088} [] []
+[2023-08-24T23:05:47.146469+00:00] main.INFO: Cron Job captcha_delete_old_attempts is run [] []
+[2023-08-24T23:05:47.176341+00:00] main.INFO: Cron Job captcha_delete_old_attempts is successfully finished. Statistics: {"sum":0.029757022857666,"count":1,"realmem":0,"emalloc":92720,"realmem_start":132120576,"emalloc_start":129351552} [] []
+[2023-08-24T23:05:47.271183+00:00] main.INFO: Cron Job captcha_delete_expired_images is run [] []
+[2023-08-24T23:05:47.359609+00:00] main.INFO: Cron Job captcha_delete_expired_images is successfully finished. Statistics: {"sum":0.088458061218262,"count":1,"realmem":2097152,"emalloc":789800,"realmem_start":132120576,"emalloc_start":129484648} [] []
+[2023-08-24T23:05:47.469066+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T23:05:47.485733+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.016561031341553,"count":1,"realmem":0,"emalloc":1072,"realmem_start":134217728,"emalloc_start":130321528} [] []
+[2023-08-24T23:05:47.547099+00:00] main.INFO: Cron Job messagequeue_clean_outdated_locks is run [] []
+[2023-08-24T23:05:47.568516+00:00] main.INFO: Cron Job messagequeue_clean_outdated_locks is successfully finished. Statistics: {"sum":0.021285057067871,"count":1,"realmem":0,"emalloc":1448,"realmem_start":134217728,"emalloc_start":130344240} [] []
+[2023-08-24T23:05:47.717679+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T23:05:47.735165+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.017364978790283,"count":1,"realmem":0,"emalloc":944,"realmem_start":134217728,"emalloc_start":131350376} [] []
+[2023-08-24T23:05:47.831604+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T23:05:48.077468+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.24608707427979,"count":1,"realmem":0,"emalloc":670120,"realmem_start":134217728,"emalloc_start":131361120} [] []
+[2023-08-24T23:05:48.189212+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T23:05:48.218192+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.02910304069519,"count":1,"realmem":2097152,"emalloc":1608,"realmem_start":134217728,"emalloc_start":132079792} [] []
+[2023-08-24T23:05:48.297424+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is run [] []
+[2023-08-24T23:05:48.316977+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is successfully finished. Statistics: {"sum":0.019443988800049,"count":1,"realmem":0,"emalloc":1448,"realmem_start":136314880,"emalloc_start":132176808} [] []
+[2023-08-24T23:05:48.377790+00:00] main.INFO: Cron Job core_process_feed is run [] []
+[2023-08-24T23:05:48.741770+00:00] main.INFO: Cron Job core_process_feed is successfully finished. Statistics: {"sum":0.36388993263245,"count":1,"realmem":0,"emalloc":221072,"realmem_start":136314880,"emalloc_start":132212424} [] []
+[2023-08-24T23:10:27.298954+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T23:10:27.532384+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.23387098312378,"count":1,"realmem":0,"emalloc":587096,"realmem_start":117440512,"emalloc_start":113319736} [] []
+[2023-08-24T23:10:27.627653+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T23:10:27.901003+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.27323889732361,"count":1,"realmem":0,"emalloc":198776,"realmem_start":117440512,"emalloc_start":113911960} [] []
+[2023-08-24T23:10:35.723717+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T23:10:35.883749+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.16111493110657,"count":1,"realmem":0,"emalloc":232504,"realmem_start":121634816,"emalloc_start":118956896} [] []
+[2023-08-24T23:10:39.990050+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T23:10:40.678907+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.68967294692993,"count":1,"realmem":6291456,"emalloc":6733392,"realmem_start":115343360,"emalloc_start":105426744} [] []
+[2023-08-24T23:10:40.916249+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T23:10:40.942089+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.025527954101562,"count":1,"realmem":0,"emalloc":1448,"realmem_start":121634816,"emalloc_start":112194288} [] []
+[2023-08-24T23:10:41.025569+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T23:10:41.057198+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.031498908996582,"count":1,"realmem":0,"emalloc":25248,"realmem_start":121634816,"emalloc_start":112245512} [] []
+[2023-08-24T23:10:41.288949+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T23:10:41.310872+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.02184796333313,"count":1,"realmem":0,"emalloc":1448,"realmem_start":121634816,"emalloc_start":112301848} [] []
+[2023-08-24T23:10:41.525583+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T23:10:41.541263+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.015503168106079,"count":1,"realmem":0,"emalloc":1072,"realmem_start":121634816,"emalloc_start":112499224} [] []
+[2023-08-24T23:10:41.748775+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T23:10:41.764097+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.015466928482056,"count":1,"realmem":0,"emalloc":1072,"realmem_start":121634816,"emalloc_start":112506176} [] []
+[2023-08-24T23:10:41.957060+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T23:10:41.975039+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.017882823944092,"count":1,"realmem":0,"emalloc":1072,"realmem_start":121634816,"emalloc_start":112512472} [] []
+[2023-08-24T23:10:42.161332+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T23:10:42.179963+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.018509149551392,"count":1,"realmem":0,"emalloc":1072,"realmem_start":121634816,"emalloc_start":112518768} [] []
+[2023-08-24T23:10:42.460535+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T23:10:42.479817+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.019232988357544,"count":1,"realmem":0,"emalloc":976,"realmem_start":121634816,"emalloc_start":113481136} [] []
+[2023-08-24T23:10:42.700464+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T23:10:42.721231+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.020550966262817,"count":1,"realmem":0,"emalloc":1072,"realmem_start":121634816,"emalloc_start":114006616} [] []
+[2023-08-24T23:10:42.948850+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T23:10:42.971512+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.022670030593872,"count":1,"realmem":0,"emalloc":1072,"realmem_start":121634816,"emalloc_start":114510832} [] []
+[2023-08-24T23:10:43.220390+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T23:10:43.242674+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.022556066513062,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":115067008} [] []
+[2023-08-24T23:10:43.465555+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T23:10:43.483112+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.017427921295166,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":115150560} [] []
+[2023-08-24T23:10:43.759986+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T23:10:43.781386+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.020981073379517,"count":1,"realmem":0,"emalloc":944,"realmem_start":123731968,"emalloc_start":116160888} [] []
+[2023-08-24T23:10:43.863946+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T23:10:44.171844+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.30778193473816,"count":1,"realmem":2097152,"emalloc":734872,"realmem_start":123731968,"emalloc_start":116211800} [] []
+[2023-08-24T23:10:44.394003+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T23:10:44.422527+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.028382062911987,"count":1,"realmem":0,"emalloc":1608,"realmem_start":125829120,"emalloc_start":116957376} [] []
+[2023-08-24T23:10:44.518711+00:00] main.INFO: Cron Job captcha_delete_expired_images is run [] []
+[2023-08-24T23:10:44.663942+00:00] main.INFO: Cron Job captcha_delete_expired_images is successfully finished. Statistics: {"sum":0.14545607566833,"count":1,"realmem":0,"emalloc":1291872,"realmem_start":125829120,"emalloc_start":116998400} [] []
+[2023-08-24T23:10:44.757371+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is run [] []
+[2023-08-24T23:10:44.789316+00:00] main.INFO: Cron Job bulk_mark_incomplete_operations_as_failed is successfully finished. Statistics: {"sum":0.031723976135254,"count":1,"realmem":0,"emalloc":1448,"realmem_start":125829120,"emalloc_start":118320024} [] []
+[2023-08-24T23:13:50.108275+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-08-24T23:13:50.208255+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.10065507888794,"count":1,"realmem":0,"emalloc":541896,"realmem_start":117440512,"emalloc_start":113320656} [] []
+[2023-08-24T23:13:50.252719+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-08-24T23:13:50.346026+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.093338012695312,"count":1,"realmem":0,"emalloc":225000,"realmem_start":117440512,"emalloc_start":113866608} [] []
+[2023-08-24T23:13:52.768359+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-08-24T23:13:52.910573+00:00] main.INFO: Cron Job consumers_runner is successfully finished. Statistics: {"sum":0.14254188537598,"count":1,"realmem":0,"emalloc":212208,"realmem_start":117440512,"emalloc_start":113656624} [] []
+[2023-08-24T23:13:55.702381+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is run [] []
+[2023-08-24T23:13:56.309843+00:00] main.INFO: Cron Job catalog_product_outdated_price_values_cleanup is successfully finished. Statistics: {"sum":0.6089289188385,"count":1,"realmem":6291456,"emalloc":6990520,"realmem_start":117440512,"emalloc_start":113819824} [] []
+[2023-08-24T23:13:56.427836+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is run [] []
+[2023-08-24T23:13:56.448222+00:00] main.INFO: Cron Job catalog_product_frontend_actions_flush is successfully finished. Statistics: {"sum":0.020289182662964,"count":1,"realmem":0,"emalloc":1512,"realmem_start":123731968,"emalloc_start":120843104} [] []
+[2023-08-24T23:13:56.509500+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is run [] []
+[2023-08-24T23:13:56.538170+00:00] main.INFO: Cron Job catalog_product_attribute_value_synchronize is successfully finished. Statistics: {"sum":0.028834104537964,"count":1,"realmem":0,"emalloc":25568,"realmem_start":123731968,"emalloc_start":120894432} [] []
+[2023-08-24T23:13:56.664445+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is run [] []
+[2023-08-24T23:13:56.683960+00:00] main.INFO: Cron Job outdated_authentication_failures_cleanup is successfully finished. Statistics: {"sum":0.019482851028442,"count":1,"realmem":0,"emalloc":1448,"realmem_start":123731968,"emalloc_start":120949696} [] []
+[2023-08-24T23:13:56.821837+00:00] main.INFO: Cron Job sales_grid_order_async_insert is run [] []
+[2023-08-24T23:13:56.838616+00:00] main.INFO: Cron Job sales_grid_order_async_insert is successfully finished. Statistics: {"sum":0.016560792922974,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121080144} [] []
+[2023-08-24T23:13:56.955331+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is run [] []
+[2023-08-24T23:13:56.971922+00:00] main.INFO: Cron Job sales_grid_order_invoice_async_insert is successfully finished. Statistics: {"sum":0.016494035720825,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121085704} [] []
+[2023-08-24T23:13:57.081974+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is run [] []
+[2023-08-24T23:13:57.099941+00:00] main.INFO: Cron Job sales_grid_order_shipment_async_insert is successfully finished. Statistics: {"sum":0.017831087112427,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121090608} [] []
+[2023-08-24T23:13:57.223631+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is run [] []
+[2023-08-24T23:13:57.240530+00:00] main.INFO: Cron Job sales_grid_order_creditmemo_async_insert is successfully finished. Statistics: {"sum":0.016793012619019,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":121095512} [] []
+[2023-08-24T23:13:57.426189+00:00] main.INFO: Cron Job sales_send_order_emails is run [] []
+[2023-08-24T23:13:57.442792+00:00] main.INFO: Cron Job sales_send_order_emails is successfully finished. Statistics: {"sum":0.016440153121948,"count":1,"realmem":0,"emalloc":976,"realmem_start":123731968,"emalloc_start":122122024} [] []
+[2023-08-24T23:13:57.581258+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is run [] []
+[2023-08-24T23:13:57.597859+00:00] main.INFO: Cron Job sales_send_order_invoice_emails is successfully finished. Statistics: {"sum":0.016489028930664,"count":1,"realmem":0,"emalloc":1072,"realmem_start":123731968,"emalloc_start":122580576} [] []
+[2023-08-24T23:13:57.743276+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is run [] []
+[2023-08-24T23:13:57.762168+00:00] main.INFO: Cron Job sales_send_order_shipment_emails is successfully finished. Statistics: {"sum":0.018523931503296,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123148936} [] []
+[2023-08-24T23:13:57.916872+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is run [] []
+[2023-08-24T23:13:57.933647+00:00] main.INFO: Cron Job sales_send_order_creditmemo_emails is successfully finished. Statistics: {"sum":0.016708850860596,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123638184} [] []
+[2023-08-24T23:13:58.069172+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is run [] []
+[2023-08-24T23:13:58.085931+00:00] main.INFO: Cron Job inventory_in_store_pickup_sales_send_order_notified_emails is successfully finished. Statistics: {"sum":0.016669034957886,"count":1,"realmem":0,"emalloc":1072,"realmem_start":125829120,"emalloc_start":123785880} [] []
+[2023-08-24T23:13:58.276438+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is run [] []
+[2023-08-24T23:13:58.292232+00:00] main.INFO: Cron Job magento_newrelicreporting_cron is successfully finished. Statistics: {"sum":0.015795946121216,"count":1,"realmem":0,"emalloc":944,"realmem_start":125829120,"emalloc_start":124797776} [] []
+[2023-08-24T23:13:58.354920+00:00] main.INFO: Cron Job newsletter_send_all is run [] []
+[2023-08-24T23:13:58.411031+00:00] main.INFO: Cron Job newsletter_send_all is successfully finished. Statistics: {"sum":0.056015968322754,"count":1,"realmem":2097152,"emalloc":698512,"realmem_start":125829120,"emalloc_start":124807728} [] []
+[2023-08-24T23:13:58.520234+00:00] main.INFO: Cron Job bulk_cleanup is run [] []
+[2023-08-24T23:13:58.540466+00:00] main.INFO: Cron Job bulk_cleanup is successfully finished. Statistics: {"sum":0.020124912261963,"count":1,"realmem":0,"emalloc":1608,"realmem_start":127926272,"emalloc_start":125515552} [] []
+[2023-09-11T23:04:51.256240+00:00] main.INFO: 44 cron jobs were cleaned [] []
+[2023-09-11T23:04:51.573601+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is run [] []
+[2023-09-11T23:04:51.792076+00:00] main.INFO: Cron Job indexer_reindex_all_invalid is successfully finished. Statistics: {"sum":0.22088885307312,"count":1,"realmem":0,"emalloc":536304,"realmem_start":111149056,"emalloc_start":108190264} [] []
+[2023-09-11T23:04:51.852922+00:00] main.INFO: Cron Job indexer_update_all_views is run [] []
+[2023-09-11T23:04:52.077141+00:00] main.INFO: Cron Job indexer_update_all_views is successfully finished. Statistics: {"sum":0.22443699836731,"count":1,"realmem":0,"emalloc":225352,"realmem_start":111149056,"emalloc_start":108729608} [] []
+[2023-09-11T23:04:58.108773+00:00] main.INFO: 56 cron jobs were cleaned [] []
+[2023-09-11T23:04:59.157477+00:00] main.INFO: Cron Job consumers_runner is run [] []
+[2023-09-11T23:21:33.281096+00:00] main.INFO: Cron Job update_stock is run [] []
+[2023-09-11T23:22:14.551321+00:00] main.ERROR: Cron Job update_stock has an error: Warning: Undefined property: Unilane\SyncProducts\Helper\ImportC::$productRepository in C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php on line 95. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":111149056,"emalloc_start":107531104} [] []
+[2023-09-11T23:22:47.080175+00:00] main.CRITICAL: Exception: Warning: Undefined property: Unilane\SyncProducts\Helper\ImportC::$productRepository in C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php on line 95 in C:\xampp\htdocs\magento\vendor\magento\framework\App\ErrorHandler.php:62
+Stack trace:
+#0 C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php(95): Magento\Framework\App\ErrorHandler->handler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Cron\ImportCron.php(44): Unilane\SyncProducts\Helper\ImportC->updateStock()
+#2 [internal function]: Unilane\SyncProducts\Cron\ImportCron->update(Object(Magento\Cron\Model\Schedule))
+#3 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(368): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(879): Magento\Cron\Observer\ProcessCronQueueObserver->_runJob(1694473800, 1694474493, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#5 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(840): Magento\Cron\Observer\ProcessCronQueueObserver->tryRunJob(1694473800, 1694474493, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#6 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(280): Magento\Cron\Observer\ProcessCronQueueObserver->processPendingJobs('unilane_syncpro...', Array, 1694474493)
+#7 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(88): Magento\Cron\Observer\ProcessCronQueueObserver->execute(Object(Magento\Framework\Event\Observer))
+#8 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod(Object(Magento\Cron\Observer\ProcessCronQueueObserver), Object(Magento\Framework\Event\Observer))
+#9 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Manager.php(65): Magento\Framework\Event\Invoker\InvokerDefault->dispatch(Array, Object(Magento\Framework\Event\Observer))
+#10 C:\xampp\htdocs\magento\generated\code\Magento\Framework\Event\Manager\Proxy.php(95): Magento\Framework\Event\Manager->dispatch('default', Array)
+#11 C:\xampp\htdocs\magento\vendor\magento\framework\App\Cron.php(86): Magento\Framework\Event\Manager\Proxy->dispatch('default')
+#12 C:\xampp\htdocs\magento\vendor\magento\module-cron\Console\Command\CronCommand.php(126): Magento\Framework\App\Cron->launch()
+#13 C:\xampp\htdocs\magento\vendor\symfony\console\Command\Command.php(298): Magento\Cron\Console\Command\CronCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Cron\Console\Command\CronCommand\Interceptor->___callParent('run', Array)
+#16 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Cron\Console\Command\CronCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\magento\generated\code\Magento\Cron\Console\Command\CronCommand\Interceptor.php(77): Magento\Cron\Console\Command\CronCommand\Interceptor->___callPlugins('run', Array, Array)
+#18 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(1040): Magento\Cron\Console\Command\CronCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Cron\Console\Command\CronCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\magento\vendor\magento\framework\Console\Cli.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(171): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\xampp\htdocs\magento\bin\magento(23): Symfony\Component\Console\Application->run()
+#23 {main} [] []
+[2023-09-11T23:22:47.149218+00:00] main.INFO: Cron Job update_stock is run [] []
+[2023-09-11T23:22:49.325660+00:00] main.ERROR: Cron Job update_stock has an error: Warning: Undefined property: Unilane\SyncProducts\Helper\ImportC::$productRepository in C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php on line 95. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":111149056,"emalloc_start":108288376} [] []
+[2023-09-11T23:22:49.345819+00:00] main.CRITICAL: Exception: Warning: Undefined property: Unilane\SyncProducts\Helper\ImportC::$productRepository in C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php on line 95 in C:\xampp\htdocs\magento\vendor\magento\framework\App\ErrorHandler.php:62
+Stack trace:
+#0 C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php(95): Magento\Framework\App\ErrorHandler->handler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Cron\ImportCron.php(44): Unilane\SyncProducts\Helper\ImportC->updateStock()
+#2 [internal function]: Unilane\SyncProducts\Cron\ImportCron->update(Object(Magento\Cron\Model\Schedule))
+#3 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(368): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(879): Magento\Cron\Observer\ProcessCronQueueObserver->_runJob(1694474400, 1694474493, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#5 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(840): Magento\Cron\Observer\ProcessCronQueueObserver->tryRunJob(1694474400, 1694474493, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#6 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(280): Magento\Cron\Observer\ProcessCronQueueObserver->processPendingJobs('unilane_syncpro...', Array, 1694474493)
+#7 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(88): Magento\Cron\Observer\ProcessCronQueueObserver->execute(Object(Magento\Framework\Event\Observer))
+#8 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod(Object(Magento\Cron\Observer\ProcessCronQueueObserver), Object(Magento\Framework\Event\Observer))
+#9 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Manager.php(65): Magento\Framework\Event\Invoker\InvokerDefault->dispatch(Array, Object(Magento\Framework\Event\Observer))
+#10 C:\xampp\htdocs\magento\generated\code\Magento\Framework\Event\Manager\Proxy.php(95): Magento\Framework\Event\Manager->dispatch('default', Array)
+#11 C:\xampp\htdocs\magento\vendor\magento\framework\App\Cron.php(86): Magento\Framework\Event\Manager\Proxy->dispatch('default')
+#12 C:\xampp\htdocs\magento\vendor\magento\module-cron\Console\Command\CronCommand.php(126): Magento\Framework\App\Cron->launch()
+#13 C:\xampp\htdocs\magento\vendor\symfony\console\Command\Command.php(298): Magento\Cron\Console\Command\CronCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Cron\Console\Command\CronCommand\Interceptor->___callParent('run', Array)
+#16 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Cron\Console\Command\CronCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\magento\generated\code\Magento\Cron\Console\Command\CronCommand\Interceptor.php(77): Magento\Cron\Console\Command\CronCommand\Interceptor->___callPlugins('run', Array, Array)
+#18 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(1040): Magento\Cron\Console\Command\CronCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Cron\Console\Command\CronCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\magento\vendor\magento\framework\Console\Cli.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(171): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\xampp\htdocs\magento\bin\magento(23): Symfony\Component\Console\Application->run()
+#23 {main} [] []
+[2023-09-11T23:36:46.519684+00:00] main.INFO: Cron Job update_stock is run [] []
+[2023-09-11T23:38:09.241377+00:00] main.ERROR: Cron Job update_stock has an error: Cannot access protected property Magento\Catalog\Model\Product\Interceptor::$_data. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":111149056,"emalloc_start":107993704} [] []
+[2023-09-11T23:38:09.268502+00:00] main.CRITICAL: Error: Cannot access protected property Magento\Catalog\Model\Product\Interceptor::$_data in C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php:102
+Stack trace:
+#0 C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Cron\ImportCron.php(44): Unilane\SyncProducts\Helper\ImportC->updateStock()
+#1 [internal function]: Unilane\SyncProducts\Cron\ImportCron->update(Object(Magento\Cron\Model\Schedule))
+#2 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(368): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(879): Magento\Cron\Observer\ProcessCronQueueObserver->_runJob(1694475000, 1694475406, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#4 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(840): Magento\Cron\Observer\ProcessCronQueueObserver->tryRunJob(1694475000, 1694475406, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#5 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(280): Magento\Cron\Observer\ProcessCronQueueObserver->processPendingJobs('unilane_syncpro...', Array, 1694475406)
+#6 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(88): Magento\Cron\Observer\ProcessCronQueueObserver->execute(Object(Magento\Framework\Event\Observer))
+#7 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod(Object(Magento\Cron\Observer\ProcessCronQueueObserver), Object(Magento\Framework\Event\Observer))
+#8 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Manager.php(65): Magento\Framework\Event\Invoker\InvokerDefault->dispatch(Array, Object(Magento\Framework\Event\Observer))
+#9 C:\xampp\htdocs\magento\generated\code\Magento\Framework\Event\Manager\Proxy.php(95): Magento\Framework\Event\Manager->dispatch('default', Array)
+#10 C:\xampp\htdocs\magento\vendor\magento\framework\App\Cron.php(86): Magento\Framework\Event\Manager\Proxy->dispatch('default')
+#11 C:\xampp\htdocs\magento\vendor\magento\module-cron\Console\Command\CronCommand.php(126): Magento\Framework\App\Cron->launch()
+#12 C:\xampp\htdocs\magento\vendor\symfony\console\Command\Command.php(298): Magento\Cron\Console\Command\CronCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Cron\Console\Command\CronCommand\Interceptor->___callParent('run', Array)
+#15 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Cron\Console\Command\CronCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\magento\generated\code\Magento\Cron\Console\Command\CronCommand\Interceptor.php(77): Magento\Cron\Console\Command\CronCommand\Interceptor->___callPlugins('run', Array, Array)
+#17 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(1040): Magento\Cron\Console\Command\CronCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Cron\Console\Command\CronCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\magento\vendor\magento\framework\Console\Cli.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(171): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\magento\bin\magento(23): Symfony\Component\Console\Application->run()
+#22 {main}
+
+Next RuntimeException: Error when running a cron job: Cannot access protected property Magento\Catalog\Model\Product\Interceptor::$_data in C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php:380
+Stack trace:
+#0 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(879): Magento\Cron\Observer\ProcessCronQueueObserver->_runJob(1694475000, 1694475406, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#1 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(840): Magento\Cron\Observer\ProcessCronQueueObserver->tryRunJob(1694475000, 1694475406, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#2 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(280): Magento\Cron\Observer\ProcessCronQueueObserver->processPendingJobs('unilane_syncpro...', Array, 1694475406)
+#3 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(88): Magento\Cron\Observer\ProcessCronQueueObserver->execute(Object(Magento\Framework\Event\Observer))
+#4 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod(Object(Magento\Cron\Observer\ProcessCronQueueObserver), Object(Magento\Framework\Event\Observer))
+#5 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Manager.php(65): Magento\Framework\Event\Invoker\InvokerDefault->dispatch(Array, Object(Magento\Framework\Event\Observer))
+#6 C:\xampp\htdocs\magento\generated\code\Magento\Framework\Event\Manager\Proxy.php(95): Magento\Framework\Event\Manager->dispatch('default', Array)
+#7 C:\xampp\htdocs\magento\vendor\magento\framework\App\Cron.php(86): Magento\Framework\Event\Manager\Proxy->dispatch('default')
+#8 C:\xampp\htdocs\magento\vendor\magento\module-cron\Console\Command\CronCommand.php(126): Magento\Framework\App\Cron->launch()
+#9 C:\xampp\htdocs\magento\vendor\symfony\console\Command\Command.php(298): Magento\Cron\Console\Command\CronCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Cron\Console\Command\CronCommand\Interceptor->___callParent('run', Array)
+#12 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Cron\Console\Command\CronCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\magento\generated\code\Magento\Cron\Console\Command\CronCommand\Interceptor.php(77): Magento\Cron\Console\Command\CronCommand\Interceptor->___callPlugins('run', Array, Array)
+#14 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(1040): Magento\Cron\Console\Command\CronCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Cron\Console\Command\CronCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\magento\vendor\magento\framework\Console\Cli.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(171): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\magento\bin\magento(23): Symfony\Component\Console\Application->run()
+#19 {main} [] []
+[2023-09-11T23:42:14.100190+00:00] main.INFO: Cron Job update_stock is run [] []
+[2023-09-11T23:43:40.353954+00:00] main.ERROR: Cron Job update_stock has an error: Cannot access protected property Magento\Catalog\Model\Product\Interceptor::$_data. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":111149056,"emalloc_start":107997728} [] []
+[2023-09-11T23:43:40.389859+00:00] main.CRITICAL: Error: Cannot access protected property Magento\Catalog\Model\Product\Interceptor::$_data in C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Helper\ImportC.php:102
+Stack trace:
+#0 C:\xampp\htdocs\magento\app\code\Unilane\SyncProducts\Cron\ImportCron.php(44): Unilane\SyncProducts\Helper\ImportC->updateStock()
+#1 [internal function]: Unilane\SyncProducts\Cron\ImportCron->update(Object(Magento\Cron\Model\Schedule))
+#2 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(368): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(879): Magento\Cron\Observer\ProcessCronQueueObserver->_runJob(1694475600, 1694475733, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#4 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(840): Magento\Cron\Observer\ProcessCronQueueObserver->tryRunJob(1694475600, 1694475733, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#5 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(280): Magento\Cron\Observer\ProcessCronQueueObserver->processPendingJobs('unilane_syncpro...', Array, 1694475733)
+#6 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(88): Magento\Cron\Observer\ProcessCronQueueObserver->execute(Object(Magento\Framework\Event\Observer))
+#7 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod(Object(Magento\Cron\Observer\ProcessCronQueueObserver), Object(Magento\Framework\Event\Observer))
+#8 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Manager.php(65): Magento\Framework\Event\Invoker\InvokerDefault->dispatch(Array, Object(Magento\Framework\Event\Observer))
+#9 C:\xampp\htdocs\magento\generated\code\Magento\Framework\Event\Manager\Proxy.php(95): Magento\Framework\Event\Manager->dispatch('default', Array)
+#10 C:\xampp\htdocs\magento\vendor\magento\framework\App\Cron.php(86): Magento\Framework\Event\Manager\Proxy->dispatch('default')
+#11 C:\xampp\htdocs\magento\vendor\magento\module-cron\Console\Command\CronCommand.php(126): Magento\Framework\App\Cron->launch()
+#12 C:\xampp\htdocs\magento\vendor\symfony\console\Command\Command.php(298): Magento\Cron\Console\Command\CronCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Cron\Console\Command\CronCommand\Interceptor->___callParent('run', Array)
+#15 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Cron\Console\Command\CronCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\magento\generated\code\Magento\Cron\Console\Command\CronCommand\Interceptor.php(77): Magento\Cron\Console\Command\CronCommand\Interceptor->___callPlugins('run', Array, Array)
+#17 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(1040): Magento\Cron\Console\Command\CronCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Cron\Console\Command\CronCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\magento\vendor\magento\framework\Console\Cli.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(171): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\magento\bin\magento(23): Symfony\Component\Console\Application->run()
+#22 {main}
+
+Next RuntimeException: Error when running a cron job: Cannot access protected property Magento\Catalog\Model\Product\Interceptor::$_data in C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php:380
+Stack trace:
+#0 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(879): Magento\Cron\Observer\ProcessCronQueueObserver->_runJob(1694475600, 1694475733, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#1 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(840): Magento\Cron\Observer\ProcessCronQueueObserver->tryRunJob(1694475600, 1694475733, Array, Object(Magento\Cron\Model\Schedule), 'unilane_syncpro...')
+#2 C:\xampp\htdocs\magento\vendor\magento\module-cron\Observer\ProcessCronQueueObserver.php(280): Magento\Cron\Observer\ProcessCronQueueObserver->processPendingJobs('unilane_syncpro...', Array, 1694475733)
+#3 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(88): Magento\Cron\Observer\ProcessCronQueueObserver->execute(Object(Magento\Framework\Event\Observer))
+#4 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Invoker\InvokerDefault.php(74): Magento\Framework\Event\Invoker\InvokerDefault->_callObserverMethod(Object(Magento\Cron\Observer\ProcessCronQueueObserver), Object(Magento\Framework\Event\Observer))
+#5 C:\xampp\htdocs\magento\vendor\magento\framework\Event\Manager.php(65): Magento\Framework\Event\Invoker\InvokerDefault->dispatch(Array, Object(Magento\Framework\Event\Observer))
+#6 C:\xampp\htdocs\magento\generated\code\Magento\Framework\Event\Manager\Proxy.php(95): Magento\Framework\Event\Manager->dispatch('default', Array)
+#7 C:\xampp\htdocs\magento\vendor\magento\framework\App\Cron.php(86): Magento\Framework\Event\Manager\Proxy->dispatch('default')
+#8 C:\xampp\htdocs\magento\vendor\magento\module-cron\Console\Command\CronCommand.php(126): Magento\Framework\App\Cron->launch()
+#9 C:\xampp\htdocs\magento\vendor\symfony\console\Command\Command.php(298): Magento\Cron\Console\Command\CronCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(58): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(138): Magento\Cron\Console\Command\CronCommand\Interceptor->___callParent('run', Array)
+#12 C:\xampp\htdocs\magento\vendor\magento\framework\Interception\Interceptor.php(153): Magento\Cron\Console\Command\CronCommand\Interceptor->Magento\Framework\Interception\{closure}(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\magento\generated\code\Magento\Cron\Console\Command\CronCommand\Interceptor.php(77): Magento\Cron\Console\Command\CronCommand\Interceptor->___callPlugins('run', Array, Array)
+#14 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(1040): Magento\Cron\Console\Command\CronCommand\Interceptor->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Cron\Console\Command\CronCommand\Interceptor), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\magento\vendor\magento\framework\Console\Cli.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\magento\vendor\symfony\console\Application.php(171): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\magento\bin\magento(23): Symfony\Component\Console\Application->run()
+#19 {main} [] []
+[2023-09-12T00:06:23.195205+00:00] main.INFO: Cron Job update_stock is missed at 2023-09-11 23:50:00 [] []
+[2023-09-12T00:06:23.287515+00:00] main.INFO: Cron Job update_stock is run [] []
+[2023-09-12T00:06:51.221654+00:00] main.INFO: Cron Job update_stock is successfully finished. Statistics: {"sum":27.934231042862,"count":1,"realmem":33554432,"emalloc":33726728,"realmem_start":111149056,"emalloc_start":108020144} [] []

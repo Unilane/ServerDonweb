@@ -1,0 +1,14 @@
+<?php
+
+/** @var Index $block */
+
+use Magento\SalesChannels\Block\Adminhtml\Index;
+
+?>
+
+<div
+    id="root"
+    data-config="<?= $block->escapeHtmlAttr($block->getConfigJson()); ?>"
+></div>
+
+<script src="<?= $escaper->escapeUrl($block->getFrontendUrl()) ?>"></script>

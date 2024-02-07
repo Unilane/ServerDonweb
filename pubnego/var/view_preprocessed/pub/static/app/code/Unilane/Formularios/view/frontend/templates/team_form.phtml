@@ -1,0 +1,26 @@
+<style> .titulo { color: #2D5D89; font-weight: 700; text-align: center; margin: 10px 0; } .colorunico{ background: #efefef17; border-top: 4px solid #2D5D89; padding: 10px 0; border-radius: 12px; width: 35%; margin: 0 auto; margin-bottom: -15px; } .inputfile { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; } .inputfile + label { max-width: 80%; font-size: 1.25rem; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; display: inline-block; overflow: hidden; padding: 0.625rem 1.25rem; } .inputfile + label svg { width: 1em; height: 1em; vertical-align: middle; fill: currentColor; margin-top: -0.25em; margin-right: 0.25em; } .iborrainputfile { font-size:16px; font-weight:normal; font-family: 'Lato'; } /* style 1 */ .inputfile-1 + label { color: #000; }</style><div class="row"><div class="col-1"></div><div class="col-10"><h2 class="text-center titulo">ÚNETE AL EQUIPO</h2><h3 class="text-center">¡Queremos conocerte!</h3><p class="text-justify"> En Unilane estamos en constante crecimiento y sabemos que el capital humano es el pilar de la empresa, por eso buscamos integrar al equipo de trabajo a personas con interés en temas de e-commerce, marketing y diseño, programación, y tecnología en general.<br><br> Si quieres conocer más sobre las oportunidades que tenemos déjanos tus datos y nos pondremos en contacto.</p><br> <form method="POST" action="<?= $block->escapeUrl($block->getFormAction()) ?>" enctype="multipart/form-data"><div class="col-12 form-control"><label for="name">Nombre<span style="color: red;"> *</span></label> <input class="form-control" type="text" id="name" name="nombre" placeholder="tu nombre completo" required></div><div class="col-12 form-control"><label for="name">Correo electrónico<span style="color: red;"> *</span></label> <input class="form-control" type="text" id="name" name="correo" placeholder="Direccion de correo electronico valido" required></div><div class="col-12 form-control"><label for="name">Telefono<span style="color: red;"> *</span></label> <input class="form-control" type="number" id="name" name="telefono" placeholder="Numero de Telefono" required></div><div class="col-12 form-control"><label for="name">Area de Experiencia<span style="color: red;"> *</span></label> <input class="form-control" type="text" id="name" name="area" placeholder="ingresa el area en la que te especializas" required></div><div class="col-12 form-control"><label for="name">Mensaje<span style="color: red;"> *</span></label> <textarea class="form-control" type="textarea" rows="8" id="name" name="mensaje" placeholder="Mensaje"  required></textarea></div><br> <div class="colorunico col-12 text-center"><input type="file" name="file-1" id="file-1" class="inputfile inputfile-1" style="display: none;"/><label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" class="iborrainputfile" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg><span class="iborrainputfile">Seleccionar archivo</span></label></div><p class="text-center" style="font-size: smaller;">Agrega tu CV (Adjuntar PDF)</p><br> <div class="col-12 text-center"><button class="btn btn-primary" type="submit" name="uploadBtn" value="Upload">Enviar Mensaje</button></div></form></div><div class="col-6"></div></div><script>
+'use strict';
+
+;( function ( document, window, index )
+{
+	var inputs = document.querySelectorAll( '.inputfile' );
+	Array.prototype.forEach.call( inputs, function( input )
+	{
+		var label	 = input.nextElementSibling,
+			labelVal = label.innerHTML;
+
+		input.addEventListener( 'change', function( e )
+		{
+			var fileName = '';
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else
+				fileName = e.target.value.split( '\\' ).pop();
+
+			if( fileName )
+				label.querySelector( 'span' ).innerHTML = fileName;
+			else
+				label.innerHTML = labelVal;
+		});
+	});
+}( document, window, 0 ));</script>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Madkting Software (http://www.madkting.com)
+  ~
+  ~                                      ..-+::moossso`:.
+  ~                                    -``         ``ynnh+.
+  ~                                 .d                 -mmn.
+  ~     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+  ~    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+  ~    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+  ~    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+  ~    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+  ~    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+  ~    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+  ~                                 .ys .::-`
+  ~                                o.+`
+  ~
+  ~ @category Module
+  ~ @package Madkting\Connect
+  ~ @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+  ~ @author Israel Calderón Aguilar <israel@madkting.com>
+  ~ @link https://bitbucket.org/madkting/magento2
+  ~ @copyright Copyright (c) 2017 Madkting Software.
+  ~ @license See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="madkting" translate="label" sortOrder="199">
+            <label>Yuju</label>
+        </tab>
+        <section id="madkting_general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>madkting</tab>
+            <resource>Madkting_Connect::general</resource>
+            <group id="information" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Module Information</label>
+                <attribute type="expanded">1</attribute>
+                <field id="module_version" translate="label" type="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Version Number</label>
+                    <frontend_model>Madkting\Connect\Block\System\Config\Form\Field\VersionNumber</frontend_model>
+                </field>
+            </group>
+            <group id="connection" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Connection</label>
+                <field id="api_token" translate="label comment" type="obscure" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Token</label>
+                    <backend_model>Madkting\Connect\Model\Config\Backend\MadktingToken</backend_model>
+                    <comment>
+                        <![CDATA[<a href="https://apps.yuju.io" target="_blank">Click here to sign into your Yuju account.</a>]]>
+                    </comment>
+                </field>
+                <field id="valid_token" translate="label" type="label" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Status</label>
+                    <frontend_model>Madkting\Connect\Block\System\Config\Form\Field\ValidToken</frontend_model>
+                </field>
+                <field id="store_id" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                    <comment>Select store where Yuju will get products and update orders.</comment>
+                </field>
+                <field id="webhook_url" translate="label" type="label" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notifications URL</label>
+                    <frontend_model>Madkting\Connect\Block\System\Config\Form\Field\WebhookUrl</frontend_model>
+                </field>
+            </group>
+        </section>
+        <section id="madkting_synchronization" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Synchronization</label>
+            <tab>madkting</tab>
+            <resource>Madkting_Connect::synchronization</resource>
+            <group id="orders" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Orders</label>
+                <field id="sync_orders" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Synchronize Orders</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="start_creation_from" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Start Creation From</label>
+                    <frontend_model>Madkting\Connect\Block\Adminhtml\Config\DatePicker</frontend_model>
+                    <depends>
+                        <field id="sync_orders">1</field>
+                    </depends>
+                </field>
+                <field id="shipping_address_lacking" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Create Orders with Shipping Address Lacking</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="sync_orders">1</field>
+                    </depends>
+                </field>
+                <field id="create_fulfillment_orders" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Create Orders with Fulfillment by Channel</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="sync_orders">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="products" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Products</label>
+                <field id="permanent_sync" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Permanent Synchronization</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="upload_disabled" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Upload Disabled Products</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="attributes_disabled_sync" translate="label comment" type="multiselect" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Disable Attributes Update</label>
+                    <source_model>Madkting\Connect\Model\Config\Source\AttributesMapped</source_model>
+                    <can_be_empty>1</can_be_empty>
+                    <comment>The selected attributes will be ignored on products update. Use Ctrl+Click to check several values or uncheck value.</comment>
+                </field>
+                <field id="no_managed_stock" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Stock for no-manage-stock Products</label>
+                    <comment>Stock quantity that will be sent to Yuju when a product has "manage stock" option disabled.</comment>
+                    <validate>validate-digits</validate>
+                </field>
+                <field id="sync_all" translate="label comment" type="button" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Update All</label>
+                    <frontend_model>Madkting\Connect\Block\System\Config\Form\Field\SyncAll</frontend_model>
+                    <comment>Update all the products created in Yuju.</comment>
+                </field>
+                <field id="sync_stock_prices" translate="label comment" type="button" sortOrder="51" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Update Stock and Price</label>
+                    <frontend_model>Madkting\Connect\Block\System\Config\Form\Field\SyncStockPrices</frontend_model>
+                    <comment>Update only stock and price in all the products created in Yuju.</comment>
+                </field>
+                <field id="max_time_get_products" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Max Time to Get Products (seconds)</label>
+                    <validate>required-entry validate-digits validate-greater-than-zero</validate>
+                </field>
+            </group>
+            <group id="tasks_queue" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Tasks Queue</label>
+                <field id="success_lifetime" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Success History Lifetime (days)</label>
+                    <validate>required-entry validate-digits validate-greater-than-zero</validate>
+                </field>
+                <field id="failure_lifetime" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Failure History Lifetime (days)</label>
+                    <validate>required-entry validate-digits validate-greater-than-zero</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

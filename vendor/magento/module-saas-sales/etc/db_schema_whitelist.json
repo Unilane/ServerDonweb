@@ -1,0 +1,7 @@
+{
+    "sales_order_data_submitted_hash": {
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

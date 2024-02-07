@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\OrderIngestion\Api\ExternalOrderRepositoryInterface" type="Magento\OrderIngestion\Model\Repository\ExternalOrderRepository"/>
+    <preference for="Magento\OrderIngestion\Api\Data\ExternalOrderInterface" type="Magento\OrderIngestion\Model\ExternalOrder"/>
+    <preference for="Magento\OrderIngestion\Api\Data\ExternalOrderSearchResultsInterface" type="Magento\OrderIngestion\Model\ExternalOrderSearchResults"/>
+    <preference for="Magento\OrderIngestion\Model\ServiceClientInterface" type="Magento\OrderIngestion\Model\ServiceClient" />
+
+    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid" type="Magento\Sales\Model\ResourceModel\Grid">
+        <arguments>
+            <argument name="columns" xsi:type="array">
+                <item name="ext_order_id" xsi:type="string">sales_order_payment.po_number</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Quote\Model\Quote\Item">
+        <plugin name="avoid_aggregation_by_sku_for_quote_item_plugin" type="Magento\OrderIngestion\Plugin\AvoidAggregationBySkuForQuoteItemPlugin" sortOrder="1" disabled="false" />
+    </type>
+    <type name="Magento\Sales\Model\ResourceModel\Order">
+        <plugin name="AssignUuidFromSalesChannel" type="Magento\OrderIngestion\Plugin\AssignUuidFromSalesChannel" sortOrder="-1"/>
+    </type>
+    <type name="Magento\SalesOrdersDataExporter\Model\Provider\ExternalOrderId">
+        <plugin name="AssignSalesChannelToExternalId" type="Magento\OrderIngestion\Plugin\AssignSalesChannelToExternalId" sortOrder="-1"/>
+    </type>
+
+    <!-- Logger -->
+    <virtualType name="OrderIngestionLogger" type="Magento\OrderIngestion\Model\Logging\Monolog">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="error" xsi:type="object">Magento\OrderIngestion\Model\Logging\Error</item>
+                <item name="system" xsi:type="object">Magento\OrderIngestion\Model\Logging\Base</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <preference for="Magento\OrderIngestion\Model\Logging\OrderIngestionLoggerInterface" type="OrderIngestionLogger"/>
+    <preference for="Magento\Sales\Block\Adminhtml\Order\View" type="Magento\OrderIngestion\Block\Adminhtml\Order\View" />
+</config>

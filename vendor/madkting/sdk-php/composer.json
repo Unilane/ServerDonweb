@@ -1,0 +1,56 @@
+{
+    "name": "madkting/sdk-php",
+    "version": "2.0.0",
+    "type": "library",
+    "description": "SDK for madkting platform",
+    "repositories": [{
+                    "url": "https://bitbucket.org/madkting/sdk-php",
+                    "type": "vcs"
+                }],
+    "keywords": [
+        "madkting",
+        "sdk-php"
+    ],
+    "homepage": "https://bitbucket.org/madkting/sdk-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jesus Camacho",
+            "email": "camacho@madkting.com",
+            "homepage": "http://madkting.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^9.0",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Madkting\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Madkting\\": "tests"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

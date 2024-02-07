@@ -1,0 +1,92 @@
+/*
+ * Madkting Software (http://www.madkting.com)
+ *
+ *                                      ..-+::moossso`:.
+ *                                    -``         ``ynnh+.
+ *                                 .d                 -mmn.
+ *     .od/hs..sd/hm.   .:mdhn:.   yo                 `hmn. on     mo omosnomsso oo  .:ndhm:.   .:odhs:.
+ *    :hs.h.shhy.d.mh: :do.hd.oh:  /h                `+nm+  dm   ys`  ````mo```` hn :ds.hd.yo: :oh.hd.dh:
+ *    ys`   `od`   `h+ sh`    `do  .d`              `snm/`  +s hd`        hd     yy yo`    `sd oh`    ```
+ *    hh     sh     +m hs      yy   y-            `+mno`    dkdm          +d     o+ no      ss ys    dosd
+ *    y+     ss     oh hdsomsmnmy   ++          .smh/`      om ss.        dh     mn yo      oh sm      hy
+ *    sh     ho     ys hs``````yy   .s       .+hh+`         ys   hs.      os     yh os      d+ od+.  ./m/
+ *    od     od     od od      od   +y    .+so:`            od     od     od     od od      od  `syssys`
+ *                                 .ys .::-`
+ *                                o.+`
+ *
+ * @category Module
+ * @package Madkting\Connect
+ * @author Carlos Guillermo Jiménez Salcedo <guillermo@madkting.com>
+ * @link https://bitbucket.org/madkting/magento2
+ * @copyright Copyright (c) 2017 Madkting Software.
+ * @license See LICENSE.txt for license details.
+ */
+
+
+/* Menu font */
+@madkting-icons-admin__font-name-path: '@{baseDir}fonts/Madkting/logo';
+@madkting-icons-admin__font-name : 'Madkting';
+.lib-font-face (
+  @family-name:@madkting-icons-admin__font-name,
+  @font-path: @madkting-icons-admin__font-name-path,
+  @font-weight: normal,
+  @font-style: normal
+);
+#menu-madkting-connect-main-menu > a:before {
+  font-family: @madkting-icons-admin__font-name;
+  content: "\e800";
+  color: #ffc72b;
+}
+
+/* Madkting grid */
+.data-row .align-middle {
+  vertical-align: middle;
+}
+
+/* Attribute match */
+#attribute-mapping-table td .default-value {
+  width: 80%;
+}
+
+/* Attribute option match */
+.attribute-option-selector-wrapper {
+  display: inline-block;
+  margin-right: 30px;
+
+  select {
+    width: 100%;
+  }
+}
+
+/* Category match */
+#madkting-category-table {
+  td .admin__action-multiselect-crumb {
+    margin-right: 0;
+    padding-right: 1rem;
+  }
+
+  .data-grid-actions-cell a:hover {
+    color: #41362f;
+    text-decoration: none;
+  }
+}
+[data-index="madkting_category_id"] select{
+  width: 100%;
+}
+
+/* Attribute set selector */
+.attribute-set-selector-wrapper.hide {
+  display: none;
+}
+
+/* Create product */
+.madkting-stores-list {
+  list-style: none;
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+.madkting-create-product-form .madkting-store-field > .admin__field-label {
+  cursor: default;
+}

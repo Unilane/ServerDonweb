@@ -1,0 +1,92 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate
+// phpcs:disable Magento2.Files.LineLength, Generic.Files.LineLength
+
+/** @var $block \Magento\Sales\Block\Order\Email\Items\DefaultItems */
+
+/** @var $_item \Magento\Sales\Model\Order\Item */
+/** @var \Magento\Framework\Escaper $escaper */
+$_item = $block->getItem();
+$_order = $_item->getOrder();
+
+?>
+<?php 
+
+// if ($_item->getProductType() == Mage_Catalog_Model_Product_Type::TYPE_CONFIGURABLE) {
+//     $parentId = Mage::getModel('catalog/product_type_configurable')
+//                        ->getParentIdsByChild($_item->getProductId());  
+//     $_product = Mage::getModel('catalog/product')  
+//                        ->setStoreId($_item->getOrder()->getStoreId())  
+//                        ->load($parentId);
+// } else {
+//     $_product = Mage::getModel('catalog/product')  
+//                        ->setStoreId($_item->getOrder()->getStoreId())  
+//                        ->load($_item->getProductId());  
+// }
+
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+$_product = $objectManager->get('Magento\Catalog\Model\Product')->load($_item->getProductId());
+
+$imageHelper  = $objectManager->get('\Magento\Catalog\Helper\Image');
+
+$image_url = $imageHelper->init($_product, 'product_page_image_small')->setImageFile($_product->getImage())->resize(75, 75)->getUrl();
+?>
+<tr>
+    <td>
+    
+    <img src="<?=$image_url?>" title="<?= $block->escapeHtml($_item->getName()) ?>" alt="<?= $block->escapeHtml($_item->getName()) ?>" />
+
+    </td>
+
+
+    <td class="item-info<?= ($block->getItemOptions() ? ' has-extra' : '') ?>">
+        <p class="product-name"><?= $escaper->escapeHtml($_item->getName()) ?></p>
+        <p class="sku"><?= $escaper->escapeHtml(__('SKU')) ?>: <?= $escaper->escapeHtml($block->getSku($_item)) ?></p>
+        <?php if ($block->getItemOptions()): ?>
+            <dl class="item-options">
+            <?php foreach ($block->getItemOptions() as $option): ?>
+                <dt><strong><em><?= $escaper->escapeHtml($option['label']) ?></em></strong></dt>
+                <dd>
+                    <?= /* @noEscape */  nl2br($option['value']) ?>
+                </dd>
+            <?php endforeach; ?>
+            </dl>
+        <?php endif; ?>
+        <?php $addInfoBlock = $block->getProductAdditionalInformationBlock(); ?>
+        <?php if ($addInfoBlock):?>
+            <?= $addInfoBlock->setItem($_item)->toHtml() ?>
+        <?php endif; ?>
+        <?= $escaper->escapeHtml($_item->getDescription()) ?>
+    </td>
+    <td class="item-qty"><?= (float) $_item->getQtyOrdered() ?></td>
+    <td class="item-price">
+        <?= /* @noEscape */ $block->getItemPrice($_item) ?>
+    </td>
+</tr>
+<?php if ($_item->getGiftMessageId()
+    && $_giftMessage = $this->helper(\Magento\GiftMessage\Helper\Message::class)
+        ->getGiftMessage($_item->getGiftMessageId())
+): ?>
+    <tr>
+    <td colspan="3" class="item-extra">
+        <table class="message-gift">
+            <tr>
+                <td>
+                    <h3><?= $escaper->escapeHtml(__('Gift Message')) ?></h3>
+                    <strong><?= $escaper->escapeHtml(__('From:')) ?></strong> <?= $escaper->escapeHtml($_giftMessage->getSender()) ?>
+                    <br /><strong><?= $escaper->escapeHtml(__('To:')) ?></strong> <?= $escaper->escapeHtml($_giftMessage->getRecipient()) ?>
+                    <br /><strong><?= $escaper->escapeHtml(__('Message:')) ?></strong>
+                    <br /><?= $escaper->escapeHtml($_giftMessage->getMessage()) ?>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<?php endif; ?>

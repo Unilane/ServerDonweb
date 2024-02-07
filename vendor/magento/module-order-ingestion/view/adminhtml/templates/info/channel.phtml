@@ -1,0 +1,21 @@
+<?php
+/**
+ * Copyright © Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+<div class="order-payment-method-name"><?= $block->escapeHtml($block->getMethod()->getTitle()); ?></div>
+<table class="data-table admin__table-secondary">
+    <tr>
+        <th><?= $block->escapeHtml(__('External Order Number')); ?>:</th>
+        <td><?= $block->escapeHtml($block->getInfo()->getPoNumber()); ?></td>
+    </tr>
+
+    <?php if (isset($block->getInfo()->getAdditionalInformation()['cancel_reason_text'])) : ?>
+        <th><?= $block->escapeHtml(__('Cancellation reason')); ?>:</th>
+        <td><?= $block->getInfo()->getAdditionalInformation()['cancel_reason_text']; ?></td>
+    <?php endif; ?>
+
+</table>
