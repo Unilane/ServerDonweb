@@ -1,0 +1,11 @@
+/pub/media/catalog/product/*
+/pub/media/tmp/*
+/var/log/*
+/generated/*
+/pubnego/pub/media/catalog/product/*
+/pubnego/pub/media/tmp/*
+/var/cache/*
+/var/page_cache/*
+/var/tmp/*
+/var/*
+
