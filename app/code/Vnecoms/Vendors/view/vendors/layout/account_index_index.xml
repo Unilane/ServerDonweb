@@ -9,7 +9,7 @@
     <body>
         <referenceContainer name="content">
         	<block class="Vnecoms\Vendors\Block\Vendors\Account" name="vendor.myaccount" template="Vnecoms_Vendors::account.phtml">
-        		<container name="vendor.myaccount.left" as="myaccount_left">
+        		<!-- <container name="vendor.myaccount.left" as="myaccount_left">
         			<block class="Vnecoms\Vendors\Block\Vendors\Account\Profile" name="vendor.myaccount.left.profile" template="Vnecoms_Vendors::account/profile.phtml">
         				<block class="Vnecoms\Vendors\Block\Vendors\Account\Profile" name="vendor.myaccount.left.profile.logo" template="Vnecoms_Vendors::account/profile/logo.phtml"/>
         				<block class="Vnecoms\Vendors\Block\Vendors\Account\Profile" name="vendor.myaccount.left.profile.title" template="Vnecoms_Vendors::account/profile/title.phtml"/>
@@ -19,7 +19,7 @@
         				<block class="Vnecoms\Vendors\Block\Vendors\Account\Profile" name="vendor.myaccount.left.profile.salescount" template="Vnecoms_Vendors::account/profile/sales.phtml"/>
         				<block class="Vnecoms\Vendors\Block\Vendors\Account\Profile" name="vendor.myaccount.left.profile.address" template="Vnecoms_Vendors::account/profile/address.phtml"/>
         			</block>
-        		</container>
+        		</container> -->
         		<container name="vendor.myaccount.content" as="myaccount_content">
         			<block class="Vnecoms\Vendors\Block\Vendors\Account\Edit" name="vendor.myaccount.form"/>
         		</container>
