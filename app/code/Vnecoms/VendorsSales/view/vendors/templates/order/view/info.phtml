@@ -30,7 +30,7 @@ $orderStoreDate = $block->formatDate(
     <div class="admin__page-section-content">
         <div class="admin__page-section-item order-information">
             <?php /* Order Information */?>
-            <?php if ($_order->getEmailSent()):
+            <?php  if ($_order->getEmailSent()):
                 $_email = __('The order confirmation email was sent');
             else:
                 $_email = __('The order confirmation email is not sent');
@@ -38,10 +38,10 @@ $orderStoreDate = $block->formatDate(
             <div class="admin__page-section-item-title">
                 <span class="title">
                     <?php if ($block->getNoUseOrderLink()): ?>
-                        <?php /* @escapeNotVerified */ echo __('Order # %1', $_order->getRealOrderId()) ?> (<span><?php /* @escapeNotVerified */ echo $_email ?></span>)
+                         <?php /* @escapeNotVerified */ echo __('Order # %1', $_order->getRealOrderId()) ?> <!-- (<span><?php /*  echo $_email */?></span>) -->
                     <?php else: ?>
                         <a href="<?php /* @escapeNotVerified */ echo $block->getViewUrl($_order->getId()) ?>"><?php /* @escapeNotVerified */ echo __('Order # %1', $_order->getRealOrderId()) ?></a>
-                        <span>(<?php /* @escapeNotVerified */ echo $_email ?>)</span>
+                        <!-- <span>(<?php /*   echo $_email */?>)</span> -->
                     <?php endif; ?>
                 </span>
             </div>
@@ -64,12 +64,12 @@ $orderStoreDate = $block->formatDate(
                     <th><?php /* @escapeNotVerified */ echo __('Order Status') ?></th>
                     <td><span id="order_status"><?php /* @escapeNotVerified */ echo $this->getOrderStatusLabel() ?></span></td>
                 </tr>
-                <?php if ($block->isSingleStoreMode() == false):?>
-                    <tr>
-                        <th><?php /* @escapeNotVerified */ echo __('Purchased From') ?></th>
-                        <td><?php /* @escapeNotVerified */ echo $block->getOrderStoreName() ?></td>
-                    </tr>
-                <?php endif; ?>
+                <?php /* if ($block->isSingleStoreMode() == false): */?>
+                    <!-- <tr>
+                        <th><?php /*  echo __('Purchased From') */?></th>
+                        <td><?php /* echo $block->getOrderStoreName() */?></td>
+                    </tr> -->
+                <?php /* endif; */?>
                 <?php if ($_order->getRelationChildId()): ?>
                     <tr>
                         <th><?php /* @escapeNotVerified */ echo __('Link to the New Order') ?></th>
@@ -123,12 +123,12 @@ $orderStoreDate = $block->formatDate(
                         <td><a href="mailto:<?php echo $block->escapeHtml($_order->getCustomerEmail()) ?>"><?php echo $block->escapeHtml($_order->getCustomerEmail()) ?></a></td>
                     </tr>
                     <?php endif;?>
-                    <?php if ($_groupName = $block->getCustomerGroupName()) : ?>
-                        <tr>
-                            <th><?php /* @escapeNotVerified */ echo __('Customer Group') ?></th>
-                            <td><?php /* @escapeNotVerified */ echo $_groupName ?></td>
-                        </tr>
-                    <?php endif; ?>
+                    <?php /* if ($_groupName = $block->getCustomerGroupName()) :  */?>
+                        <!-- <tr>
+                            <th><?php /* echo __('Customer Group') */?></th>
+                            <td><?php /* echo $_groupName  */?></td>
+                        </tr> -->
+                    <?php /* endif; */ ?>
                     <?php foreach ($block->getCustomerAccountData() as $data):?>
                         <tr>
                             <th><?php /* @escapeNotVerified */ echo $data['label'] ?></th>
