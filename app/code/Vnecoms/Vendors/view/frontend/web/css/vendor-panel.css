@@ -1942,3 +1942,27 @@ top:.4rem;
 .admin__form-loading-mask .spinner {font-size: 4rem;left: 50%;margin-left: -2rem;margin-top: -2rem;position: absolute;top: 50%;}
 /*End Loading*/
 /*End UI Form*/
+
+
+/* ADMIN CONFIGURATION*/
+
+.page-content.content-wrapper div[data-index='configurable'] {
+  display: none;
+}
+
+.page-content.content-wrapper div[data-index='downloadable'] {
+  display: none;
+}
+
+
+.page-content.content-wrapper div[data-index='product.form.configurable.matrix.content'] {
+  display: none;
+}
+
+.page-content.content-wrapper div[data-index='related'] {
+  display: none;
+}
+
+.page-content.content-wrapper div[data-index='custom_options'] {
+  display: none;
+}
