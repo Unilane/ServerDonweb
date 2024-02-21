@@ -48,4 +48,7 @@ body table.mceLayout, body textarea.tinyMCE {
 .admin__page-nav-items.items .admin__page-nav-item.item.section-product_import_export._last{display:none;}     
 
 
-#general_store_information #row_general_store_information_logo{display:none} 
+#general_store_information #row_general_store_information_logo{display:none}    
+
+/* Account information*/
+.account-index-index #container .col-md-3{display:none;}

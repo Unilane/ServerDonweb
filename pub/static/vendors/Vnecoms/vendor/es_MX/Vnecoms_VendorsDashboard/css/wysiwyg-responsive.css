@@ -49,3 +49,6 @@ body table.mceLayout, body textarea.tinyMCE {
 
 
 #general_store_information #row_general_store_information_logo{display:none} 
+
+/* Account information*/
+.account-index-index #container .col-md-3{display:none;}
