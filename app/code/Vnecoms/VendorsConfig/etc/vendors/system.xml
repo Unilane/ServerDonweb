@@ -18,25 +18,25 @@
             <resource>Vnecoms_VendorsConfig::general</resource>
             <group id="store_information" translate="label tooltip" type="text" sortOrder="10" showInDefault="1" showInStore="1">
 				<label>Store Information</label>
-				<field id="logo" translate="label" type="image" sortOrder="10" showInDefault="1">
+				<!-- <field id="logo" translate="label" type="image" sortOrder="10" showInDefault="1">
 	            	<label>Logo</label>
 	            	<comment>Allowed file types: PNG, GIF, JPG, JPEG</comment>
 	            	<backend_model>Vnecoms\VendorsConfig\Model\Config\Backend\Image</backend_model>
 	            	<upload_dir config="system/filesystem/media" scope_info="1">ves_vendors/logo</upload_dir>
                     <base_url type="media">ves_vendors/logo</base_url>
-	        	</field>
+	        	</field> -->
 				<field id="name" translate="label" type="text" sortOrder="20" showInDefault="1" showInStore="1">
-	            	<label>Store Name</label>
+	            	<label>Seller Name</label>
 	        	</field>
 	        	<field id="short_description" translate="label" type="textarea" sortOrder="30" showInDefault="1" showInStore="1">
 	            	<label>Short Description</label>
 	            	<backend_model>Vnecoms\Vendors\Model\Config\Backend\StoreDescription</backend_model>
 	        	</field>
 	        	<field id="phone" translate="label" type="text" sortOrder="40" showInDefault="1" showInStore="1">
-	            	<label>Store Phone Number</label>
+	            	<label>Contact number</label>
 	        	</field>
 	        	<field id="hours" translate="label" type="text" sortOrder="50" showInDefault="1" showInStore="1">
-	            	<label>Store Hours of Operation</label>
+	            	<label>Contact schedule</label>
 	        	</field>
 			</group>
 		</section>

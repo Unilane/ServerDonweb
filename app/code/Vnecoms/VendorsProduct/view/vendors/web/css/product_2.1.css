@@ -12,3 +12,25 @@
     flex-direction: row;
 }
 .admin__control-fields .control-grouped .admin__field{margin-top: 0px;}
+
+/* PRODUCT SECCTIONS */
+.page-content.content-wrapper div[data-index='configurable'] {
+    display: none;
+}
+
+.page-content.content-wrapper div[data-index='downloadable'] {
+    display: none;
+}
+
+
+.page-content.content-wrapper div[data-index='product.form.configurable.matrix.content'] {
+    display: none;
+}
+
+.page-content.content-wrapper div[data-index='related'] {
+    display: none;
+}
+
+.page-content.content-wrapper div[data-index='custom_options'] {
+    display: none;
+}
